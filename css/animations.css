@@ -1,0 +1,129 @@
+/* ── Animations — Scroll Reveals, Hovers, Transitions ── */
+
+/* Scroll reveal base state */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity var(--dur-slow) var(--ease-drift),
+              transform var(--dur-slow) var(--ease-drift);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children */
+.reveal-stagger > .reveal {
+  --stagger: 0;
+  transition-delay: calc(var(--stagger) * 80ms);
+}
+
+/* Hero text clip reveal */
+.hero-headline {
+  overflow: hidden;
+}
+
+.hero-headline .word {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.hero-headline .word-inner {
+  display: inline-block;
+  transform: translateY(110%);
+  transition: transform 0.65s var(--ease-drift);
+  transition-delay: calc(var(--word-i, 0) * 20ms + 100ms);
+}
+
+.hero-headline.is-visible .word-inner {
+  transform: translateY(0);
+}
+
+/* Image hover scale */
+.img-hover {
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.img-hover img {
+  transition: transform 0.6s var(--ease-drift);
+}
+
+.img-hover:hover img {
+  transform: scale(1.03);
+}
+
+/* Link underline grow */
+.link-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.3s var(--ease-out);
+}
+
+.link-underline:hover::after {
+  width: 100%;
+}
+
+/* Text scramble effect container */
+.scramble-text {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* Project bar hover */
+.project-bar {
+  transition: padding-left 0.3s var(--ease-out);
+}
+
+.project:hover .project-bar {
+  padding-left: 0.5rem;
+}
+
+/* Fade in up for sections */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Subtle float for decorative elements */
+@keyframes subtleFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* Prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .hero-headline .word-inner {
+    transform: none;
+    transition: none;
+  }
+
+  .img-hover img,
+  .project-bar {
+    transition: none;
+  }
+}

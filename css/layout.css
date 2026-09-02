@@ -1,0 +1,116 @@
+/* ── Layout — Sections, Dividers, Guide Rails ── */
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+/* ── ASCII Dither Trail Canvas (vessa-inspired background overlay) ── */
+.dither-trail-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 2;
+  image-rendering: pixelated;
+}
+
+/* Container widths */
+.container {
+  width: var(--col);
+  margin-inline: auto;
+  padding-inline: var(--pad-outer);
+}
+
+.container--wide {
+  width: var(--col-wide);
+  margin-inline: auto;
+}
+
+/* ── Vertical Guide Rails (vessa-inspired) ── */
+.guides {
+  position: fixed;
+  inset: 0;
+  width: var(--col-wide);
+  margin: 0 auto;
+  pointer-events: none;
+  z-index: 101;
+}
+
+.guides .rail {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--dash-v);
+  -webkit-mask-image: linear-gradient(#000 0, #000 calc(100% - 180px), transparent);
+  mask-image: linear-gradient(#000 0, #000 calc(100% - 180px), transparent);
+}
+
+.guides .rail--l { left: 0; transform: translateX(-50%); }
+.guides .rail--r { right: 0; transform: translateX(50%); }
+
+/* ── Section Dividers ── */
+.section-divider {
+  position: relative;
+  width: 100vw;
+  height: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--dash-h);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent 0, #000 8%, #000 92%, transparent);
+}
+
+/* Corner dots at section intersections */
+.section-divider::before,
+.section-divider::after {
+  content: '';
+  position: absolute;
+  width: var(--dot-size);
+  height: var(--dot-size);
+  background: var(--ink);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.section-divider::before {
+  left: max(calc((100vw - var(--col-wide)) / 2), 0.75rem);
+}
+
+.section-divider::after {
+  right: max(calc((100vw - var(--col-wide)) / 2), 0.75rem);
+}
+
+/* ── Main sections ── */
+.section {
+  position: relative;
+  padding-block: var(--space-3xl);
+}
+
+.section--hero {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: calc(54px + clamp(2rem, 5.5vh, 4.5rem));
+  padding-bottom: clamp(1.5rem, 3.5vh, 2.5rem);
+  box-sizing: border-box;
+}
+
+.section--hero .section__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+/* Section inner padding */
+.section__inner {
+  width: var(--col);
+  margin-inline: auto;
+  padding-inline: var(--pad-outer);
+}

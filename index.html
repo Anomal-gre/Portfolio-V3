@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tran Gia Bao (Anomal) — Portfolio</title>
+  <meta name="description" content="Portfolio of Tran Gia Bao (Anomal) - Student Leader, Media Strategist & Graphic Designer based in Hanoi, Vietnam.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ASCII Dither Trail Canvas (vessa.design inspired) -->
+  <canvas class="dither-trail-canvas" aria-hidden="true"></canvas>
+
+  <!-- Vertical Architectural Guide Rails (desktop only) -->
+  <div class="guides" aria-hidden="true">
+    <div class="rail rail--l"></div>
+    <div class="rail rail--r"></div>
+  </div>
+
+  <!-- Sticky Header -->
+  <header class="site-header" id="top">
+    <div class="header-row">
+      <a href="#top" class="header-brand" aria-label="Home">ANOMAL</a>
+      
+      <nav class="header-nav" aria-label="Main navigation">
+        <a href="#showcase" data-i18n="nav_work">Work</a>
+        <a href="#other-works" data-i18n="nav_other">Other</a>
+        <a href="#about" data-i18n="nav_about">About</a>
+        <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language">VI</button>
+      </nav>
+
+      <button class="header-burger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-overlay" aria-hidden="true"></div>
+  <aside class="mobile-drawer" aria-label="Mobile navigation">
+    <a href="#showcase" data-i18n="nav_work">Work</a>
+    <a href="#other-works" data-i18n="nav_other">Other</a>
+    <a href="#about" data-i18n="nav_about">About</a>
+    <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px dashed var(--border-solid);">
+      <button class="lang-toggle" id="lang-toggle-mobile" style="width: 100%; padding: 0.6rem;" aria-label="Toggle language">VI / EN</button>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- 1. LANDING / HERO SECTION -->
+    <section id="landing" class="section section--hero">
+      <div class="section__inner">
+        <h1 class="hero-headline" data-i18n="hero_intro">
+          Third-year student with extensive experience initiating and leading media, design, and branding operations across diverse student organizations and national-scale events.
+        </h1>
+
+        <div class="hero-stack reveal">
+          <div>
+            <span class="hero-work-label" data-i18n="hero_selected">Selected Work</span>
+            <span class="hero-work-years" data-i18n="hero_years">2022 – 26</span>
+          </div>
+          <div class="hero-scroll-hint">
+            <span data-i18n="hero_scroll">Scroll</span>
+            <span class="arrow">↓</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- 2. SHOWCASE SECTION (9 Projects — der-lukas structure) -->
+    <section id="showcase" class="section">
+      <div class="section__inner">
+
+        <!-- PROJECT 1: Tôi Bản Lĩnh 2026 -->
+        <article class="project reveal">
+          <div class="project-bar">
+            <span class="project-year">2026</span>
+            <div class="project-bar-right">
+              <span class="project-category" data-i18n="type_event">Event</span>
+              <span class="project-name-label" data-i18n="proj_tbl_name">Tôi Bản Lĩnh 2026</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-info">
+              <h2 class="project-title" data-i18n="proj_tbl_name">Tôi Bản Lĩnh 2026</h2>
+              <div class="project-description">
+                <p data-i18n="proj_tbl_desc">Flagship university-wide public speaking and leadership competition. Architected the complete visual identity and centralized design system for cross-team collaboration.</p>
+              </div>
+              <dl class="project-meta">
+                <div class="meta-row">
+                  <dt>Role</dt>
+                  <dd data-i18n="proj_tbl_role">Lead Visual Designer</dd>
+                </div>
+                <div class="meta-row">
+                  <dt>Deliverables</dt>
+                  <dd data-i18n="proj_tbl_deliverables">Design System, Key Visual, Social Media, Stage Design</dd>
+                </div>
+                <div class="meta-row">
+                  <dt>Organization</dt>
+                  <dd>Presentation Club of UET</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="project-media">
+              <div class="img-hover"><img src="assets/images/toi-ban-linh/img-1.png" alt="Tôi Bản Lĩnh 2026 Key Visual" loading="lazy"></div>
+              <div class="img-hover"><img src="assets/images/toi-ban-linh/img-2.png" alt="Tôi Bản Lĩnh 2026 Avatar CK" loading="lazy"></div>
+              <div class="img-hover"><img src="assets/images/toi-ban-linh/img-3.png" alt="Tôi Bản Lĩnh 2026 Cover CK" loading="lazy"></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: Hola Radio -->
+        <article class="project reveal">
+          <div class="project-bar">
+            <span class="project-year">2022</span>
+            <div class="project-bar-right">
+              <span class="project-category" data-i18n="type_branding">Branding</span>
+              <span class="project-name-label" data-i18n="proj_hola_name">Hola Radio</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-info">
+              <h2 class="project-title" data-i18n="proj_hola_name">Hola Radio</h2>
+              <div class="project-description">
+                <p data-i18n="proj_hola_desc">Brand identity and visual system for a student radio initiative, establishing a cohesive voice across digital platforms.</p>
+              </div>
+              <dl class="project-meta">
+                <div class="meta-row">
+                  <dt>Role</dt>
+                  <dd data-i18n="proj_hola_role">Designer</dd>
+                </div>
+                <div class="meta-row">
+                  <dt>Deliverables</dt>
+                  <dd data-i18n="proj_hola_deliverables">Brand Identity, Social Media</dd>
+                </div>
+                <div class="meta-row">
+                  <dt>Format</dt>
+                  <dd>Digital & Audio Media</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="project-media">
+              <div class="img-hover"><img src="assets/images/hola-radio/img-1.jpg" alt="Hola Radio Visual 1" loading="lazy"></div>
+              <div class="img-hover"><img src="assets/images/hola-radio/img-2.jpg" alt="Hola Radio Visual 2" loading="lazy"></div>
+              <div class="img-hover"><img src="assets/images/hola-radio/img-3.jpg" alt="Hola Radio Visual 3" loading="lazy"></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: Workshop UET IS x ULIS TV -->
+        <article class="project reveal">
+          <div class="project-bar">
+            <span class="project-year">2026</span>
+            <div class="project-bar-right">
+              <span class="project-category" data-i18n="type_event">Event</span>
+              <span class="project-name-label" data-i18n="proj_ws_name">UET IS × ULIS TV Workshop</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-info">
+              <h2 class="project-title" data-i18n="proj_ws_name">UET IS × ULIS TV Workshop</h2>
+              <div class="project-description">
+                <p data-i18n="proj_ws_desc">Collaborative media and design workshop co-organized by two universities. Designed event Key Visuals and standardized joint branding.</p>
+              </div>
+              <dl class="project-meta">
+                <div class="meta-row">
+                  <dt>Role</dt>
+                  <dd data-i18n="proj_ws_role">Head of Marketing</dd>
+                </div>
+                <div class="meta-row">
+                  <dt>Deliverables</dt>
+                  <dd data-i18n="proj_ws_deliverables">Key Visual, Content, Cross-club Coordination</dd>
+                </div>
+                <div class="meta-row">
+                  <dt>Collaboration</dt>
+                  <dd>UET IS × ULIS TV</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="project-media">
+              <div class="img-hover"><img src="assets/images/workshop/img-1.png" alt="Workshop Avatar" loading="lazy"></div>
+              <div class="img-hover"><img src="assets/images/workshop/img-2.png" alt="Workshop Hint" loading="lazy"></div>
+              <div class="img-hover"><img src="assets/images/workshop/img-3.png" alt="Workshop Facebook Cover" loading="lazy"></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 4: HRTech -->
+        <article class="project reveal">
+          <div class="project-bar">
+            <span class="project-year">2025</span>
+            <div class="project-bar-right">
+              <span class="project-category" data-i18n="type_social">Social Media</span>
+              <span class="project-name-label" data-i18n="proj_hr_name">HRTech</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-info">
+              <h2 class="project-title" data-i18n="proj_hr_name">HRTech</h2>
+              <div class="project-description">
+                <p data-i18n="proj_hr_desc">Managed end-to-end Facebook media operations for a student HR-tech initiative, establishing visual benchmarks and authoring core graphic assets.</p>
+              </div>
+              <dl class="project-meta">
+                <div class="meta-row">
+                  <dt>Role</dt>
+                  <dd data-i18n="proj_hr_role">Head of Marketing</dd>
+                </div>
+                <div class="meta-row">
+                  <dt>Deliverables</dt>
+                  <dd data-i18n="proj_hr_deliverables">Social Media, Visual Governance</dd>
+                </div>
+                <div class="meta-row">
+                  <dt>Platform</dt>
+                  <dd>VNU-UET</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="project-media">
+              <div class="img-hover"><img src="assets/images/hrtech/img-1.jpg" alt="HRTech Visual 1" loading="lazy"></div>
+              <div class="img-hover"><img src="assets/images/hrtech/img-2.jpg" alt="HRTech Visual 2" loading="lazy"></div>
+              <div class="img-hover"><img src="assets/images/hrtech/img-3.jpg" alt="HRTech Visual 3" loading="lazy"></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 5: The Xmas Knock -->
+        <article class="project reveal">
+          <div class="project-bar">
+            <span class="project-year">2024</span>
+            <div class="project-bar-right">
+              <span class="project-category" data-i18n="type_event">Event</span>
+              <span class="project-name-label" data-i18n="proj_xmas_name">The Xmas Knock</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-info">
+              <h2 class="project-title" data-i18n="proj_xmas_name">The Xmas Knock</h2>
+              <div class="project-description">
+                <p data-i18n="proj_xmas_desc">Seasonal presentation event blending festive storytelling with student public speaking excellence.</p>
+              </div>
+              <dl class="project-meta">
+                <div class="meta-row">
+                  <dt>Role</dt>
+                  <dd data-i18n="proj_xmas_role">Designer</dd>
+                </div>
+                <div class="meta-row">
+                  <dt>Deliverables</dt>
+                  <dd data-i18n="proj_xmas_deliverables">Key Visual, Social Media</dd>
+                </div>
+                <div class="meta-row">
+                  <dt>Event</dt>
+                  <dd>Annual Winter Showcase</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="project-media">
+              <div class="img-hover"><img src="assets/images/xmas-knock/img-1.jpg" alt="The Xmas Knock Visual 1" loading="lazy"></div>
+              <div class="img-hover"><img src="assets/images/xmas-knock/img-2.jpg" alt="The Xmas Knock Visual 2" loading="lazy"></div>
+              <div class="img-hover"><img src="assets/images/xmas-knock/img-3.jpg" alt="The Xmas Knock Visual 3" loading="lazy"></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 6: Tuyển Gen Campaign -->
+        <article class="project reveal">
+          <div class="project-bar">
+            <span class="project-year">2024</span>
+            <div class="project-bar-right">
+              <span class="project-category" data-i18n="type_campaign">Campaign</span>
+              <span class="project-name-label" data-i18n="proj_gen_name">Tuyển Gen Campaign</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-info">
+              <h2 class="project-title" data-i18n="proj_gen_name">Tuyển Gen Campaign</h2>
+              <div class="project-description">
+                <p data-i18n="proj_gen_desc">Full-cycle recruitment campaign for Presentation Club, featuring distinctive visual concept and multi-phase communication strategy.</p>
+              </div>
+              <dl class="project-meta">
+                <div class="meta-row">
+                  <dt>Role</dt>
+                  <dd data-i18n="proj_gen_role">Head of Marketing</dd>
+                </div>
+                <div class="meta-row">
+                  <dt>Deliverables</dt>
+                  <dd data-i18n="proj_gen_deliverables">Campaign Concept, Key Visual, Social Media</dd>
+                </div>
+                <div class="meta-row">
+                  <dt>Impact</dt>
+                  <dd>100% Visual Consistency & High Engagement</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="project-media">
+              <div class="img-hover"><img src="assets/images/tuyen-gen/img-1.png" alt="Tuyển Gen Announcement" loading="lazy"></div>
+              <div class="img-hover"><img src="assets/images/tuyen-gen/img-2.png" alt="Tuyển Gen Interview Email" loading="lazy"></div>
+              <div class="img-hover"><img src="assets/images/tuyen-gen/img-3.png" alt="Tuyển Gen Hint Post" loading="lazy"></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 7: iae Ambassador 2026 -->
+        <article class="project reveal">
+          <div class="project-bar">
+            <span class="project-year">2026</span>
+            <div class="project-bar-right">
+              <span class="project-category" data-i18n="type_campaign">Campaign</span>
+              <span class="project-name-label" data-i18n="proj_iae_name">iae Ambassador 2026</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-info">
+              <h2 class="project-title" data-i18n="proj_iae_name">iae Ambassador 2026</h2>
+              <div class="project-description">
+                <p data-i18n="proj_iae_desc">Youth leadership and global education ambassadorship initiative. Owned nearly 100% of visual production; conceptualized 3 exclusive Key Visual suites for 3 flagship events.</p>
+              </div>
+              <dl class="project-meta">
+                <div class="meta-row">
+                  <dt>Role</dt>
+                  <dd data-i18n="proj_iae_role">Lead Visual Designer / Creative Lead</dd>
+                </div>
+                <div class="meta-row">
+                  <dt>Deliverables</dt>
+                  <dd data-i18n="proj_iae_deliverables">Key Visual ×3, Digital Ads, Posters, Backdrops</dd>
+                </div>
+                <div class="meta-row">
+                  <dt>Client</dt>
+                  <dd>iae GLOBAL Vietnam</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="project-media">
+              <div class="img-hover"><img src="assets/images/iae-ambassador/img-1.png" alt="iae Ambassador Visual 1" loading="lazy"></div>
+              <div class="img-hover"><img src="assets/images/iae-ambassador/img-2.png" alt="iae Ambassador Visual 2" loading="lazy"></div>
+              <div class="img-hover"><img src="assets/images/iae-ambassador/img-3.png" alt="iae Ambassador Visual 3" loading="lazy"></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 8: Logo Collection -->
+        <article class="project reveal">
+          <div class="project-bar">
+            <span class="project-year">2024–26</span>
+            <div class="project-bar-right">
+              <span class="project-category" data-i18n="type_identity">Identity</span>
+              <span class="project-name-label" data-i18n="proj_logo_name">Logo Collection</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-info">
+              <h2 class="project-title" data-i18n="proj_logo_name">Logo Collection</h2>
+              <div class="project-description">
+                <p data-i18n="proj_logo_desc">A curated selection of logo and brand identity work across various student organizations and personal projects.</p>
+              </div>
+              <dl class="project-meta">
+                <div class="meta-row">
+                  <dt>Role</dt>
+                  <dd data-i18n="proj_logo_role">Designer</dd>
+                </div>
+                <div class="meta-row">
+                  <dt>Deliverables</dt>
+                  <dd data-i18n="proj_logo_deliverables">Logo Design, Brand Identity</dd>
+                </div>
+                <div class="meta-row">
+                  <dt>Scope</dt>
+                  <dd>Vector Marks, Typography, Systems</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="project-media">
+              <div class="img-hover"><img src="assets/images/logos/img-1.png" alt="Asky Logo Mark 1" loading="lazy"></div>
+              <div class="img-hover"><img src="assets/images/logos/img-2.png" alt="Asky Logo Mark 2" loading="lazy"></div>
+              <div class="img-hover"><img src="assets/images/logos/img-3.png" alt="GM Cloud Brand Logo" loading="lazy"></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 9: Green Dreams (HYYF) -->
+        <article class="project reveal">
+          <div class="project-bar">
+            <span class="project-year">2024</span>
+            <div class="project-bar-right">
+              <span class="project-category" data-i18n="type_charity">Charity</span>
+              <span class="project-name-label" data-i18n="proj_hyyf_name">Green Dreams</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-info">
+              <h2 class="project-title" data-i18n="proj_hyyf_name">Green Dreams</h2>
+              <div class="project-description">
+                <p data-i18n="proj_hyyf_desc">Annual grassroots humanitarian initiative providing material donations and emotional support to orphaned children. Raised over 5,000,000 VND.</p>
+              </div>
+              <dl class="project-meta">
+                <div class="meta-row">
+                  <dt>Role</dt>
+                  <dd data-i18n="proj_hyyf_role">Head of Marketing</dd>
+                </div>
+                <div class="meta-row">
+                  <dt>Deliverables</dt>
+                  <dd data-i18n="proj_hyyf_deliverables">Campaign Design, Fundraising, Community Outreach</dd>
+                </div>
+                <div class="meta-row">
+                  <dt>Organization</dt>
+                  <dd>Hung Yen Youth Forum (HYYF)</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="project-media">
+              <div class="img-hover"><img src="assets/images/hyyf/img-1.jpg" alt="Green Dreams Activity 1" loading="lazy"></div>
+              <div class="img-hover"><img src="assets/images/hyyf/img-2.jpg" alt="Green Dreams Activity 2" loading="lazy"></div>
+              <div class="img-hover"><img src="assets/images/hyyf/img-3.jpg" alt="Green Dreams Activity 3" loading="lazy"></div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- 3. OTHER PROJECTS SECTION (Ohwow, Chonvachot, Teto Cornellius, Teto Taskous) -->
+    <section id="other-works" class="section">
+      <div class="section__inner">
+        <h2 class="other-heading reveal" data-i18n="other_title">Other Projects</h2>
+
+        <div class="other-list reveal-stagger">
+          
+          <!-- Item 1: Ohwow.win -->
+          <a href="https://ohwow.win" target="_blank" rel="noopener noreferrer" class="other-item reveal">
+            <span class="other-item__name scramble-text" data-i18n="other_ohwow_name">Ohwow.win</span>
+            <span class="other-item__type" data-i18n="type_webapp">Web App</span>
+            <svg class="other-item__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7M17 7H7M17 7V17"/>
+            </svg>
+            <p class="other-item__desc" data-i18n="other_ohwow_desc">Online Dots & Boxes multiplayer game — real-time strategy board game with ELO ranking.</p>
+          </a>
+
+          <!-- Item 2: Chọn & Chốt -->
+          <a href="https://chonvachot.com" target="_blank" rel="noopener noreferrer" class="other-item reveal">
+            <span class="other-item__name scramble-text" data-i18n="other_cnc_name">Chọn & Chốt</span>
+            <span class="other-item__type" data-i18n="type_website">Website</span>
+            <svg class="other-item__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7M17 7H7M17 7V17"/>
+            </svg>
+            <p class="other-item__desc" data-i18n="other_cnc_desc">Independent tech review & buying guide — "I choose, you decide."</p>
+          </a>
+
+          <!-- Item 3: Teto Cornellius -->
+          <div class="other-item reveal">
+            <span class="other-item__name scramble-text" data-i18n="other_cornellius_name">Teto Cornellius</span>
+            <span class="other-item__type" data-i18n="type_software">Software</span>
+            <svg class="other-item__arrow" style="opacity: 0.3;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="1"></circle>
+            </svg>
+            <p class="other-item__desc" data-i18n="other_cornellius_desc">Note-taking app using the Cornell method for structured and effective learning.</p>
+          </div>
+
+          <!-- Item 4: Teto Taskous -->
+          <div class="other-item reveal">
+            <span class="other-item__name scramble-text" data-i18n="other_taskous_name">Teto Taskous</span>
+            <span class="other-item__type" data-i18n="type_software">Software</span>
+            <svg class="other-item__arrow" style="opacity: 0.3;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="1"></circle>
+            </svg>
+            <p class="other-item__desc" data-i18n="other_taskous_desc">Sticky note-style task manager — lightweight reminders to never miss a deadline.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- 4. ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="section__inner">
+        <div class="about-grid">
+          
+          <div class="about-main reveal">
+            <h2 class="about-title" data-i18n="about_title">About</h2>
+            <div class="about-text">
+              <p data-i18n="about_text_1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <p data-i18n="about_text_2">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+
+            <div class="about-skills">
+              <h3 class="about-skills__title" data-i18n="skills_label">Tools & Skills</h3>
+              <div class="about-skills__list">
+                <span class="skill-tag">Adobe Photoshop</span>
+                <span class="skill-tag">Adobe Illustrator</span>
+                <span class="skill-tag">Adobe InDesign</span>
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">Premiere Pro</span>
+                <span class="skill-tag">After Effects</span>
+                <span class="skill-tag">Generative AI</span>
+                <span class="skill-tag">Design Systems</span>
+                <span class="skill-tag">Brand Direction</span>
+                <span class="skill-tag">Visual Identity</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="about-sidebar reveal">
+            <div class="about-detail">
+              <span class="about-detail__label">Name</span>
+              <span class="about-detail__value">Tran Gia Bao (Anomal)</span>
+            </div>
+            
+            <div class="about-detail">
+              <span class="about-detail__label" data-i18n="about_location_label">Location</span>
+              <span class="about-detail__value" data-i18n="about_location">Hanoi, Vietnam</span>
+            </div>
+
+            <div class="about-detail">
+              <span class="about-detail__label" data-i18n="about_education_label">Education</span>
+              <span class="about-detail__value" data-i18n="about_education">VNU University of Engineering & Technology</span>
+              <span style="font-size: var(--text-xs); color: var(--ink-soft);" data-i18n="about_degree">Bachelor of Industrial & Graphic Design</span>
+              <span style="font-size: var(--text-xs); color: var(--ink-faint);" data-i18n="about_gpa">GPA: 3.57 / 4.0</span>
+            </div>
+
+            <div class="about-detail">
+              <span class="about-detail__label" data-i18n="about_email_label">Email</span>
+              <span class="about-detail__value"><a href="mailto:bao.anomal@gmail.com">bao.anomal@gmail.com</a></span>
+            </div>
+
+            <div class="about-detail">
+              <span class="about-detail__label">Phone</span>
+              <span class="about-detail__value"><a href="tel:+84367190229">(+84) 367 190 229</a></span>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+  </main>
+
+  <!-- 5. FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="https://www.facebook.com/anomalgreatad/" target="_blank" rel="noopener noreferrer" class="footer-link">
+          <span>Facebook</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/anomal/" target="_blank" rel="noopener noreferrer" class="footer-link">
+          <span>LinkedIn</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1VGFzM5YZ_y-cfqixUHnG_vazjcJgUScA?usp=sharing" target="_blank" rel="noopener noreferrer" class="footer-link">
+          <span data-i18n="footer_portfolio">Portfolio</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </a>
+        <a href="#" class="footer-link" style="opacity: 0.5; pointer-events: none;">
+          <span data-i18n="footer_cv">CV (Coming soon)</span>
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        <span data-i18n="footer_copy">© 2026 Tran Gia Bao</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/animated-favicon.js"></script>
+  <script src="js/dither-trail.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/neko-landing.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

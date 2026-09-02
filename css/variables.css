@@ -1,0 +1,68 @@
+/* ── Design Tokens — B&W Minimal ── */
+:root {
+  /* Colors */
+  --bg:           #f2f0eb;
+  --bg-alt:       #e8e6e1;
+  --surface:      #ffffff;
+  --ink:          #111111;
+  --ink-soft:     #4a4a4a;
+  --ink-faint:    #8a8a8a;
+  --accent:       #111111;
+  --accent-ink:   #f2f0eb;
+  --border:       rgba(0, 0, 0, 0.13);
+  --border-solid: #d4d2cd;
+  --hairline:     rgba(0, 0, 0, 0.07);
+
+  /* Dashed lines (vessa-inspired) */
+  --dash-h: repeating-linear-gradient(
+    90deg,
+    var(--border-solid) 0,
+    var(--border-solid) 4px,
+    transparent 4px,
+    transparent 8px
+  );
+  --dash-v: repeating-linear-gradient(
+    0deg,
+    var(--border-solid) 0,
+    var(--border-solid) 4px,
+    transparent 4px,
+    transparent 8px
+  );
+
+  /* Typography */
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --text-xs:    clamp(0.6875rem, 0.8vw, 0.75rem);
+  --text-sm:    clamp(0.8125rem, 1vw, 0.875rem);
+  --text-base:  clamp(0.9375rem, 1.1vw, 1rem);
+  --text-md:    clamp(1rem, 1.3vw, 1.125rem);
+  --text-lg:    clamp(1.125rem, 1.6vw, 1.3125rem);
+  --text-xl:    clamp(1.3125rem, 2vw, 1.75rem);
+  --text-2xl:   clamp(1.5rem, 2.6vw, 2.25rem);
+  --text-3xl:   clamp(2rem, 4vw, 3rem);
+  --text-hero:  clamp(2rem, 5vw, 3.5rem);
+
+  /* Spacing */
+  --space-xs:   clamp(0.5rem, 1vw, 0.75rem);
+  --space-sm:   clamp(0.75rem, 1.5vw, 1rem);
+  --space-md:   clamp(1rem, 2vw, 1.5rem);
+  --space-lg:   clamp(1.5rem, 3vw, 2.5rem);
+  --space-xl:   clamp(2rem, 4vw, 3.5rem);
+  --space-2xl:  clamp(3rem, 6vw, 5rem);
+  --space-3xl:  clamp(5rem, 11vw, 8.5rem);
+
+  /* Layout */
+  --col:        min(78rem, calc(100vw - 3rem));
+  --col-wide:   min(86rem, calc(100vw - 1.5rem));
+  --pad-outer:  clamp(1.25rem, 4vw, 4rem);
+
+  /* Motion */
+  --ease-out:   cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:    cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-drift: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast:   0.2s;
+  --dur-base:   0.4s;
+  --dur-slow:   0.7s;
+
+  /* Corner dot size */
+  --dot-size: 7px;
+}
