@@ -12,7 +12,7 @@
       // Hero
       hero_intro: 'Third-year student with extensive experience initiating and leading media, design, and branding operations across diverse student organizations and national-scale events.',
       hero_selected: 'Selected Work',
-      hero_years: '2022 – 26',
+      hero_years: '2022 – 2026',
       hero_scroll: 'Scroll',
 
       // Project names
@@ -111,7 +111,7 @@
       // Hero
       hero_intro: 'Sinh viên năm ba với kinh nghiệm phong phú trong việc khởi xướng và dẫn dắt các hoạt động truyền thông, thiết kế và xây dựng thương hiệu tại nhiều tổ chức sinh viên và sự kiện quy mô quốc gia.',
       hero_selected: 'Sản phẩm nổi bật',
-      hero_years: '2022 – 26',
+      hero_years: '2022 – 2026',
       hero_scroll: 'Cuộn xuống',
 
       // Project names

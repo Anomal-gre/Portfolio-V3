@@ -1,4 +1,4 @@
-/* ── Neko Landing — Autonomous Pixel Cat for Landing Section ── */
+/* ── Neko Landing — Autonomous Pixel Cat with Drag & Drop & Tap-to-Stop Toggle ── */
 (function () {
   'use strict';
 
@@ -21,8 +21,8 @@
     "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABAklEQVR4nO2V2xKDMAhE2U7//5fpi1iCXBJL60zHfdKY5CwkINGti4VgnJNvHWJ5eMxM6oYzMzFzbmCb0G2CBSzKMtBtYoADICJCaqDRhAsn8jNwgCkTZ4yE8OHBm+zJbpCBtw3TtU8PDoAKI1GZ7ouqQDwDU2JmieQAnoVqlZcwMkHvaIe6Xlg3GBjOfiGS8s5UCo/AptmCPgWXBroAleQI4Fysn+jQB4aXL2VB94Mq7CVDE/1j3cBqFuQoJztqauB0c9GAbA8AYRW48Cq6qHSzknb7uQeQ8y2qZepS673Kv6GO2sDP1C3brMD7aMHqvaNZCMTdUIcPM3ZNp7p16+/1AoBksuBmmrTtAAAAAElFTkSuQmCC", // 14: L_MOVE 2
     "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABCElEQVR4nO2XwRLDIAhEodP//2V6aDa1gBEUc+h0T5mUuk8UJUzrkuaZs39+Jgb3A+Qdwpz2HgIIBoe0if59Ro+eOQxhyswkIqdphTnRJwMYjfHcGsB8hwCA3N5qTmSXwOykneYeQEiVUKMyDKmpjvSZ0AsyJXhl7sWqku3CLANEdMC4XldpMhWxAyKyTmXZ8CCmqqBStwIcmfxK5+0Z0BAhAO+qbS+qFUUOovOCas2rNmZ6CSpmvQSwOnM9gSgAV888C2A0C6QzmAFg7PxII6qrxImVLADRcYxGIUTE9JV4D5UcRCMIhDkQMt2QRPoAB8yeKRPew++FwLhnFz4F0Hm/p07/+nm9AC/+b1UxIU8OAAAAAElFTkSuQmCC", // 15: UL_MOVE 1
     "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABJ0lEQVR4nOWW2xLDIAhEl0z//5fpQ6NFJCAa04cy0+klsnsELwX+PWhgDN+gMZ3MzK0/EZUH9fMKhJfIygQaRkMltMNB7BlKU2vM+WwI4GUZn8mdsq6GNfOMuQUQJnpVmYkCoFVNkMg8O3sAOKS4MGAhuDUqgFxUo2WW44iofE/1qACQhJDiRJSqRBZCK4fbzxT5zr75TejLh43ngTa6Slhm+t0CFpVgr63hSbgaEtDaJeFdcJJsMQf6FnQan9zbtmM3kwiggmQh9OyvqjgKkIaIFmYVTQAInXsWJwDKVCArPhRbAK6u6scAMhCz+2toHWgA67jeVgHpA+c8mQWYPZy6PP2XLCvW9SG7RVdbQPo1UJlmzBNrwIVYacEyBPC7CmyP5sLx4g2TyYdbcQVdwQAAAABJRU5ErkJggg==", // 16: UL_MOVE 2
-    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABH0lEQVR4nOVX0RLCIAwrnv//y/EFbgVaGjp2emdedFLSUCCrIhzgfI7j7fs47uLFBpIAAAEwinLxjgiTYzQKGTclq6u8iIpLtcxBCwAgpZQp8USoYqqoZQ76DBjE03hVuqpGSgAaMYsdEadvwTYYmdhZfUdOnIFIgJnZE5S5CZSAJysQnYHSiPTqxpVaz0xyKkCUB6gfZqJh/KgAL+mS+BJ0xgm7B/4QHqlAzZmqQMhPOWHmFrCv5EhA2oRYEV+34p8UsNXTbcDkHQXoPYfI0t9DqLlur2j2hPrgNVvNGlHYQdn5n9gB2xu8+l77MFSjC3JatMWcfauUfs90POA3n96cCdH/Ao8g2ib65GZ8AEaJ01fllhHdTX4HT5nVH+IDSk+VHrQ/yTUAAAAASUVORK5CYII=", // 17: U_CLAW 1
-    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABHUlEQVR4nOVWWw7DMAiDqfe/MvvoQ4xAMHlok2ZpmloS7AIhEGGQ66efrd37T/FCyEWERKTkGMUxsTcTc9t5iQDmx88ZChFrt+HvEj/7gDVykzFzQ9wRCglAaqAhVyQNcbVeIAHIl48CjsAulGqg7PxMS5cjE+AyR4K82sh4UgEzuV8RASIVheg4es+of7gGdHi9qFg78vWwgIi06xiMAtStyBRjoQiXRODiHIpA6h++jqtA23EmYOoYIiK+3op/UoCd/1bB9WsF6JwLUbe/p9BTVDQnuCOZbasj84AeULrrfP49w4fXG6L4NheQckDWFr13bPVWSZ850+vFCGBgT4PxCjOpQluvxUwfYOeKLhfPbCPimWO6Erua1x/gDfHvngq4OJEYAAAAAElFTkSuQmCC", // 18: U_CLAW 2
+    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABH0lEQVR4nOVX0RLCIAwrnv//y/EFbgVaGjp2emdedFLSUCCrIhzgfI7j7fs47uLFBpIAAAEwinLxjgiTYzQKGTclq6u8iIpLtcxBCwAgpZQp8USoYqqoZQ76DBjE03hVuqpGSgAaMYsdEadvwTYYmdhZfUdOnIFIgJnZE5S5CZSAJysQnYHSiPTqxpVaz0xyKkCUB6gfZqJh/KgAL+mS+BJ0xgm7B/4QHqlAzZmqQMhPOWHmFrCv5EhA2oRYEV+34p8UsNXTbcDkHQXoPYfI0t9DqLlur2j2hPrgNVvNGlHYQdn5n9gB2xu8+l77MFSjC3JatMWcfauUfs90POA3n96cCdH/Ao8g2ib65GZ8AEaJ01fllhHdTX4HT5nVH+IDSk+VHrQ/yTUAAAAASUVORK5CYII=", // 17: U_CLAW 1 (Dangling 1)
+    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABHUlEQVR4nOVWWw7DMAiDqfe/MvvoQ4xAMHlok2ZpmloS7AIhEGGQ66efrd37T/FCyEWERKTkGMUxsTcTc9t5iQDmx88ZChFrt+HvEj/7gDVykzFzQ9wRCglAaqAhVyQNcbVeIAHIl48CjsAulGqg7PxMS5cjE+AyR4K82sh4UgEzuV8RASIVheg4es+of7gGdHi9qFg78vWwgIi06xiMAtStyBRjoQiXRODiHIpA6h++jqtA23EmYOoYIiK+3op/UoCd/1bB9WsF6JwLUbe/p9BTVDQnuCOZbasj84AeULrrfP49w4fXG6L4NheQckDWFr13bPVWSZ850+vFCGBgT4PxCjOpQluvxUwfYOeKLhfPbCPimWO6Erua1x/gDfHvngq4OJEYAAAAAElFTkSuQmCC", // 18: U_CLAW 2 (Dangling 2)
     "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA/ElEQVR4nO2WUQ/DIAiEj2X//y+zF2ksgmCL3UsvWbJM4nfisRbYL24fU5/dcGaXvd1ACAeA7x/hDABUDW70YYHoQBG6TFQaSLW8MwKgLgMpeCvcYiCUPvnjBrSkE48b0J3YNYYuXGfgioEhbcxsbi5QqTFNrYKzaY8kxrIG0mOWBTc2ZwxM4VGLDbDAz1+uwDXAvWcHDszHcKntEsSJSMMjA8tKmBjkjWFJ6FTg0gZuk2d3HhkoG7cILOozcBueabln4AQnojBMuuYKXIoHuLdmmUjsnypg4zfoNe9hYx2gG8mpCbkCgvNH0a9ZJ76dm8X6VVr1W/erV/X6AU6CeC0t3vKrAAAAAElFTkSuQmCC", // 19: R_CLAW 1
     "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABCElEQVR4nO2WzRKDMAiE2Y7v/8r0kqSISVzS0F5kxoPK8G34U5F803J17ZUNVx2y0wXcwjMFUHARkWM3uNBpf+yEz8BAQ1nmNgF0youQytXsKfDgWp6m9mcCRvYXATYLqQIA+NRffRbiXiKpqgAYQ5wI04ihKYjO+NCsAHYR0WPWAdkgfgypElAL5k7g6iIKLRjG12cF8mkqLyacdlaE9T8KSQBoR0TIRtPgT21ftT3gVuRS012imz1gOTY2PIxtqhnUP3L3p5K3r9KOEzsBVDlrCTCpUxq853hKQ2T+V+CMM/uXsxqf24RGTVeEb2Kzcm8ZzOcY9eqd+NvmjXZelLbzp/exx3LsDfOJkxZk2B+5AAAAAElFTkSuQmCC", // 20: R_CLAW 2
     "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA+UlEQVR4nO2VSw6AIAxEKfH+V64bwfIpTPm5cRKNgdB50FKd08XPs1W+NcnMAeQbgBMQXYDdEB4NLCCWgtATkKSXMKwvIgprlwNwy3gHhKyBaP4EPyKoCE8AwEe/CyCRTMXudMgiLGpAOxUicsyswZmIqwAzElAQSPUa5jsbAUOv6VAjEgbTDSsAvO7AbkMNIOpBmHNvMe9AsBysRsyNRswVgFhrXoxUDVf0gex3npz49XpRGC2OamEzKtJtiQzdDlQhLZafEYmFS8zjy6jkJAz9IBkqPhBTdXKiGSEASXuWZtq1zHbc9LhakwCZZg6ndkkKJuL++vW9bhYolBau0DkQAAAAAElFTkSuQmCC", // 21: L_CLAW 1
@@ -50,6 +50,9 @@
     UL: [15, 16]   // Up-Left
   };
 
+  // Dangling / Lifted paw sprites when being dragged
+  const DRAG_SPRITES = [17, 18];
+
   class NekoLanding {
     constructor() {
       this.landing = document.getElementById('landing');
@@ -62,7 +65,7 @@
       this.el = document.createElement('div');
       this.el.id = 'neko-landing';
       this.el.className = 'neko-cat';
-      this.el.setAttribute('title', 'Pet me! 🐾');
+      this.el.setAttribute('title', 'Nhấn để dừng lại, giữ & kéo để di chuyển 🐾');
 
       this.img = document.createElement('img');
       this.img.src = SPRITES[28]; // Initial sitting sprite
@@ -79,12 +82,18 @@
       this.targetY = 0;
       this.speed = 1.28; // Movement speed
       this.direction = 'D';
-      this.state = 'IDLE'; // 'WALKING', 'IDLE', 'AWAKE'
+      this.state = 'IDLE'; // 'WALKING', 'IDLE', 'AWAKE', 'DRAGGING'
       this.idleType = 'STOP'; // 'STOP', 'WASH', 'SCRATCH', 'YAWN', 'SLEEP'
       this.idleTimer = 0;
       this.animTick = 0;
       this.frameToggle = 0;
       this.isVisible = true;
+      this.isPaused = false; // Toggle state: permanently stop or roam
+
+      // Pointer / Drag State
+      this.isDragging = false;
+      this.pointerStartX = 0;
+      this.pointerStartY = 0;
 
       // Init position
       this.updateBounds();
@@ -96,12 +105,9 @@
 
       // Events
       window.addEventListener('resize', () => this.updateBounds(), { passive: true });
-      this.el.addEventListener('click', (e) => {
-        e.stopPropagation();
-        this.interact();
-      });
+      this.setupInteraction();
 
-      // Pause when out of view
+      // Pause loop when out of view to save CPU
       const observer = new IntersectionObserver((entries) => {
         this.isVisible = entries[0].isIntersecting;
       }, { threshold: 0.1 });
@@ -113,11 +119,102 @@
       requestAnimationFrame((t) => this.loop(t));
     }
 
+    setupInteraction() {
+      const onPointerMove = (e) => {
+        const dx = e.clientX - this.pointerStartX;
+        const dy = e.clientY - this.pointerStartY;
+        const dist = Math.hypot(dx, dy);
+
+        if (!this.isDragging && dist > 6) {
+          // Began dragging
+          this.isDragging = true;
+          this.state = 'DRAGGING';
+          this.el.classList.add('is-dragging');
+        }
+
+        if (this.isDragging) {
+          const landingRect = this.landing.getBoundingClientRect();
+          // Center cat on pointer (36px offset for 72px cat)
+          this.x = e.clientX - landingRect.left - 36;
+          this.y = e.clientY - landingRect.top - 36;
+
+          // Clamp within landing bounds
+          this.x = Math.max(this.bounds.minX, Math.min(this.bounds.maxX, this.x));
+          this.y = Math.max(this.bounds.minY, Math.min(this.bounds.maxY, this.y));
+
+          this.targetX = this.x;
+          this.targetY = this.y;
+          this.updateElementPosition();
+
+          // Dangling / clawing animation while being dragged
+          const dragFrameIndex = Math.floor(this.animTick / 10) % 2;
+          this.img.src = SPRITES[DRAG_SPRITES[dragFrameIndex]];
+        }
+      };
+
+      const onPointerUp = () => {
+        window.removeEventListener('pointermove', onPointerMove);
+        window.removeEventListener('pointerup', onPointerUp);
+        window.removeEventListener('pointercancel', onPointerUp);
+
+        if (this.isDragging) {
+          // Finished dragging & dropped at new position
+          this.isDragging = false;
+          this.el.classList.remove('is-dragging');
+          this.targetX = this.x;
+          this.targetY = this.y;
+
+          if (this.isPaused) {
+            // Stay paused at new location
+            this.state = 'IDLE';
+            this.idleType = 'STOP';
+            this.img.src = SPRITES[28];
+          } else {
+            // Alert on landing, then resume
+            this.state = 'AWAKE';
+            this.img.src = SPRITES[0]; // '!'
+            this.idleTimer = 25;
+          }
+        } else {
+          // Single tap / click -> Toggle Stop & Move!
+          if (!this.isPaused) {
+            // Pause: Stop and sit still permanently!
+            this.isPaused = true;
+            this.state = 'IDLE';
+            this.idleType = 'STOP';
+            this.img.src = SPRITES[28]; // Sitting sprite
+            this.targetX = this.x;
+            this.targetY = this.y;
+            this.el.setAttribute('title', 'Đang dừng 🐾 Nhấn lần nữa để mèo đi tiếp');
+          } else {
+            // Resume: Wake up and move normally!
+            this.isPaused = false;
+            this.wakeUp();
+            this.el.setAttribute('title', 'Nhấn để dừng lại, giữ & kéo để di chuyển 🐾');
+          }
+
+          // Trigger bounce effect on img
+          this.el.classList.add('is-petted');
+          setTimeout(() => this.el.classList.remove('is-petted'), 350);
+        }
+      };
+
+      this.el.addEventListener('pointerdown', (e) => {
+        e.preventDefault();
+        this.pointerStartX = e.clientX;
+        this.pointerStartY = e.clientY;
+
+        window.addEventListener('pointermove', onPointerMove, { passive: false });
+        window.addEventListener('pointerup', onPointerUp);
+        window.addEventListener('pointercancel', onPointerUp);
+      });
+    }
+
     updateBounds() {
       if (!this.landing) return;
       const landingRect = this.landing.getBoundingClientRect();
       const pad = 24;
-      const catSize = 64;
+      const catSize = 72;
 
       let topLimit = pad;
       let bottomLimit = landingRect.height - catSize - pad;
@@ -167,6 +264,7 @@
     }
 
     pickNewTarget() {
+      if (this.isDragging || this.isPaused) return;
       this.updateBounds();
       // Pick random destination within bounds
       this.targetX = this.bounds.minX + Math.random() * (this.bounds.maxX - this.bounds.minX);
@@ -209,6 +307,13 @@
     }
 
     startIdle() {
+      if (this.isPaused) {
+        this.state = 'IDLE';
+        this.idleType = 'STOP';
+        this.img.src = SPRITES[28];
+        return;
+      }
+
       this.state = 'IDLE';
       const rand = Math.random();
 
@@ -238,14 +343,7 @@
     wakeUp() {
       this.state = 'AWAKE';
       this.img.src = SPRITES[0]; // 0: Awake '!' sprite
-      this.idleTimer = 35; // Pause for ~0.5s with '!' before moving
-    }
-
-    interact() {
-      // User clicked on cat
-      this.wakeUp();
-      this.el.classList.add('is-petted');
-      setTimeout(() => this.el.classList.remove('is-petted'), 600);
+      this.idleTimer = 30; // Pause for ~0.4s with '!' before moving
     }
 
     loop(currentTime) {
@@ -255,7 +353,14 @@
       if (this.isVisible) {
         this.animTick++;
 
-        if (this.state === 'WALKING') {
+        if (this.state === 'DRAGGING') {
+          // Dangling animation handled in pointermove
+          const dragFrameIndex = Math.floor(this.animTick / 10) % 2;
+          this.img.src = SPRITES[DRAG_SPRITES[dragFrameIndex]];
+        } else if (this.isPaused) {
+          // Permanently sitting still while paused
+          this.img.src = SPRITES[28];
+        } else if (this.state === 'WALKING') {
           const dx = this.targetX - this.x;
           const dy = this.targetY - this.y;
           const dist = Math.hypot(dx, dy);
@@ -315,7 +420,9 @@
           }
         }
 
-        this.updateElementPosition();
+        if (!this.isDragging) {
+          this.updateElementPosition();
+        }
       }
 
       requestAnimationFrame((t) => this.loop(t));
