@@ -10,7 +10,7 @@
       nav_about: 'About',
 
       // Hero
-      hero_intro: 'Third-year student with extensive experience initiating and leading media, design, and branding operations across diverse student organizations and city-scale events.',
+      hero_intro: 'Third-year student with proven experience initiating and leading media, design, and branding operations across diverse student organizations and multi-scale events ranging from university to national level.',
       hero_selected: 'Selected Work',
       hero_years: '2022 – 2026',
       hero_scroll: 'Scroll',
@@ -27,7 +27,7 @@
       proj_hola_role: 'Designer',
       proj_hola_deliverables: 'Brand Identity, Social Media',
 
-      proj_ws_name: 'UET IS × ULIS TV Workshop',
+      proj_ws_name: 'Workshop "Gen Z Doing Research"',
       proj_ws_desc: 'Collaborative media and design workshop co-organized by two universities. Designed event Key Visuals and standardized joint branding.',
       proj_ws_role: 'Head of Marketing',
       proj_ws_deliverables: 'Key Visual, Content, Cross-club Coordination',
@@ -42,7 +42,7 @@
       proj_xmas_role: 'Designer',
       proj_xmas_deliverables: 'Key Visual, Social Media',
 
-      proj_gen_name: 'Tuyển Gen Campaign',
+      proj_gen_name: 'Gen 20 Member Recruitment',
       proj_gen_desc: 'Full-cycle recruitment campaign for Presentation Club, featuring distinctive visual concept and multi-phase communication strategy.',
       proj_gen_role: 'Head of Marketing',
       proj_gen_deliverables: 'Campaign Concept, Key Visual, Social Media',
@@ -110,7 +110,7 @@
       nav_about: 'Giới thiệu',
 
       // Hero
-      hero_intro: 'Sinh viên năm ba với kinh nghiệm phong phú trong việc khởi xướng và dẫn dắt các hoạt động truyền thông, thiết kế và xây dựng thương hiệu tại nhiều tổ chức sinh viên và sự kiện quy mô thành phố.',
+      hero_intro: 'Sinh viên năm ba với bề dày kinh nghiệm khởi xướng và dẫn dắt các hoạt động truyền thông, thiết kế và định hướng thương hiệu tại nhiều tổ chức sinh viên cùng các sự kiện quy mô từ cấp trường đến toàn quốc.',
       hero_selected: 'Sản phẩm nổi bật',
       hero_years: '2022 – 2026',
       hero_scroll: 'Cuộn xuống',
@@ -127,7 +127,7 @@
       proj_hola_role: 'Designer',
       proj_hola_deliverables: 'Nhận diện thương hiệu, Mạng xã hội',
 
-      proj_ws_name: 'Workshop UET IS × ULIS TV',
+      proj_ws_name: 'Workshop "Gen Z làm nghiên cứu"',
       proj_ws_desc: 'Workshop truyền thông và thiết kế hợp tác giữa hai trường đại học. Thiết kế Key Visual sự kiện và chuẩn hóa thương hiệu chung.',
       proj_ws_role: 'Trưởng ban Truyền thông',
       proj_ws_deliverables: 'Key Visual, Nội dung, Phối hợp liên CLB',
@@ -142,7 +142,7 @@
       proj_xmas_role: 'Designer',
       proj_xmas_deliverables: 'Key Visual, Mạng xã hội',
 
-      proj_gen_name: 'Chiến dịch Tuyển Gen',
+      proj_gen_name: 'Sự kiện Tuyển thành viên CLB Gen 20',
       proj_gen_desc: 'Chiến dịch tuyển thành viên toàn diện cho CLB Thuyết trình, với concept hình ảnh đặc trưng và chiến lược truyền thông đa giai đoạn.',
       proj_gen_role: 'Trưởng ban Truyền thông',
       proj_gen_deliverables: 'Concept chiến dịch, Key Visual, Mạng xã hội',

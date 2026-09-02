@@ -367,21 +367,31 @@
 .project {
   margin-bottom: 0;
   position: relative;
+  border-top: 1px dashed var(--border-solid);
+}
+
+.project:first-child {
+  border-top: none;
 }
 
 .project + .project {
   margin-top: clamp(2rem, 4vh, 4rem);
 }
 
-/* Project bar */
+/* Project bar (Sticky text and numbers floating transparently over images) */
 .project-bar {
+  position: sticky;
+  top: 54px;
+  z-index: 15;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.85rem 0;
-  border-bottom: 1px dashed var(--border-solid);
+  border-bottom: none;
   cursor: default;
   font-family: var(--font-display);
+  pointer-events: none;
 }
 
 .project-year {
@@ -420,14 +430,14 @@
   display: grid;
   grid-template-columns: 1fr 1.35fr;
   gap: clamp(2.5rem, 5vw, 5rem);
-  padding: clamp(2rem, 3.5vh, 3.5rem) 0 clamp(3rem, 6vh, 6rem);
+  padding: clamp(1.5rem, 2.5vh, 2.5rem) 0 clamp(3rem, 6vh, 6rem);
   align-items: start;
 }
 
-/* Project info (left column - Sticky in 1 viewport) */
+/* Project info (left column - Sticky in 1 viewport under project-bar) */
 .project-info {
   position: sticky;
-  top: calc(52px + 2rem);
+  top: calc(54px + 3.25rem);
   display: flex;
   flex-direction: column;
   align-self: start;
@@ -499,24 +509,111 @@
   opacity: 0.6;
 }
 
-/* Project media (right column) */
+/* Project media (right column gallery) */
 .project-media {
   display: flex;
   flex-direction: column;
-  gap: clamp(1.5rem, 2.5vw, 2.5rem);
+  gap: clamp(1rem, 1.8vw, 1.5rem);
+}
+
+.media-grid-2 {
+  display: flex;
+  align-items: stretch;
+  gap: clamp(0.6rem, 1.2vw, 1.25rem);
+  width: 100%;
+}
+
+.media-grid-2 > .img-hover {
+  flex: 1 1 0%;
+  min-width: 0;
+  display: flex;
+}
+
+.media-grid-3 {
+  display: flex;
+  align-items: stretch;
+  gap: clamp(0.6rem, 1.2vw, 1.25rem);
+  width: 100%;
+}
+
+.media-grid-3 > .img-hover {
+  flex: 1 1 0%;
+  min-width: 0;
+  display: flex;
+}
+
+.media-grid-1 {
+  width: 100%;
+}
+
+/* Subgroup Dividers in Project Media (For multi-part projects like iae Ambassador) */
+.media-subgroup {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 1.8vw, 1.5rem);
+  margin-top: clamp(2rem, 4vh, 3.5rem);
+}
+
+.media-subgroup:first-child {
+  margin-top: 0;
+}
+
+.media-subgroup__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px dashed var(--border-solid);
+  margin-bottom: 0.5rem;
+}
+
+.subgroup-left {
+  display: flex;
+  align-items: baseline;
+  gap: 0.85rem;
+}
+
+.subgroup-num {
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-faint);
+}
+
+.subgroup-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 1.5vw, 1.35rem);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+.subgroup-count {
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  color: var(--ink-faint);
+  letter-spacing: 0.04em;
 }
 
 .project-media img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 6px;
   object-fit: cover;
-  transition: transform 0.5s var(--ease-drift);
+  transition: transform 0.45s var(--ease-drift);
   background: var(--bg-alt);
+  display: block;
+}
+
+.media-grid-2 > .img-hover img {
+  width: 100%;
+  height: 100%;
 }
 
 .project-media img:hover {
-  transform: scale(1.012);
+  transform: scale(1.015);
 }
 
 /* ═══════════════════════════════════════════
@@ -585,12 +682,125 @@
   color: var(--ink);
 }
 
+.other-item:hover .other-item__arrow--download {
+  transform: translateY(3px);
+}
+
 .other-item__desc {
   grid-column: 1 / -1;
   font-size: var(--text-xs);
   color: var(--ink-faint);
   line-height: 1.5;
   padding-bottom: 0.25rem;
+}
+
+/* Other Item with Orderly Floating Preview Dock */
+.other-item--has-preview {
+  position: relative;
+}
+
+.other-preview-stack {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 14px);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  background: var(--bg-card);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-solid);
+  border-radius: 12px;
+  box-shadow: 0 24px 48px -8px rgba(0, 0, 0, 0.18), 0 4px 12px rgba(0, 0, 0, 0.06);
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.25s var(--ease-out),
+              transform 0.25s var(--ease-out),
+              visibility 0.25s;
+  z-index: 60;
+  max-width: 90vw;
+}
+
+.other-item--has-preview:hover .other-preview-stack,
+.other-item--has-preview:focus-within .other-preview-stack {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.other-preview-stack__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2px 6px;
+  border-bottom: 1px dashed var(--border-solid);
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  color: var(--ink-faint);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.other-preview-stack__tray {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 2x2 Grid for landscape multi-screen apps (Teto Cornellius) */
+.other-preview-stack__tray--grid-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 240px);
+  gap: 10px;
+}
+
+.other-preview-stack__tray--grid-2x2 .other-preview-card {
+  height: 135px;
+  width: 100%;
+}
+
+.other-preview-stack__tray--grid-2x2 .other-preview-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.other-preview-card {
+  height: 180px;
+  width: auto;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--bg-alt);
+  border: 1px solid var(--border-solid);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s var(--ease-out), box-shadow 0.2s var(--ease-out), border-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.other-preview-card img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.other-preview-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--ink-faint);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+}
+
+@media (max-width: 768px) {
+  .other-preview-stack {
+    display: none;
+  }
 }
 
 /* ═══════════════════════════════════════════

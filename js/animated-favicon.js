@@ -140,6 +140,29 @@
     angle += (Math.PI / 180) * 15; // 15 degrees per step
   }
 
+  // Render static Logo on white badge when tab is inactive
+  function renderLogoFavicon() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // 1. Draw White Rounded Square Background
+    ctx.fillStyle = '#ffffff';
+    ctx.strokeStyle = 'rgba(0, 0, 0, 0.08)';
+    ctx.lineWidth = 1.5;
+    drawRoundedRect(ctx, 2, 2, 60, 60, 14);
+
+    // 2. Draw Black Logo in the Center
+    ctx.save();
+    ctx.translate(canvas.width / 2, canvas.height / 2);
+    if (isLogoReady) {
+      const size = 34;
+      ctx.drawImage(tintCanvas, -size / 2, -size / 2, size, size);
+    }
+    ctx.restore();
+
+    // Update favicon href
+    link.href = canvas.toDataURL('image/png');
+  }
+
   function startAnimation() {
     if (!intervalId) {
       renderFavicon();
@@ -154,12 +177,13 @@
     }
   }
 
-  // Auto-pause when tab is inactive to save battery & resources
+  // Auto-pause and freeze on Logo when tab is inactive
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) {
       stopAnimation();
+      renderLogoFavicon(); // Static Logo shown while away
     } else {
-      startAnimation();
+      startAnimation(); // Resume animated loop when active
     }
   });
 

@@ -84,8 +84,41 @@
     requestAnimationFrame(updateActiveNav);
   }, { passive: true });
 
-  /* ── Rename image files with cleaner names ── */
-  // Handle broken images gracefully
+  /* ── Dynamic Equal-Height Multi-Column Media Alignment ── */
+  function alignMediaRows() {
+    document.querySelectorAll('.media-grid-2, .media-grid-3').forEach((row) => {
+      const items = Array.from(row.querySelectorAll('.img-hover'));
+      if (items.length >= 2) {
+        const imgs = items.map((item) => item.querySelector('img'));
+        const compute = () => {
+          if (imgs.every((img) => img && img.naturalWidth && img.naturalHeight)) {
+            imgs.forEach((img, i) => {
+              const aspect = img.naturalWidth / img.naturalHeight;
+              items[i].style.flex = `${aspect} 1 0%`;
+            });
+          }
+        };
+
+        compute();
+        imgs.forEach((img) => {
+          if (img && !img.complete) {
+            img.addEventListener('load', compute);
+          }
+        });
+      }
+    });
+  }
+
+  // Run on DOM ready & window load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', alignMediaRows);
+  } else {
+    alignMediaRows();
+  }
+  window.addEventListener('load', alignMediaRows);
+  window.addEventListener('resize', alignMediaRows, { passive: true });
+
+  /* ── Handle broken images gracefully ── */
   document.querySelectorAll('.project-media img').forEach((img) => {
     img.addEventListener('error', () => {
       img.style.display = 'none';
