@@ -7,17 +7,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ── ASCII Dither Trail Canvas (vessa-inspired background overlay) ── */
-.dither-trail-canvas {
-  position: fixed;
-  inset: 0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-  z-index: 2;
-  image-rendering: pixelated;
-}
-
 /* Container widths */
 .container {
   width: var(--col);

@@ -133,11 +133,6 @@
   .section-divider::after {
     right: 0.75rem;
   }
-
-  /* Dither trail disabled on touch */
-  .dither-trail-canvas {
-    display: none !important;
-  }
 }
 
 /* Small mobile */

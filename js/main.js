@@ -36,13 +36,23 @@
   /* ── Smooth scroll for anchor links ── */
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', (e) => {
-      e.preventDefault();
-      const targetId = anchor.getAttribute('href').slice(1);
+      const href = anchor.getAttribute('href');
+      if (!href || href === '#' || href === '#top' || anchor.classList.contains('header-brand')) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+
+      const targetId = href.slice(1);
       const target = document.getElementById(targetId);
       if (target) {
-        const headerHeight = header ? header.offsetHeight : 0;
-        const top = target.getBoundingClientRect().top + window.scrollY - headerHeight - 20;
-        window.scrollTo({ top, behavior: 'smooth' });
+        e.preventDefault();
+        const headerHeight = header ? header.offsetHeight : 54;
+        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+        window.scrollTo({
+          top: Math.max(0, targetPosition),
+          behavior: 'smooth'
+        });
       }
     });
   });

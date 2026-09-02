@@ -9,10 +9,10 @@
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
   
-  <!-- Google Fonts: Inter -->
+  <!-- Google Fonts: Inter & Geist (Neo-Grotesque Swiss Typography) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/reset.css">
@@ -24,8 +24,6 @@
 </head>
 <body>
 
-  <!-- ASCII Dither Trail Canvas (vessa.design inspired) -->
-  <canvas class="dither-trail-canvas" aria-hidden="true"></canvas>
 
   <!-- Vertical Architectural Guide Rails (desktop only) -->
   <div class="guides" aria-hidden="true">
@@ -36,7 +34,10 @@
   <!-- Sticky Header -->
   <header class="site-header" id="top">
     <div class="header-row">
-      <a href="#top" class="header-brand" aria-label="Home">ANOMAL</a>
+      <a href="#top" class="header-brand" aria-label="Home">
+        <img src="assets/images/logo.png" alt="Anomal Logo" class="header-logo-img">
+        <span>ANOMAL</span>
+      </a>
       
       <nav class="header-nav" aria-label="Main navigation">
         <a href="#showcase" data-i18n="nav_work">Work</a>
@@ -71,7 +72,7 @@
     <section id="landing" class="section section--hero">
       <div class="section__inner">
         <h1 class="hero-headline" data-i18n="hero_intro">
-          Third-year student with extensive experience initiating and leading media, design, and branding operations across diverse student organizations and national-scale events.
+          Third-year student with extensive experience initiating and leading media, design, and branding operations across diverse student organizations and city-scale events.
         </h1>
 
         <div class="hero-stack reveal">
@@ -449,7 +450,7 @@
           
           <!-- Item 1: Ohwow.win -->
           <a href="https://ohwow.win" target="_blank" rel="noopener noreferrer" class="other-item reveal">
-            <span class="other-item__name scramble-text" data-i18n="other_ohwow_name">Ohwow.win</span>
+            <span class="other-item__name" data-i18n="other_ohwow_name">Ohwow.win</span>
             <span class="other-item__type" data-i18n="type_webapp">Web App</span>
             <svg class="other-item__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M7 17L17 7M17 7H7M17 7V17"/>
@@ -459,7 +460,7 @@
 
           <!-- Item 2: Chọn & Chốt -->
           <a href="https://chonvachot.com" target="_blank" rel="noopener noreferrer" class="other-item reveal">
-            <span class="other-item__name scramble-text" data-i18n="other_cnc_name">Chọn & Chốt</span>
+            <span class="other-item__name" data-i18n="other_cnc_name">Chọn & Chốt</span>
             <span class="other-item__type" data-i18n="type_website">Website</span>
             <svg class="other-item__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M7 17L17 7M17 7H7M17 7V17"/>
@@ -469,7 +470,7 @@
 
           <!-- Item 3: Teto Cornellius -->
           <div class="other-item reveal">
-            <span class="other-item__name scramble-text" data-i18n="other_cornellius_name">Teto Cornellius</span>
+            <span class="other-item__name" data-i18n="other_cornellius_name">Teto Cornellius</span>
             <span class="other-item__type" data-i18n="type_software">Software</span>
             <svg class="other-item__arrow" style="opacity: 0.3;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="1"></circle>
@@ -479,7 +480,7 @@
 
           <!-- Item 4: Teto Taskous -->
           <div class="other-item reveal">
-            <span class="other-item__name scramble-text" data-i18n="other_taskous_name">Teto Taskous</span>
+            <span class="other-item__name" data-i18n="other_taskous_name">Teto Taskous</span>
             <span class="other-item__type" data-i18n="type_software">Software</span>
             <svg class="other-item__arrow" style="opacity: 0.3;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="1"></circle>
@@ -559,8 +560,6 @@
       </div>
     </section>
 
-    <div class="section-divider" aria-hidden="true"></div>
-
   </main>
 
   <!-- 5. FOOTER -->
@@ -592,7 +591,6 @@
 
   <!-- Scripts -->
   <script src="js/animated-favicon.js"></script>
-  <script src="js/dither-trail.js"></script>
   <script src="js/animations.js"></script>
   <script src="js/i18n.js"></script>
   <script src="js/neko-landing.js"></script>
