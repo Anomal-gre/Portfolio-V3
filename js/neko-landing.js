@@ -65,7 +65,14 @@
       this.el = document.createElement('div');
       this.el.id = 'neko-landing';
       this.el.className = 'neko-cat';
-      this.el.setAttribute('title', 'Nhấn để dừng lại, giữ & kéo để di chuyển 🐾');
+
+      // Interactive tooltip notice
+      this.tooltip = document.createElement('div');
+      this.tooltip.className = 'neko-tooltip';
+      this.tooltip.setAttribute('data-i18n', 'neko_tooltip');
+      const savedLang = localStorage.getItem('site_lang') || 'en';
+      this.tooltip.textContent = savedLang === 'vi' ? 'Click hoặc giữ' : 'Click or hold & drag';
+      this.el.appendChild(this.tooltip);
 
       this.img = document.createElement('img');
       this.img.src = SPRITES[28]; // Initial sitting sprite

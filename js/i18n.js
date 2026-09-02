@@ -14,6 +14,7 @@
       hero_selected: 'Selected Work',
       hero_years: '2022 – 2026',
       hero_scroll: 'Scroll',
+      neko_tooltip: 'Click or hold',
 
       // Project names
       proj_tbl_name: 'Tôi Bản Lĩnh 2026',
@@ -113,6 +114,7 @@
       hero_selected: 'Sản phẩm nổi bật',
       hero_years: '2022 – 2026',
       hero_scroll: 'Cuộn xuống',
+      neko_tooltip: 'Click hoặc giữ',
 
       // Project names
       proj_tbl_name: 'Tôi Bản Lĩnh 2026',

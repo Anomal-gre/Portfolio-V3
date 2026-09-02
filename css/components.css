@@ -296,6 +296,51 @@
   50% { transform: scale(1.15) translateY(-4px); }
 }
 
+/* Interactive tooltip notice above Neko */
+.neko-tooltip {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  background: rgba(17, 17, 17, 0.9);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #ffffff;
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  padding: 0.28rem 0.65rem;
+  border-radius: 999px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.22s var(--ease-out), transform 0.22s var(--ease-out);
+  z-index: 20;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.neko-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 4px;
+  border-style: solid;
+  border-color: rgba(17, 17, 17, 0.9) transparent transparent transparent;
+}
+
+.neko-cat:hover .neko-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.neko-cat.is-dragging .neko-tooltip {
+  opacity: 0;
+  transform: translateX(-50%) translateY(4px);
+}
+
 /* ═══════════════════════════════════════════
    PROJECT CARDS (der-lukas style)
    ═══════════════════════════════════════════ */
