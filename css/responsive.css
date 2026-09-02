@@ -64,15 +64,35 @@
   /* Projects - single column */
   .project-content {
     grid-template-columns: 1fr;
-    gap: var(--space-md);
+    gap: var(--space-lg);
+    padding: var(--space-md) 0 var(--space-xl);
   }
 
   .project-info {
+    position: static;
+    top: auto;
+    padding-right: 0;
     order: 1;
   }
 
   .project-media {
     order: 2;
+  }
+
+  .project-title {
+    font-size: clamp(1.75rem, 6vw, 2.25rem);
+    margin-bottom: 0.75rem;
+  }
+
+  .project-description {
+    font-size: var(--text-base);
+    margin-bottom: 1.25rem;
+  }
+
+  .meta-row {
+    grid-template-columns: 7rem 1fr;
+    padding: 0.65rem 0;
+    font-size: var(--text-xs);
   }
 
   /* Other projects */

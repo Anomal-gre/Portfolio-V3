@@ -10,7 +10,7 @@
 
 .reveal.is-visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 /* Stagger children */
@@ -80,6 +80,11 @@
 .scramble-text {
   display: inline-block;
   white-space: nowrap;
+}
+
+.hero-work-label,
+.other-item {
+  cursor: pointer;
 }
 
 /* Project bar hover */
