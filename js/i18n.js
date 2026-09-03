@@ -10,7 +10,7 @@
       nav_about: 'About',
 
       // Hero
-      hero_intro: 'Third-year student pursuing Communication & Content Creation with strong expertise combining content ideation and visual design across diverse real-world projects. Seeking an internship in Communication & Creative to collaborate on producing polished, high-engagement media campaigns.',
+      hero_intro: 'Third-year student specializing in Communication & Content Creation, combining strengths in content ideation and visual design across numerous real-world projects.',
       hero_selected: 'Selected Work',
       hero_years: '2022 – 2026',
       hero_scroll: 'Scroll',
@@ -114,7 +114,7 @@
       nav_about: 'Giới thiệu',
 
       // Hero
-      hero_intro: 'Sinh viên năm ba định hướng phát triển trong mảng Truyền thông & Sáng tạo nội dung (Communication & Content). Có thế mạnh kết hợp giữa việc lên ý tưởng nội dung và thiết kế hình ảnh qua nhiều dự án thực tế. Tìm kiếm cơ hội thực tập vị trí Communication & Creative để cùng đội ngũ sản xuất các bài đăng truyền thông chỉn chu và tạo tương tác thực.',
+      hero_intro: 'Sinh viên năm ba định hướng phát triển trong Truyền thông & Sáng tạo nội dung, kết hợp thế mạnh lên ý tưởng và thiết kế hình ảnh qua nhiều dự án thực tế.',
       hero_selected: 'Sản phẩm nổi bật',
       hero_years: '2022 – 2026',
       hero_scroll: 'Cuộn xuống',
