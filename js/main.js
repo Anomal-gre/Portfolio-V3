@@ -125,4 +125,12 @@
     });
   });
 
+  /* ── About portrait click/tap reveal toggle ── */
+  const portrait = document.querySelector('.about-portrait');
+  if (portrait) {
+    portrait.addEventListener('click', () => {
+      portrait.classList.toggle('is-revealed');
+    });
+  }
+
 })();

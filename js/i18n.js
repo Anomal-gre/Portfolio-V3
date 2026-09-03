@@ -82,9 +82,11 @@
       other_taskous_desc: 'Sticky note-style task manager — lightweight reminders to never miss a deadline.',
 
       // About
-      about_title: 'About',
-      about_text_1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
-      about_text_2: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      about_title: "Hi there, Bao's here",
+      about_profile_meta: 'PROFILE',
+      about_text_1: 'I am a graphic designer and student leader based in Hanoi, focusing on the intersection of brand direction, visual communication, and creative operations. I gravitate toward projects where complex ideas need to be distilled into cohesive design systems and compelling visual stories that resonate with communities.',
+      about_text_2: 'Currently studying Industrial & Graphic Design at VNU University of Engineering and Technology (VNU-UET), my experience spans co-founding creative initiatives, directing media operations for university organizations, and leading visual design for national student competitions. A growing share of my workflow sits where visual design meets AI — integrating generative tools into concept drafting, copywriting, and asset production to scale execution speed without compromising artistic judgment or craft.',
+      about_text_3: 'Beyond visual output, I care deeply about the people side of creative leadership: mentoring peers, establishing design guidelines, and building repeatable workflows that help teams deliver consistent, high-impact work. I am always open to meaningful connections around creative direction, communication strategy, and community-driven initiatives.',
       about_location: 'Hanoi, Vietnam',
       about_education: 'VNU University of Engineering & Technology',
       about_degree: 'Bachelor of Industrial & Graphic Design',
@@ -194,9 +196,11 @@
       other_taskous_desc: 'Phần mềm quản lý công việc dạng sticky note — nhắc nhở nhẹ nhàng để không bỏ lỡ deadline.',
 
       // About
-      about_title: 'Giới thiệu',
-      about_text_1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
-      about_text_2: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      about_title: 'Xin chào, Bảo đây',
+      about_profile_meta: 'HỒ SƠ',
+      about_text_1: 'Tôi là một graphic designer và người điều phối truyền thông tại Hà Nội, hoạt động tại giao điểm giữa định hướng thương hiệu, truyền thông thị giác và tư duy chiến lược. Tôi thích những bài toán đòi hỏi chuyển hóa các ý tưởng phức tạp thành hệ thống nhận diện tinh gọn, nhất quán và những câu chuyện thị giác chạm được tới cộng đồng.',
+      about_text_2: 'Hiện theo học ngành Thiết kế Công nghiệp & Đồ họa tại Trường ĐH Công nghệ (ĐHQGHN), kinh nghiệm của tôi gắn liền với việc đồng sáng lập agency sáng tạo, dẫn dắt đội ngũ truyền thông sinh viên và chịu trách nhiệm thiết kế chính cho các cuộc thi quy mô toàn quốc. Trong quy trình làm việc hằng ngày, tôi chủ động ứng dụng AI vào việc phác thảo ý tưởng, phát triển nội dung và tối ưu hóa tiến độ — xem công nghệ như đòn bẩy gia tăng năng suất mà không đánh đổi tính thẩm mỹ và tiêu chuẩn thủ công.',
+      about_text_3: 'Bên cạnh chuyên môn hình ảnh, tôi đặc biệt coi trọng yếu tố con người trong sáng tạo — từ việc hướng dẫn thành viên mới, chuẩn hóa bộ nhận diện thương hiệu đến thiết lập quy trình làm việc khoa học để cả đội ngũ cùng tạo ra kết quả tốt nhất. Tôi luôn hào hứng kết nối với những cơ hội hợp tác trong mảng định hướng sáng tạo, chiến lược truyền thông và các dự án vì cộng đồng.',
       about_location: 'Hà Nội, Việt Nam',
       about_education: 'Trường ĐH Công nghệ, ĐHQG Hà Nội',
       about_degree: 'Cử nhân Thiết kế Công nghiệp & Đồ họa',

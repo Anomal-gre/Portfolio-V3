@@ -13,12 +13,12 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <!-- Stylesheets -->
-<link href="css/reset.css" rel="stylesheet"/>
-<link href="css/variables.css" rel="stylesheet"/>
-<link href="css/layout.css" rel="stylesheet"/>
-<link href="css/components.css" rel="stylesheet"/>
-<link href="css/animations.css" rel="stylesheet"/>
-<link href="css/responsive.css" rel="stylesheet"/>
+<link href="css/reset.css?v=1.1" rel="stylesheet"/>
+<link href="css/variables.css?v=1.1" rel="stylesheet"/>
+<link href="css/layout.css?v=1.1" rel="stylesheet"/>
+<link href="css/components.css?v=1.1" rel="stylesheet"/>
+<link href="css/animations.css?v=1.1" rel="stylesheet"/>
+<link href="css/responsive.css?v=1.1" rel="stylesheet"/>
 </head>
 <body>
 <!-- Vertical Architectural Guide Rails (desktop only) -->
@@ -869,14 +869,48 @@
 <section class="section" id="about">
 <div class="section__inner">
 <div class="about-grid">
-<div class="about-main reveal">
-<h2 class="about-title" data-i18n="about_title">About</h2>
+<!-- Top: Greeting Title -->
+<h2 class="about-title reveal" data-i18n="about_title">Hi there, Bao's here</h2>
+<!-- Left Column: Portrait Photo, Education & Contact -->
+<div class="about-profile reveal">
+<div class="about-portrait">
+<div class="about-bubble" aria-live="polite">
+<div class="about-bubble__content"></div>
+<a class="about-bubble-sub" href="#" target="_blank" rel="noopener noreferrer" style="display: none;">
+<span class="about-bubble-sub__text">Click vào đây</span>
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"></path></svg>
+</a>
+</div>
+<img alt="Tran Gia Bao (Anomal)" loading="lazy" src="assets/images/portrait.png"/>
+</div>
+<div class="about-details-stack">
+<div class="about-detail">
+<span class="about-detail__label" data-i18n="about_education_label">Education</span>
+<span class="about-detail__value" data-i18n="about_education">VNU University of Engineering &amp; Technology</span>
+<span data-i18n="about_degree" style="font-size: var(--text-xs); color: var(--ink-soft);">Bachelor of Industrial &amp; Graphic Design</span>
+<span data-i18n="about_gpa" style="font-size: var(--text-xs); color: var(--ink-faint);">GPA: 3.57 / 4.0</span>
+</div>
+<div class="about-detail">
+<span class="about-detail__label" data-i18n="about_email_label">Email</span>
+<span class="about-detail__value"><a href="mailto:contact.anomal@gmail.com">contact.anomal@gmail.com</a> <span data-i18n="about_email_business" style="font-size: var(--text-xs); color: var(--ink-faint);">(For Business)</span></span>
+<span class="about-detail__value"><a href="mailto:bao.anomal@gmail.com">bao.anomal@gmail.com</a> <span data-i18n="about_email_activities" style="font-size: var(--text-xs); color: var(--ink-faint);">(For Extra Curriculum Activities)</span></span>
+</div>
+</div>
+</div>
+<!-- Right Column: Editorial Profile, Bio Paragraphs & Tools -->
+<div class="about-bio reveal">
+<div class="about-meta-tag">
+<span data-i18n="about_profile_meta">PROFILE</span>
+</div>
 <div class="about-text">
 <p data-i18n="about_text_1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                I am a graphic designer and student leader based in Hanoi, focusing on the intersection of brand direction, visual communication, and creative operations. I gravitate toward projects where complex ideas need to be distilled into cohesive design systems and compelling visual stories that resonate with communities.
               </p>
 <p data-i18n="about_text_2">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Currently studying Industrial &amp; Graphic Design at VNU University of Engineering and Technology (VNU-UET), my experience spans co-founding creative initiatives, directing media operations for university organizations, and leading visual design for national student competitions. A growing share of my workflow sits where visual design meets AI — integrating generative tools into concept drafting, copywriting, and asset production to scale execution speed without compromising artistic judgment or craft.
+              </p>
+<p data-i18n="about_text_3">
+                Beyond visual output, I care deeply about the people side of creative leadership: mentoring peers, establishing design guidelines, and building repeatable workflows that help teams deliver consistent, high-impact work. I am always open to meaningful connections around creative direction, communication strategy, and community-driven initiatives.
               </p>
 </div>
 <div class="about-skills">
@@ -895,31 +929,6 @@
 </div>
 </div>
 </div>
-<aside class="about-sidebar reveal">
-<div class="about-detail">
-<span class="about-detail__label">Name</span>
-<span class="about-detail__value">Tran Gia Bao (Anomal)</span>
-</div>
-<div class="about-detail">
-<span class="about-detail__label" data-i18n="about_location_label">Location</span>
-<span class="about-detail__value" data-i18n="about_location">Hanoi, Vietnam</span>
-</div>
-<div class="about-detail">
-<span class="about-detail__label" data-i18n="about_education_label">Education</span>
-<span class="about-detail__value" data-i18n="about_education">VNU University of Engineering &amp; Technology</span>
-<span data-i18n="about_degree" style="font-size: var(--text-xs); color: var(--ink-soft);">Bachelor of Industrial &amp; Graphic Design</span>
-<span data-i18n="about_gpa" style="font-size: var(--text-xs); color: var(--ink-faint);">GPA: 3.57 / 4.0</span>
-</div>
-<div class="about-detail">
-<span class="about-detail__label" data-i18n="about_email_label">Email</span>
-<span class="about-detail__value"><a href="mailto:contact.anomal@gmail.com">contact.anomal@gmail.com</a> <span data-i18n="about_email_business" style="font-size: var(--text-xs); color: var(--ink-faint);">(For Business)</span></span>
-<span class="about-detail__value"><a href="mailto:bao.anomal@gmail.com">bao.anomal@gmail.com</a> <span data-i18n="about_email_activities" style="font-size: var(--text-xs); color: var(--ink-faint);">(For Extra Curriculum Activities)</span></span>
-</div>
-<div class="about-detail">
-<span class="about-detail__label">Phone</span>
-<span class="about-detail__value"><a href="tel:+84367190229">(+84) 367 190 229</a></span>
-</div>
-</aside>
 </div>
 </div>
 </section>
@@ -966,6 +975,7 @@
 <script src="js/animated-favicon.js"></script>
 <script src="js/animations.js"></script>
 <script src="js/i18n.js"></script>
+<script src="js/portrait-quotes.js"></script>
 <script src="js/neko-landing.js"></script>
 <script src="js/main.js"></script>
 <script src="js/project-accordion.js"></script></body>

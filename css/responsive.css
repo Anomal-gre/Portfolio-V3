@@ -112,6 +112,15 @@
   /* About */
   .about-grid {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 1.25rem;
+  }
+
+  .about-title,
+  .about-profile,
+  .about-bio {
+    grid-column: 1;
+    grid-row: auto;
   }
 
   /* Footer */
