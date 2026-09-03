@@ -20,51 +20,58 @@
       btn_open_part: 'Open',
       btn_close_part: 'Collapse',
 
+      // Project metadata labels
+      meta_role: 'Role',
+      meta_deliverables: 'Deliverables',
+      meta_organization: 'Organization',
+
       // Project names
       proj_tbl_name: 'Tôi Bản Lĩnh 2026',
-      proj_tbl_desc: 'Flagship university-wide public speaking and leadership competition. Architected the complete visual identity and centralized design system for cross-team collaboration.',
+      proj_tbl_desc: 'An annual public speaking and leadership competition organized by Presentation Club (VNU-UET) to foster critical thinking, articulate expression, and public confidence. The journey culminates in a high-stakes Grand Finale where the top 6 finalists compete in head-to-head debate and inspiring keynote speeches.',
       proj_tbl_role: 'Lead Visual Designer',
-      proj_tbl_deliverables: 'Design System, Key Visual, Social Media, Stage Design',
+      proj_tbl_deliverables: 'Key Visual, Social Media, Print Design',
+      proj_tbl_org: 'Presentation Club of UET',
 
       proj_hola_name: 'Hola Radio',
-      proj_hola_desc: 'Brand identity and visual system for a student radio initiative, establishing a cohesive voice across digital platforms.',
+      proj_hola_desc: 'A student podcast and radio initiative by Presentation Club accompanying UET freshers during their military training term at Hoa Lac. Designed warm, autumnal visual assets and social announcement templates to connect student stories.',
       proj_hola_role: 'Designer',
       proj_hola_deliverables: 'Brand Identity, Social Media',
 
       proj_ws_name: 'Workshop "Gen Z Doing Research"',
-      proj_ws_desc: 'Collaborative media and design workshop co-organized by two universities. Designed event Key Visuals and standardized joint branding.',
+      proj_ws_desc: 'A comprehensive workshop series organized by Presentation Club, guiding students step-by-step from topic ideation and methodology to completing research papers and theses. Features practical guidance on leveraging AI tools effectively and ethically.',
       proj_ws_role: 'Head of Marketing',
-      proj_ws_deliverables: 'Key Visual, Content, Cross-club Coordination',
+      proj_ws_deliverables: 'Key Visual, Content',
 
-      proj_hr_name: 'HRTech',
-      proj_hr_desc: 'Managed end-to-end Facebook media operations for a student HR-tech initiative, establishing visual benchmarks and authoring core graphic assets.',
+      proj_hr_name: 'HRTech — Gen 16 Recruitment',
+      proj_hr_desc: 'Full-cycle member recruitment campaign for the Human Resources Club (HRC). Developed the creative concept, authored content, and designed the core visual identity and social assets.',
       proj_hr_role: 'Head of Marketing',
-      proj_hr_deliverables: 'Social Media, Visual Governance',
+      proj_hr_deliverables: 'Campaign Concept, Graphic Design, Content',
+      proj_hr_org: 'HRTech - Human Resources Club of UET',
 
       proj_xmas_name: 'The Xmas Knock',
-      proj_xmas_desc: 'Seasonal presentation event blending festive storytelling with student public speaking excellence.',
+      proj_xmas_desc: 'A holiday initiative by Presentation Club featuring the "Letters to Santa" mailbox — an open, gentle space for students to slow down, share unspoken thoughts, and send warm wishes to Santa.',
       proj_xmas_role: 'Designer',
       proj_xmas_deliverables: 'Key Visual, Social Media',
 
       proj_gen_name: 'Gen 20 Member Recruitment',
-      proj_gen_desc: 'Full-cycle recruitment campaign for Presentation Club, featuring distinctive visual concept and multi-phase communication strategy.',
+      proj_gen_desc: 'Full-cycle recruitment campaign for Presentation Club, featuring distinctive visual concept, content development, and a multi-phase communication strategy.',
       proj_gen_role: 'Head of Marketing',
-      proj_gen_deliverables: 'Campaign Concept, Key Visual, Social Media',
+      proj_gen_deliverables: 'Campaign Concept, Content, Social Media',
 
-      proj_iae_name: 'iae Ambassador 2026',
-      proj_iae_desc: 'Youth leadership and global education ambassadorship initiative. Owned nearly 100% of visual production; conceptualized 3 exclusive Key Visual suites for 3 flagship events.',
+      proj_iae_name: 'iae Ambassador Season 3',
+      proj_iae_desc: 'A 3-month hybrid project by iae GLOBAL Vietnam creating an international working culture and real-world media execution environment for Vietnamese students. Led visual production and crafted 3 signature Key Visual suites.',
       proj_iae_role: 'Lead Visual Designer / Creative Lead',
       proj_iae_deliverables: 'Key Visual ×3, Digital Ads, Posters, Backdrops',
 
-      proj_logo_name: 'Logo Collection',
-      proj_logo_desc: 'A curated selection of logo and brand identity work across various student organizations and personal projects.',
-      proj_logo_role: 'Designer',
-      proj_logo_deliverables: 'Logo Design, Brand Identity',
+      proj_logo_name: 'Logo Archive Across My Creative Journey',
+      proj_logo_note: 'Bonus project',
+      proj_logo_desc: 'A personal collection of my logos, revised and remade many times across different chapters of my creative journey. Some or perhaps most might not look pretty, yet they remain an irreplaceable part of my life from high school through to university, as I now reach the halfway mark of my degree.',
 
       proj_hyyf_name: 'Green Dreams',
-      proj_hyyf_desc: 'Annual grassroots humanitarian initiative providing material donations and emotional support to orphaned children. Raised over 5,000,000 VND.',
+      proj_hyyf_desc: 'A youth fundraising and charity campaign organized by Hung Yen Youth Forum (HYYF). Directed social media communications and created visual assets to mobilize community donations for disadvantaged children.',
       proj_hyyf_role: 'Head of Marketing',
-      proj_hyyf_deliverables: 'Campaign Design, Fundraising, Community Outreach',
+      proj_hyyf_deliverables: 'Social Media',
+      proj_hyyf_org: 'Hung Yen Youth Forum (HYYF)',
 
       // Other projects
       other_title: 'Other Projects',
@@ -134,51 +141,58 @@
       btn_open_part: 'Mở xem',
       btn_close_part: 'Thu gọn',
 
+      // Project metadata labels
+      meta_role: 'Vai trò',
+      meta_deliverables: 'Hạng mục',
+      meta_organization: 'Tổ chức',
+
       // Project names
       proj_tbl_name: 'Tôi Bản Lĩnh 2026',
-      proj_tbl_desc: 'Cuộc thi thuyết trình và phát triển bản lĩnh cấp trường hàng năm. Xây dựng hoàn chỉnh nhận diện thương hiệu và hệ thống thiết kế tập trung cho sự phối hợp đa nhóm.',
+      proj_tbl_desc: 'Cuộc thi thường niên do CLB Thuyết trình (VNU-UET) tổ chức nhằm rèn luyện tư duy phản biện, kỹ năng diễn đạt và sự tự tin trước đám đông cho người trẻ; khép lại bằng đêm Chung kết kịch tính với màn tranh tài của 6 thí sinh xuất sắc nhất qua hai phần thi Hùng biện đối kháng và Diễn thuyết truyền cảm hứng.',
       proj_tbl_role: 'Lead Visual Designer',
-      proj_tbl_deliverables: 'Hệ thống thiết kế, Key Visual, Mạng xã hội, Thiết kế sân khấu',
+      proj_tbl_deliverables: 'Key Visual, Social Media, Print Design',
+      proj_tbl_org: 'Câu lạc bộ Thuyết trình (VNU-UET)',
 
       proj_hola_name: 'Hola Radio',
-      proj_hola_desc: 'Nhận diện thương hiệu và hệ thống hình ảnh cho một sáng kiến radio sinh viên, thiết lập giọng nói nhất quán trên các nền tảng số.',
+      proj_hola_desc: 'Dự án phát thanh sinh viên do CLB Thuyết trình khởi xướng nhằm đồng hành cùng tân sinh viên UET trong kỳ học quân sự tại Hòa Lạc; phụ trách thiết kế trọn bộ nhận diện ấm áp mang sắc thu và các ấn phẩm truyền thông mạng xã hội kết nối câu chuyện sinh viên.',
       proj_hola_role: 'Designer',
-      proj_hola_deliverables: 'Nhận diện thương hiệu, Mạng xã hội',
+      proj_hola_deliverables: 'Brand Identity, Social Media',
 
       proj_ws_name: 'Workshop "Gen Z làm nghiên cứu"',
-      proj_ws_desc: 'Workshop truyền thông và thiết kế hợp tác giữa hai trường đại học. Thiết kế Key Visual sự kiện và chuẩn hóa thương hiệu chung.',
+      proj_ws_desc: 'Chuỗi Workshop do CLB Thuyết trình tổ chức, định hướng sinh viên tiếp cận nghiên cứu khoa học và khóa luận tốt nghiệp bài bản từ ý tưởng đến hoàn thiện đề tài, đồng thời trang bị tư duy làm chủ công cụ AI hiệu quả.',
       proj_ws_role: 'Trưởng ban Truyền thông',
-      proj_ws_deliverables: 'Key Visual, Nội dung, Phối hợp liên CLB',
+      proj_ws_deliverables: 'Key Visual, Content',
 
-      proj_hr_name: 'HRTech',
-      proj_hr_desc: 'Quản lý toàn bộ hoạt động truyền thông Facebook cho sáng kiến HR-tech sinh viên, thiết lập chuẩn hình ảnh và sáng tạo các sản phẩm đồ họa chủ đạo.',
+      proj_hr_name: 'HRTech — Tuyển thành viên Gen 16',
+      proj_hr_desc: 'Chiến dịch tuyển thành viên Gen 16 của CLB Nguồn Nhân Lực (HRC). Trực tiếp lên ý tưởng concept, biên soạn nội dung và thiết kế đồng bộ các ấn phẩm truyền thông chủ đạo.',
       proj_hr_role: 'Trưởng ban Truyền thông',
-      proj_hr_deliverables: 'Mạng xã hội, Quản lý hình ảnh',
+      proj_hr_deliverables: 'Campaign Concept, Graphic Design, Content',
+      proj_hr_org: 'HRTech - CLB Nguồn nhân Lực UET',
 
       proj_xmas_name: 'The Xmas Knock',
-      proj_xmas_desc: 'Sự kiện thuyết trình mùa lễ hội, kết hợp câu chuyện lễ hội với năng lực thuyết trình sinh viên.',
+      proj_xmas_desc: 'Chiến dịch Giáng sinh của CLB Thuyết trình với "Hòm thư Letters to Santa" — một khoảng dừng dịu dàng dịp cuối năm để người trẻ trải lòng, gửi gắm những tâm tư và ước nguyện chưa kịp cất thành lời.',
       proj_xmas_role: 'Designer',
-      proj_xmas_deliverables: 'Key Visual, Mạng xã hội',
+      proj_xmas_deliverables: 'Key Visual, Social Media',
 
       proj_gen_name: 'Sự kiện Tuyển thành viên CLB Gen 20',
-      proj_gen_desc: 'Chiến dịch tuyển thành viên toàn diện cho CLB Thuyết trình, với concept hình ảnh đặc trưng và chiến lược truyền thông đa giai đoạn.',
+      proj_gen_desc: 'Chiến dịch tuyển thành viên toàn diện cho CLB Thuyết trình, với concept hình ảnh đặc trưng, phát triển nội dung và chiến lược truyền thông đa giai đoạn.',
       proj_gen_role: 'Trưởng ban Truyền thông',
-      proj_gen_deliverables: 'Concept chiến dịch, Key Visual, Mạng xã hội',
+      proj_gen_deliverables: 'Campaign Concept, Content, Social Media',
 
-      proj_iae_name: 'iae Ambassador 2026',
-      proj_iae_desc: 'Chương trình đại sứ lãnh đạo trẻ và giáo dục toàn cầu. Đảm nhận gần 100% sản xuất hình ảnh; sáng tạo 3 bộ Key Visual riêng cho 3 sự kiện chính.',
+      proj_iae_name: 'iae Ambassador mùa 3',
+      proj_iae_desc: 'Dự án 3 tháng do iae GLOBAL Việt Nam tổ chức nhằm tạo môi trường trải nghiệm văn hóa làm việc quốc tế và vận hành chiến dịch truyền thông thực tế. Đảm nhận sản xuất hình ảnh và sáng tạo 3 bộ Key Visual chủ đạo.',
       proj_iae_role: 'Lead Visual Designer / Creative Lead',
-      proj_iae_deliverables: 'Key Visual ×3, Quảng cáo số, Poster, Backdrop',
+      proj_iae_deliverables: 'Key Visual ×3, Digital Ads, Posters, Backdrops',
 
-      proj_logo_name: 'Bộ sưu tập Logo',
-      proj_logo_desc: 'Tuyển chọn các tác phẩm logo và nhận diện thương hiệu cho nhiều tổ chức sinh viên và dự án cá nhân.',
-      proj_logo_role: 'Designer',
-      proj_logo_deliverables: 'Thiết kế Logo, Nhận diện thương hiệu',
+      proj_logo_name: 'Tổng hợp logo của tôi qua từng giai đoạn',
+      proj_logo_note: 'Dự án bonus',
+      proj_logo_desc: 'Tuyển tập logo của cá nhân tôi, được chỉnh sửa và làm lại nhiều lần qua nhiều giai đoạn trong hành trình sáng tạo của tôi, có thể một số hoặc đa số nó không đẹp nhưng vẫn là một phần không thể thiếu trong những năm tháng cấp ba cho đến khi lên đại học và giờ là đã hoàn thành một nửa khóa học đại học như hiện tại.',
 
       proj_hyyf_name: 'Những Ước Mơ Xanh',
-      proj_hyyf_desc: 'Sáng kiến nhân đạo cộng đồng thường niên, cung cấp quyên góp vật chất và hỗ trợ tinh thần cho trẻ mồ côi. Quyên góp trên 5.000.000 VND.',
+      proj_hyyf_desc: 'Chiến dịch gây quỹ thiện nguyện do Diễn đàn Tuổi trẻ Hưng Yên (HYYF) tổ chức; chịu trách nhiệm điều phối truyền thông mạng xã hội và thiết kế ấn phẩm nhằm lan tỏa thông điệp sẻ chia, vận động nguồn lực ủng hộ trẻ em có hoàn cảnh khó khăn.',
       proj_hyyf_role: 'Trưởng ban Truyền thông',
-      proj_hyyf_deliverables: 'Thiết kế chiến dịch, Gây quỹ, Tiếp cận cộng đồng',
+      proj_hyyf_deliverables: 'Social Media',
+      proj_hyyf_org: 'Diễn đàn Tuổi trẻ Hưng Yên',
 
       // Other projects
       other_title: 'Dự án khác',
@@ -232,7 +246,7 @@
     }
   };
 
-  let currentLang = localStorage.getItem('portfolio-lang') || 'en';
+  let currentLang = localStorage.getItem('portfolio-lang') || 'vi';
 
   function applyLang(lang) {
     currentLang = lang;

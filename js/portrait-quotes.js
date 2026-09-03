@@ -59,8 +59,8 @@
       en: 'My favorite video game genre is the Boomer Shooter.'
     },
     {
-      vi: '"Có những người sống những ngày tàn, có những người gục tại bàn, xã hội long tranh hổ đấu nên mấy ông xanh xăm ngực đại bàng."',
-      en: '"Có những người sống những ngày tàn, có những người gục tại bàn, xã hội long tranh hổ đấu nên mấy ông xanh xăm ngực đại bàng."',
+      vi: '"Có những người sống những ngày tàn, có những người gục tại bàn, xã hội long tranh hổ đấu nên mấy ông anh xăm ngực đại bàng."',
+      en: '"Có những người sống những ngày tàn, có những người gục tại bàn, xã hội long tranh hổ đấu nên mấy ông anh xăm ngực đại bàng."',
       url: 'https://www.youtube.com/watch?v=kSjj0LlsqnI'
     },
     {
@@ -106,25 +106,91 @@
     }
   ];
 
-  let lastIndex = -1;
+  // Mark quote-only lines with isQuote: true
+  // Index of quotes:
+  // 0: Slogan (intro)
+  // 1: UET (intro)
+  // 2: Joke (intro)
+  // 3: Tính năng này (intro)
+  // 4: Band nhạc (intro/music)
+  // 5: Thể loại nhạc (intro)
+  // 6: "The only thing they fear is you" (quote)
+  // 7: Thứ hạng ngành (intro)
+  // 8: Logo nickname (intro)
+  // 9: Anomal nghĩa là (intro)
+  // 10: "Nhìn quanh lần cuối..." (quote)
+  // 11: Trợ cấp 2 năm (intro)
+  // 12: Boomer Shooter (intro)
+  // 13: "Có những người sống những ngày tàn..." (quote)
+  // 14: "Rip and Tear until it is done." (quote)
+  // 15: Hoàng đế bảo vệ (intro)
+  // 16: SCP (intro)
+  // 17: "Hate. Let me tell you..." (quote)
+  // 18: "Limbo, Lust, all gone..." (quote)
+  // 19: Vibe code Antigravity (intro)
+  // 20: "Phân khu Phản truyền nhận thức không tồn tại." (quote)
+  // 21: Đam mê công nghệ (intro)
+  // 22: Cần tìm người cùng trọ (intro)
+
+  // Identify pure quotes (starting with quote marks or lyric/game lines)
+  const quoteIndices = [6, 10, 13, 14, 17, 18, 20];
+  const introIndices = [];
+  for (let i = 0; i < quotes.length; i++) {
+    if (!quoteIndices.includes(i)) {
+      introIndices.push(i);
+    }
+  }
+
+  const RECENT_HISTORY_LIMIT = 5;
+  const recentIndexes = [];
+  let triggerCount = 0;
   let cancelTypewriter = null;
   let isHovered = false;
   let currentQuote = null;
 
   function getRandomQuote() {
-    let index;
-    do {
-      index = Math.floor(Math.random() * quotes.length);
-    } while (index === lastIndex && quotes.length > 1);
-    lastIndex = index;
-    return quotes[index];
+    if (quotes.length <= 1) return quotes[0];
+    
+    triggerCount++;
+
+    let available = [];
+
+    // First 2 triggers: MUST be normal intro quotes
+    if (triggerCount <= 2) {
+      available = introIndices.filter((idx) => !recentIndexes.includes(idx));
+      if (available.length === 0) available = introIndices;
+    } else {
+      // From 3rd trigger onward: pick from all quotes, excluding last 5
+      const maxHistory = Math.min(RECENT_HISTORY_LIMIT, quotes.length - 1);
+      available = [];
+      for (let i = 0; i < quotes.length; i++) {
+        if (!recentIndexes.includes(i)) {
+          available.push(i);
+        }
+      }
+      if (available.length === 0) {
+        available = Array.from({ length: quotes.length }, (_, i) => i);
+      }
+    }
+
+    // Pick random from available
+    const chosenIndex = available[Math.floor(Math.random() * available.length)];
+    
+    // Track history
+    recentIndexes.push(chosenIndex);
+    const maxHistory = Math.min(RECENT_HISTORY_LIMIT, quotes.length - 1);
+    if (recentIndexes.length > maxHistory) {
+      recentIndexes.shift();
+    }
+
+    return quotes[chosenIndex];
   }
 
   function getCurrentLang() {
     if (window.i18n && typeof window.i18n.getCurrentLang === 'function') {
       return window.i18n.getCurrentLang();
     }
-    return localStorage.getItem('portfolio-lang') || 'en';
+    return localStorage.getItem('portfolio-lang') || 'vi';
   }
 
   function typewrite(element, text, speed = 20, onComplete) {

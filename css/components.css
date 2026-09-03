@@ -454,6 +454,20 @@
   color: var(--ink);
 }
 
+.project-badge-note {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  color: var(--ink-faint);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid var(--border-solid);
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  margin-bottom: 1.25rem;
+  width: fit-content;
+}
+
 .project-description {
   font-size: clamp(1.05rem, 1.3vw, 1.35rem);
   color: var(--ink);
