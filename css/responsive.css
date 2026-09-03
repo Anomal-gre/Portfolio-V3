@@ -15,6 +15,11 @@
 
 /* Mobile */
 @media (max-width: 768px) {
+  /* Global overflow prevention */
+  html, body {
+    overflow-x: hidden;
+  }
+
   /* Header */
   .header-nav {
     display: none;
@@ -95,6 +100,32 @@
     font-size: var(--text-xs);
   }
 
+  /* Project bar: prevent overlap with media on mobile */
+  .project-bar {
+    position: relative;
+    top: auto;
+    z-index: auto;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .project-bar-right {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  /* Media grids: prevent overflow */
+  .media-grid-2,
+  .media-grid-3 {
+    flex-wrap: wrap;
+  }
+
+  .media-grid-2 > .img-hover,
+  .media-grid-3 > .img-hover {
+    flex: 1 1 calc(50% - 0.5rem);
+    min-width: calc(50% - 0.5rem);
+  }
+
   /* Other projects */
   .other-item {
     grid-template-columns: 1fr auto;
@@ -121,6 +152,27 @@
   .about-bio {
     grid-column: 1;
     grid-row: auto;
+  }
+
+  /* Constrain portrait on mobile to avoid full-screen-height image */
+  .about-portrait img {
+    aspect-ratio: 4 / 3;
+    object-position: center 20%;
+  }
+
+  /* Speech bubble adjustments for mobile */
+  .about-bubble {
+    top: 10px;
+    left: 8px;
+    right: 8px;
+    padding: 0.5rem 0.7rem;
+  }
+
+  .about-bubble-sub {
+    bottom: -13px;
+    right: 10px;
+    font-size: 0.65rem;
+    padding: 0.2rem 0.55rem;
   }
 
   /* Footer */
@@ -184,5 +236,12 @@
   .subgroup-right {
     width: 100%;
     justify-content: space-between;
+  }
+
+  /* Extra small: stack media grids fully */
+  .media-grid-2 > .img-hover,
+  .media-grid-3 > .img-hover {
+    flex: 1 1 100%;
+    min-width: 100%;
   }
 }
