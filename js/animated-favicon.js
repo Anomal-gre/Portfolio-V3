@@ -25,7 +25,7 @@
   // Load user logo
   const logo = new Image();
   logo.crossOrigin = 'anonymous';
-  logo.src = 'assets/images/logo.png';
+  logo.src = 'assets/images/logo.webp';
   let isLogoReady = false;
 
   logo.onload = () => {

@@ -546,30 +546,52 @@
   width: 100%;
 }
 
-/* Subgroup Dividers in Project Media (For multi-part projects like iae Ambassador) */
+/* ── Subgroup Dividers & Accordion in Project Media (For multi-part projects like iae Ambassador) ── */
 .media-subgroup {
   display: flex;
   flex-direction: column;
-  gap: clamp(1rem, 1.8vw, 1.5rem);
-  margin-top: clamp(2rem, 4vh, 3.5rem);
+  border: 1px solid var(--border-solid);
+  border-radius: 12px;
+  background-color: var(--surface);
+  margin-top: clamp(1rem, 2vh, 1.5rem);
+  padding: clamp(1rem, 1.5vw, 1.25rem) clamp(1.2rem, 2vw, 1.75rem);
+  transition: border-color var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out);
 }
 
 .media-subgroup:first-child {
   margin-top: 0;
 }
 
+.media-subgroup:hover {
+  border-color: var(--ink-faint);
+}
+
+.media-subgroup.is-open {
+  border-color: var(--ink);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
 .media-subgroup__header {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
-  padding-bottom: 0.75rem;
+  padding: 0.25rem 0;
+  cursor: pointer;
+  user-select: none;
+  border-bottom: none;
+  margin-bottom: 0;
+  transition: padding var(--dur-fast) var(--ease-out);
+}
+
+.media-subgroup.is-open .media-subgroup__header {
+  padding-bottom: 1rem;
   border-bottom: 1px dashed var(--border-solid);
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .subgroup-left {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 0.85rem;
 }
 
@@ -584,10 +606,16 @@
 
 .subgroup-title {
   font-family: var(--font-display);
-  font-size: clamp(1.1rem, 1.5vw, 1.35rem);
+  font-size: clamp(1.05rem, 1.4vw, 1.25rem);
   font-weight: 500;
   letter-spacing: -0.01em;
   color: var(--ink);
+}
+
+.subgroup-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .subgroup-count {
@@ -595,6 +623,104 @@
   font-size: var(--text-xs);
   color: var(--ink-faint);
   letter-spacing: 0.04em;
+}
+
+.subgroup-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  border: 1px solid var(--border-solid);
+  background: var(--bg);
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--ink);
+  transition: all var(--dur-fast) var(--ease-out);
+}
+
+.media-subgroup__header:hover .subgroup-toggle-btn {
+  background: var(--ink);
+  color: var(--surface);
+  border-color: var(--ink);
+}
+
+.subgroup-toggle-icon {
+  transition: transform 0.3s var(--ease-out);
+}
+
+.media-subgroup.is-open .subgroup-toggle-icon {
+  transform: rotate(180deg);
+}
+
+.media-subgroup__body {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 1.8vw, 1.5rem);
+}
+
+.media-subgroup__body[hidden] {
+  display: none !important;
+}
+
+/* ── Show More / Collapsible Rows in Project Media ── */
+.project-media__more {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 1.8vw, 1.5rem);
+  width: 100%;
+}
+
+.project-media__more[hidden] {
+  display: none !important;
+}
+
+.project-media-toggle {
+  display: inline-flex;
+  align-self: center;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 0;
+  padding: 0.65rem 1.35rem;
+  background-color: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--border-solid);
+  border-radius: 9999px;
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: all var(--dur-fast) var(--ease-out);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.project-media-toggle:hover {
+  background-color: var(--ink);
+  color: var(--surface);
+  border-color: var(--ink);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.project-media-toggle .toggle-icon {
+  transition: transform 0.3s var(--ease-out);
+}
+
+.project-media-toggle[aria-expanded="true"] .toggle-icon {
+  transform: rotate(180deg);
+}
+
+.project-media-toggle .toggle-count {
+  color: var(--ink-faint);
+  font-size: 0.9em;
+  font-weight: 400;
+  transition: color var(--dur-fast) ease;
+}
+
+.project-media-toggle:hover .toggle-count {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .project-media img {

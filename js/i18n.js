@@ -10,11 +10,15 @@
       nav_about: 'About',
 
       // Hero
-      hero_intro: 'Third-year student with proven experience initiating and leading media, design, and branding operations across diverse student organizations and multi-scale events ranging from university to national level.',
+      hero_intro: 'Third-year student pursuing Communication & Content Creation with strong expertise combining content ideation and visual design across diverse real-world projects. Seeking an internship in Communication & Creative to collaborate on producing polished, high-engagement media campaigns.',
       hero_selected: 'Selected Work',
       hero_years: '2022 – 2026',
       hero_scroll: 'Scroll',
       neko_tooltip: 'Click or hold',
+      btn_view_more: 'View more',
+      btn_show_less: 'Show less',
+      btn_open_part: 'Open',
+      btn_close_part: 'Collapse',
 
       // Project names
       proj_tbl_name: 'Tôi Bản Lĩnh 2026',
@@ -110,11 +114,15 @@
       nav_about: 'Giới thiệu',
 
       // Hero
-      hero_intro: 'Sinh viên năm ba với bề dày kinh nghiệm khởi xướng và dẫn dắt các hoạt động truyền thông, thiết kế và định hướng thương hiệu tại nhiều tổ chức sinh viên cùng các sự kiện quy mô từ cấp trường đến toàn quốc.',
+      hero_intro: 'Sinh viên năm ba định hướng phát triển trong mảng Truyền thông & Sáng tạo nội dung (Communication & Content). Có thế mạnh kết hợp giữa việc lên ý tưởng nội dung và thiết kế hình ảnh qua nhiều dự án thực tế. Tìm kiếm cơ hội thực tập vị trí Communication & Creative để cùng đội ngũ sản xuất các bài đăng truyền thông chỉn chu và tạo tương tác thực.',
       hero_selected: 'Sản phẩm nổi bật',
       hero_years: '2022 – 2026',
       hero_scroll: 'Cuộn xuống',
       neko_tooltip: 'Click hoặc giữ',
+      btn_view_more: 'Xem thêm',
+      btn_show_less: 'Thu gọn',
+      btn_open_part: 'Mở xem',
+      btn_close_part: 'Thu gọn',
 
       // Project names
       proj_tbl_name: 'Tôi Bản Lĩnh 2026',
@@ -235,6 +243,9 @@
 
     // Update html lang attribute
     document.documentElement.lang = lang === 'en' ? 'en' : 'vi';
+
+    // Dispatch language change event for other modules
+    window.dispatchEvent(new CustomEvent('portfolio-lang-change', { detail: { lang } }));
   }
 
   // Toggle handler

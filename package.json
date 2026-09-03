@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-v3",
+  "version": "1.0.0",
+  "description": "Portfolio of Tran Gia Bao (Anomal)",
+  "scripts": {
+    "serve": "npx serve .",
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "keywords": [],
+  "author": "Tran Gia Bao",
+  "license": "ISC"
+}

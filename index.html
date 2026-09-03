@@ -1,1072 +1,946 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tran Gia Bao (Anomal) — Portfolio</title>
-  <meta name="description" content="Portfolio of Tran Gia Bao (Anomal) - Student Leader, Media Strategist & Graphic Designer based in Hanoi, Vietnam.">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='white'/><text x='50%' y='55%' font-size='60' text-anchor='middle' dominant-baseline='middle' fill='%23111111'>✦</text></svg>">
-  
-  <!-- Google Fonts: Inter & Geist (Neo-Grotesque Swiss Typography) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/animations.css">
-  <link rel="stylesheet" href="css/responsive.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tran Gia Bao (Anomal) — Portfolio</title>
+<meta content="Portfolio of Tran Gia Bao (Anomal) - Student Leader, Media Strategist &amp; Graphic Designer based in Hanoi, Vietnam." name="description"/>
+<!-- Favicon -->
+<link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;rect width='100' height='100' rx='24' fill='white'/&gt;&lt;text x='50%' y='55%' font-size='60' text-anchor='middle' dominant-baseline='middle' fill='%23111111'&gt;✦&lt;/text&gt;&lt;/svg&gt;" rel="icon" type="image/svg+xml"/>
+<!-- Google Fonts: Inter & Geist (Neo-Grotesque Swiss Typography) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Stylesheets -->
+<link href="css/reset.css" rel="stylesheet"/>
+<link href="css/variables.css" rel="stylesheet"/>
+<link href="css/layout.css" rel="stylesheet"/>
+<link href="css/components.css" rel="stylesheet"/>
+<link href="css/animations.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet"/>
 </head>
 <body>
-
-
-  <!-- Vertical Architectural Guide Rails (desktop only) -->
-  <div class="guides" aria-hidden="true">
-    <div class="rail rail--l"></div>
-    <div class="rail rail--r"></div>
-  </div>
-
-  <!-- Sticky Header -->
-  <header class="site-header" id="top">
-    <div class="header-row">
-      <a href="#top" class="header-brand" aria-label="Home">
-        <img src="assets/images/logo.png" alt="Anomal Logo" class="header-logo-img">
-        <span>ANOMAL</span>
-      </a>
-      
-      <nav class="header-nav" aria-label="Main navigation">
-        <a href="#showcase" data-i18n="nav_work">Work</a>
-        <a href="#other-works" data-i18n="nav_other">Other</a>
-        <a href="#about" data-i18n="nav_about">About</a>
-        <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language">VI</button>
-      </nav>
-
-      <button class="header-burger" aria-label="Open menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </header>
-
-  <!-- Mobile Drawer Menu -->
-  <div class="drawer-overlay" aria-hidden="true"></div>
-  <aside class="mobile-drawer" aria-label="Mobile navigation">
-    <a href="#showcase" data-i18n="nav_work">Work</a>
-    <a href="#other-works" data-i18n="nav_other">Other</a>
-    <a href="#about" data-i18n="nav_about">About</a>
-    <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px dashed var(--border-solid);">
-      <button class="lang-toggle" id="lang-toggle-mobile" style="width: 100%; padding: 0.6rem;" aria-label="Toggle language">VI / EN</button>
-    </div>
-  </aside>
-
-  <!-- Main Content -->
-  <main id="main-content">
-
-    <!-- 1. LANDING / HERO SECTION -->
-    <section id="landing" class="section section--hero">
-      <div class="section__inner">
-        <h1 class="hero-headline" data-i18n="hero_intro">
-          Third-year student with proven experience initiating and leading media, design, and branding operations across diverse student organizations and multi-scale events ranging from university to national level.
+<!-- Vertical Architectural Guide Rails (desktop only) -->
+<div aria-hidden="true" class="guides">
+<div class="rail rail--l"></div>
+<div class="rail rail--r"></div>
+</div>
+<!-- Sticky Header -->
+<header class="site-header" id="top">
+<div class="header-row">
+<a aria-label="Home" class="header-brand" href="#top">
+<img alt="Anomal Logo" class="header-logo-img" src="assets/images/logo.webp"/>
+<span>ANOMAL</span>
+</a>
+<nav aria-label="Main navigation" class="header-nav">
+<a data-i18n="nav_work" href="#showcase">Work</a>
+<a data-i18n="nav_other" href="#other-works">Other</a>
+<a data-i18n="nav_about" href="#about">About</a>
+<button aria-label="Toggle language" class="lang-toggle" id="lang-toggle">VI</button>
+</nav>
+<button aria-expanded="false" aria-label="Open menu" class="header-burger">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+</header>
+<!-- Mobile Drawer Menu -->
+<div aria-hidden="true" class="drawer-overlay"></div>
+<aside aria-label="Mobile navigation" class="mobile-drawer">
+<a data-i18n="nav_work" href="#showcase">Work</a>
+<a data-i18n="nav_other" href="#other-works">Other</a>
+<a data-i18n="nav_about" href="#about">About</a>
+<div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px dashed var(--border-solid);">
+<button aria-label="Toggle language" class="lang-toggle" id="lang-toggle-mobile" style="width: 100%; padding: 0.6rem;">VI / EN</button>
+</div>
+</aside>
+<!-- Main Content -->
+<main id="main-content">
+<!-- 1. LANDING / HERO SECTION -->
+<section class="section section--hero" id="landing">
+<div class="section__inner">
+<h1 class="hero-headline" data-i18n="hero_intro">
+          Third-year student pursuing Communication &amp; Content Creation with strong expertise combining content ideation and visual design across diverse real-world projects. Seeking an internship in Communication &amp; Creative to collaborate on producing polished, high-engagement media campaigns.
         </h1>
-
-        <div class="hero-stack reveal">
-          <div>
-            <span class="hero-work-label" data-i18n="hero_selected">Selected Work</span>
-            <span class="hero-work-years" data-i18n="hero_years">2022 – 2026</span>
-          </div>
-          <div class="hero-scroll-hint">
-            <span data-i18n="hero_scroll">Scroll</span>
-            <span class="arrow">↓</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="section-divider" aria-hidden="true"></div>
-
-    <!-- 2. SHOWCASE SECTION (9 Projects — der-lukas structure) -->
-    <section id="showcase" class="section">
-      <div class="section__inner">
-
-        <!-- PROJECT 1: Tôi Bản Lĩnh 2026 (04.2026 – 09.2026) -->
-        <article class="project reveal">
-          <div class="project-bar">
-            <span class="project-year">04/2026 – 09/2026</span>
-            <div class="project-bar-right">
-              <span class="project-category" data-i18n="type_event">Event</span>
-              <span class="project-name-label" data-i18n="proj_tbl_name">Tôi Bản Lĩnh 2026</span>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-info">
-              <h2 class="project-title" data-i18n="proj_tbl_name">Tôi Bản Lĩnh 2026</h2>
-              <div class="project-description">
-                <p data-i18n="proj_tbl_desc">Flagship university-wide public speaking and leadership competition. Architected the complete visual identity and centralized design system for cross-team collaboration.</p>
-              </div>
-              <dl class="project-meta">
-                <div class="meta-row">
-                  <dt>Role</dt>
-                  <dd data-i18n="proj_tbl_role">Lead Visual Designer</dd>
-                </div>
-                <div class="meta-row">
-                  <dt>Deliverables</dt>
-                  <dd data-i18n="proj_tbl_deliverables">Design System, Key Visual, Social Media, Stage Design</dd>
-                </div>
-                <div class="meta-row">
-                  <dt>Organization</dt>
-                  <dd>Presentation Club of UET</dd>
-                </div>
-              </dl>
-            </div>
-            <div class="project-media">
-              <!-- Row 1: 2-col -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/toi-ban-linh/01.png" alt="Tôi Bản Lĩnh 2026 01" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/toi-ban-linh/02.png" alt="Tôi Bản Lĩnh 2026 02" loading="lazy"></div>
-              </div>
-
-              <!-- Row 2: Full width banner -->
-              <div class="media-grid-1 img-hover">
-                <img src="assets/images/toi-ban-linh/03.jpg" alt="Tôi Bản Lĩnh 2026 Forest Cover" loading="lazy">
-              </div>
-
-              <!-- Bố cục ghép: 04 ở trên (Banner lớn), 06, 07, 11 ở dưới (3 cột) -->
-              <div class="media-grid-1 img-hover">
-                <img src="assets/images/toi-ban-linh/04.png" alt="Tôi Bản Lĩnh 2026 04" loading="lazy">
-              </div>
-
-              <div class="media-grid-3">
-                <div class="img-hover"><img src="assets/images/toi-ban-linh/06.png" alt="Tôi Bản Lĩnh 2026 06" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/toi-ban-linh/07.png" alt="Tôi Bản Lĩnh 2026 07" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/toi-ban-linh/11.png" alt="Tôi Bản Lĩnh 2026 11" loading="lazy"></div>
-              </div>
-
-              <!-- Row: 05 + 12 (Countdown 12H + Khách mời Phạm Hoàng Anh Dũng) -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/toi-ban-linh/05.png" alt="Tôi Bản Lĩnh 2026 05" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/toi-ban-linh/12.png" alt="Tôi Bản Lĩnh 2026 12" loading="lazy"></div>
-              </div>
-
-              <!-- Row 5: 2-col -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/toi-ban-linh/08.png" alt="Tôi Bản Lĩnh 2026 08" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/toi-ban-linh/09.png" alt="Tôi Bản Lĩnh 2026 09" loading="lazy"></div>
-              </div>
-
-              <!-- Row 6: 2-col (LARVA + 4H) -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/toi-ban-linh/10.png" alt="Tôi Bản Lĩnh 2026 10" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/toi-ban-linh/13.png" alt="Tôi Bản Lĩnh 2026 13" loading="lazy"></div>
-              </div>
-
-              <!-- Row 7: 2-col -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/toi-ban-linh/14.png" alt="Tôi Bản Lĩnh 2026 14" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/toi-ban-linh/15.png" alt="Tôi Bản Lĩnh 2026 15" loading="lazy"></div>
-              </div>
-
-              <!-- Row 8: Full width banner (KÉN) -->
-              <div class="media-grid-1 img-hover">
-                <img src="assets/images/toi-ban-linh/16.png" alt="Tôi Bản Lĩnh 2026 Chung Kết Banner 16" loading="lazy">
-              </div>
-
-              <!-- Row 9: 1-col (17) -->
-              <div class="media-grid-1 img-hover">
-                <img src="assets/images/toi-ban-linh/17.png" alt="Tôi Bản Lĩnh 2026 17" loading="lazy">
-              </div>
-
-              <!-- Row 10: 2-col (18 cạnh 19) -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/toi-ban-linh/18.png" alt="Tôi Bản Lĩnh 2026 18" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/toi-ban-linh/19.png" alt="Tôi Bản Lĩnh 2026 19" loading="lazy"></div>
-              </div>
-
-              <!-- Row 11: 2-col (20 cạnh 21) -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/toi-ban-linh/20.png" alt="Tôi Bản Lĩnh 2026 20" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/toi-ban-linh/21.png" alt="Tôi Bản Lĩnh 2026 21" loading="lazy"></div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 2: iae Ambassador 2026 (02.2026 – 06.2026) -->
-        <article class="project reveal">
-          <div class="project-bar">
-            <span class="project-year">02/2026 – 06/2026</span>
-            <div class="project-bar-right">
-              <span class="project-category" data-i18n="type_campaign">Campaign</span>
-              <span class="project-name-label" data-i18n="proj_iae_name">iae Ambassador 2026</span>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-info">
-              <h2 class="project-title" data-i18n="proj_iae_name">iae Ambassador 2026</h2>
-              <div class="project-description">
-                <p data-i18n="proj_iae_desc">Youth leadership and global education ambassadorship initiative. Owned nearly 100% of visual production; conceptualized 3 exclusive Key Visual suites for 3 flagship events.</p>
-              </div>
-              <dl class="project-meta">
-                <div class="meta-row">
-                  <dt>Role</dt>
-                  <dd data-i18n="proj_iae_role">Lead Visual Designer / Creative Lead</dd>
-                </div>
-                <div class="meta-row">
-                  <dt>Deliverables</dt>
-                  <dd data-i18n="proj_iae_deliverables">Key Visual ×3, Digital Ads, Posters, Backdrops</dd>
-                </div>
-                <div class="meta-row">
-                  <dt>Client</dt>
-                  <dd>iae GLOBAL Vietnam</dd>
-                </div>
-              </dl>
-            </div>
-            <div class="project-media">
-              
-              <!-- PHẦN I: THIẾT KẾ CHUNG -->
-              <section class="media-subgroup">
-                <div class="media-subgroup__header">
-                  <div class="subgroup-left">
-                    <span class="subgroup-num">I.</span>
-                    <h3 class="subgroup-title">Thiết kế chung</h3>
-                  </div>
-                  <span class="subgroup-count">12 visual items</span>
-                </div>
-
-                <!-- Hàng 1: 12 (Banner) -->
-                <div class="media-grid-1 img-hover">
-                  <img src="assets/images/iae-ambassador/part-1/12.png" alt="Thiết kế chung 12" loading="lazy">
-                </div>
-
-                <!-- Hàng 2: 10 + 07 -->
-                <div class="media-grid-2">
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-1/10.png" alt="Thiết kế chung 10" loading="lazy"></div>
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-1/07.png" alt="Thiết kế chung 07" loading="lazy"></div>
-                </div>
-
-                <!-- Hàng 3: 01 (Banner) -->
-                <div class="media-grid-1 img-hover">
-                  <img src="assets/images/iae-ambassador/part-1/01.png" alt="Thiết kế chung 01" loading="lazy">
-                </div>
-
-                <!-- Hàng 4: 02 + 03 -->
-                <div class="media-grid-2">
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-1/02.png" alt="Thiết kế chung 02" loading="lazy"></div>
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-1/03.png" alt="Thiết kế chung 03" loading="lazy"></div>
-                </div>
-
-                <!-- Hàng 5: 04 + 05 -->
-                <div class="media-grid-2">
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-1/04.png" alt="Thiết kế chung 04" loading="lazy"></div>
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-1/05.png" alt="Thiết kế chung 05" loading="lazy"></div>
-                </div>
-
-                <!-- Hàng 6: 06 + 08 -->
-                <div class="media-grid-2">
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-1/06.png" alt="Thiết kế chung 06" loading="lazy"></div>
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-1/08.png" alt="Thiết kế chung 08" loading="lazy"></div>
-                </div>
-
-                <!-- Hàng 7: 09 + 11 -->
-                <div class="media-grid-2">
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-1/09.png" alt="Thiết kế chung 09" loading="lazy"></div>
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-1/11.png" alt="Thiết kế chung 11" loading="lazy"></div>
-                </div>
-              </section>
-
-              <!-- PHẦN II: UK ADVANTAGE DAY -->
-              <section class="media-subgroup">
-                <div class="media-subgroup__header">
-                  <div class="subgroup-left">
-                    <span class="subgroup-num">II.</span>
-                    <h3 class="subgroup-title">UK Advantage Day</h3>
-                  </div>
-                  <span class="subgroup-count">13 visual items</span>
-                </div>
-
-                <div class="media-grid-1 img-hover">
-                  <img src="assets/images/iae-ambassador/part-2/04.png" alt="UK Advantage Day Cover" loading="lazy">
-                </div>
-
-                <div class="media-grid-2">
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-2/01.png" alt="UK Advantage Day 01" loading="lazy"></div>
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-2/02.png" alt="UK Advantage Day 02" loading="lazy"></div>
-                </div>
-
-                <div class="media-grid-2">
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-2/03.png" alt="UK Advantage Day 03" loading="lazy"></div>
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-2/05.png" alt="UK Advantage Day 05" loading="lazy"></div>
-                </div>
-
-                <div class="media-grid-2">
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-2/06.png" alt="UK Advantage Day 06" loading="lazy"></div>
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-2/07.png" alt="UK Advantage Day 07" loading="lazy"></div>
-                </div>
-
-                <div class="media-grid-2">
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-2/08.png" alt="UK Advantage Day 08" loading="lazy"></div>
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-2/09.png" alt="UK Advantage Day 09" loading="lazy"></div>
-                </div>
-
-                <div class="media-grid-2">
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-2/10.png" alt="UK Advantage Day 10" loading="lazy"></div>
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-2/11.png" alt="UK Advantage Day 11" loading="lazy"></div>
-                </div>
-
-                <div class="media-grid-2">
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-2/12.png" alt="UK Advantage Day 12" loading="lazy"></div>
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-2/13.png" alt="UK Advantage Day 13" loading="lazy"></div>
-                </div>
-              </section>
-
-              <!-- PHẦN III: LOGIHUB - STUDY IN GERMANY -->
-              <section class="media-subgroup">
-                <div class="media-subgroup__header">
-                  <div class="subgroup-left">
-                    <span class="subgroup-num">III.</span>
-                    <h3 class="subgroup-title">LOGIHUB – Study in Germany</h3>
-                  </div>
-                  <span class="subgroup-count">13 visual items</span>
-                </div>
-
-                <div class="media-grid-1 img-hover">
-                  <img src="assets/images/iae-ambassador/part-3/02.png" alt="LOGIHUB Study in Germany Cover" loading="lazy">
-                </div>
-
-                <div class="media-grid-2">
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-3/01.png" alt="LOGIHUB 01" loading="lazy"></div>
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-3/03.png" alt="LOGIHUB 03" loading="lazy"></div>
-                </div>
-
-                <div class="media-grid-2">
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-3/04.png" alt="LOGIHUB 04" loading="lazy"></div>
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-3/05.png" alt="LOGIHUB 05" loading="lazy"></div>
-                </div>
-
-                <div class="media-grid-2">
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-3/06.png" alt="LOGIHUB 06" loading="lazy"></div>
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-3/07.png" alt="LOGIHUB 07" loading="lazy"></div>
-                </div>
-
-                <div class="media-grid-2">
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-3/08.png" alt="LOGIHUB 08" loading="lazy"></div>
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-3/09.png" alt="LOGIHUB 09" loading="lazy"></div>
-                </div>
-
-                <div class="media-grid-2">
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-3/11.png" alt="LOGIHUB 11" loading="lazy"></div>
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-3/12.png" alt="LOGIHUB 12" loading="lazy"></div>
-                </div>
-
-                <div class="media-grid-2">
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-3/13.png" alt="LOGIHUB 13" loading="lazy"></div>
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-3/14.png" alt="LOGIHUB 14" loading="lazy"></div>
-                </div>
-              </section>
-
-              <!-- PHẦN IV: GERMANY GLOW DAY -->
-              <section class="media-subgroup">
-                <div class="media-subgroup__header">
-                  <div class="subgroup-left">
-                    <span class="subgroup-num">IV.</span>
-                    <h3 class="subgroup-title">Germany Glow Day</h3>
-                  </div>
-                  <span class="subgroup-count">9 visual items</span>
-                </div>
-
-                <div class="media-grid-1 img-hover">
-                  <img src="assets/images/iae-ambassador/part-4/02.png" alt="Germany Glow Day Cover" loading="lazy">
-                </div>
-
-                <div class="media-grid-2">
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-4/01.png" alt="Germany Glow Day 01" loading="lazy"></div>
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-4/03.png" alt="Germany Glow Day 03" loading="lazy"></div>
-                </div>
-
-                <div class="media-grid-2">
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-4/04.png" alt="Germany Glow Day 04" loading="lazy"></div>
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-4/05.png" alt="Germany Glow Day 05" loading="lazy"></div>
-                </div>
-
-                <div class="media-grid-2">
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-4/06.png" alt="Germany Glow Day 06" loading="lazy"></div>
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-4/07.png" alt="Germany Glow Day 07" loading="lazy"></div>
-                </div>
-
-                <div class="media-grid-2">
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-4/08.png" alt="Germany Glow Day 08" loading="lazy"></div>
-                  <div class="img-hover"><img src="assets/images/iae-ambassador/part-4/09.png" alt="Germany Glow Day 09" loading="lazy"></div>
-                </div>
-              </section>
-
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 3: Workshop Gen Z làm nghiên cứu (03.2026 - 04.2026) -->
-        <article class="project reveal">
-          <div class="project-bar">
-            <span class="project-year">03/2026 – 04/2026</span>
-            <div class="project-bar-right">
-              <span class="project-category" data-i18n="type_event">Event</span>
-              <span class="project-name-label" data-i18n="proj_ws_name">Workshop "Gen Z Doing Research"</span>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-info">
-              <h2 class="project-title" data-i18n="proj_ws_name">Workshop "Gen Z Doing Research"</h2>
-              <div class="project-description">
-                <p data-i18n="proj_ws_desc">Collaborative media and design workshop co-organized by two universities. Designed event Key Visuals and standardized joint branding.</p>
-              </div>
-              <dl class="project-meta">
-                <div class="meta-row">
-                  <dt>Role</dt>
-                  <dd data-i18n="proj_ws_role">Head of Marketing</dd>
-                </div>
-                <div class="meta-row">
-                  <dt>Deliverables</dt>
-                  <dd data-i18n="proj_ws_deliverables">Key Visual, Content, Cross-club Coordination</dd>
-                </div>
-                <div class="meta-row">
-                  <dt>Collaboration</dt>
-                  <dd>UET IS × ULIS TV</dd>
-                </div>
-              </dl>
-            </div>
-            <div class="project-media">
-              <!-- Hàng 1: 1, 2 -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/workshop/01.png" alt="Workshop Gen Z Visual 01" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/workshop/02.png" alt="Workshop Gen Z Visual 02" loading="lazy"></div>
-              </div>
-
-              <!-- Hàng 2: 3 (Full width) -->
-              <div class="media-grid-1 img-hover">
-                <img src="assets/images/workshop/03.png" alt="Workshop Gen Z Banner 03" loading="lazy">
-              </div>
-
-              <!-- Hàng 3: 4, 5 -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/workshop/04.png" alt="Workshop Gen Z Visual 04" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/workshop/05.png" alt="Workshop Gen Z Visual 05" loading="lazy"></div>
-              </div>
-
-              <!-- Hàng 4: 6, 7 -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/workshop/06.png" alt="Workshop Gen Z Visual 06" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/workshop/07.png" alt="Workshop Gen Z Visual 07" loading="lazy"></div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 4: HRTech (11.2025 - 12.2025) -->
-        <article class="project reveal">
-          <div class="project-bar">
-            <span class="project-year">11/2025 – 12/2025</span>
-            <div class="project-bar-right">
-              <span class="project-category" data-i18n="type_social">Social Media</span>
-              <span class="project-name-label" data-i18n="proj_hr_name">HRTech</span>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-info">
-              <h2 class="project-title" data-i18n="proj_hr_name">HRTech</h2>
-              <div class="project-description">
-                <p data-i18n="proj_hr_desc">Managed end-to-end Facebook media operations for a student HR-tech initiative, establishing visual benchmarks and authoring core graphic assets.</p>
-              </div>
-              <dl class="project-meta">
-                <div class="meta-row">
-                  <dt>Role</dt>
-                  <dd data-i18n="proj_hr_role">Head of Marketing</dd>
-                </div>
-                <div class="meta-row">
-                  <dt>Deliverables</dt>
-                  <dd data-i18n="proj_hr_deliverables">Social Media, Visual Governance</dd>
-                </div>
-                <div class="meta-row">
-                  <dt>Platform</dt>
-                  <dd>VNU-UET</dd>
-                </div>
-              </dl>
-            </div>
-            <div class="project-media">
-              <!-- Hàng 1: 1, 2 -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/hrtech/1.jpg" alt="HRTech Visual 1" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/hrtech/2.jpg" alt="HRTech Visual 2" loading="lazy"></div>
-              </div>
-
-              <!-- Hàng 2: 3 (Banner) -->
-              <div class="media-grid-1 img-hover">
-                <img src="assets/images/hrtech/3.png" alt="HRTech Banner 3" loading="lazy">
-              </div>
-
-              <!-- Hàng 3: 4, 5 -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/hrtech/4.jpg" alt="HRTech Visual 4" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/hrtech/5.jpg" alt="HRTech Visual 5" loading="lazy"></div>
-              </div>
-
-              <!-- Hàng 4: 6, 7, 8 -->
-              <div class="media-grid-3">
-                <div class="img-hover"><img src="assets/images/hrtech/6.jpg" alt="HRTech Visual 6" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/hrtech/7.jpg" alt="HRTech Visual 7" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/hrtech/9.jpg" alt="HRTech Visual 8" loading="lazy"></div>
-              </div>
-
-              <!-- Hàng 5: 10, 11 -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/hrtech/10.jpg" alt="HRTech Visual 10" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/hrtech/11.jpg" alt="HRTech Visual 11" loading="lazy"></div>
-              </div>
-
-              <!-- Hàng 6: 12, 13 -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/hrtech/12.jpg" alt="HRTech Visual 12" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/hrtech/13.jpg" alt="HRTech Visual 13" loading="lazy"></div>
-              </div>
-
-              <!-- Hàng 7: 14, 15 -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/hrtech/14.jpg" alt="HRTech Visual 14" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/hrtech/15.jpg" alt="HRTech Visual 15" loading="lazy"></div>
-              </div>
-
-              <!-- Hàng 8: 16, 17 -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/hrtech/16.jpg" alt="HRTech Visual 16" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/hrtech/17.jpg" alt="HRTech Visual 17" loading="lazy"></div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 5: The Xmas Knock (12.2025) -->
-        <article class="project reveal">
-          <div class="project-bar">
-            <span class="project-year">12/2025</span>
-            <div class="project-bar-right">
-              <span class="project-category" data-i18n="type_event">Event</span>
-              <span class="project-name-label" data-i18n="proj_xmas_name">The Xmas Knock</span>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-info">
-              <h2 class="project-title" data-i18n="proj_xmas_name">The Xmas Knock</h2>
-              <div class="project-description">
-                <p data-i18n="proj_xmas_desc">Seasonal presentation event blending festive storytelling with student public speaking excellence.</p>
-              </div>
-              <dl class="project-meta">
-                <div class="meta-row">
-                  <dt>Role</dt>
-                  <dd data-i18n="proj_xmas_role">Designer</dd>
-                </div>
-                <div class="meta-row">
-                  <dt>Deliverables</dt>
-                  <dd data-i18n="proj_xmas_deliverables">Key Visual, Social Media</dd>
-                </div>
-                <div class="meta-row">
-                  <dt>Event</dt>
-                  <dd>Annual Winter Showcase</dd>
-                </div>
-              </dl>
-            </div>
-            <div class="project-media">
-              <!-- Row 1: Full width banner -->
-              <div class="media-grid-1 img-hover">
-                <img src="assets/images/xmas-knock/1.jpg" alt="The Xmas Knock Banner 1" loading="lazy">
-              </div>
-
-              <!-- Row 2: 3-column square gallery -->
-              <div class="media-grid-3">
-                <div class="img-hover"><img src="assets/images/xmas-knock/2.jpg" alt="The Xmas Knock Visual 2" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/xmas-knock/3.jpg" alt="The Xmas Knock Visual 3" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/xmas-knock/4.jpg" alt="The Xmas Knock Visual 4" loading="lazy"></div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 6: Gen 20 Member Recruitment (10.2025 - 12.2025) -->
-        <article class="project reveal">
-          <div class="project-bar">
-            <span class="project-year">10/2025 – 12/2025</span>
-            <div class="project-bar-right">
-              <span class="project-category" data-i18n="type_campaign">Campaign</span>
-              <span class="project-name-label" data-i18n="proj_gen_name">Gen 20 Member Recruitment</span>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-info">
-              <h2 class="project-title" data-i18n="proj_gen_name">Gen 20 Member Recruitment</h2>
-              <div class="project-description">
-                <p data-i18n="proj_gen_desc">Full-cycle recruitment campaign for Presentation Club, featuring distinctive visual concept and multi-phase communication strategy.</p>
-              </div>
-              <dl class="project-meta">
-                <div class="meta-row">
-                  <dt>Role</dt>
-                  <dd data-i18n="proj_gen_role">Head of Marketing</dd>
-                </div>
-                <div class="meta-row">
-                  <dt>Deliverables</dt>
-                  <dd data-i18n="proj_gen_deliverables">Campaign Concept, Key Visual, Social Media</dd>
-                </div>
-                <div class="meta-row">
-                  <dt>Impact</dt>
-                  <dd>100% Visual Consistency & High Engagement</dd>
-                </div>
-              </dl>
-            </div>
-            <div class="project-media">
-              <!-- Hàng 1: 1, 2 -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/tuyen-gen/1.png" alt="Tuyển Gen Visual 1" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/tuyen-gen/2.png" alt="Tuyển Gen Visual 2" loading="lazy"></div>
-              </div>
-
-              <!-- Hàng 2: 3 (Banner) -->
-              <div class="media-grid-1 img-hover">
-                <img src="assets/images/tuyen-gen/3.png" alt="Tuyển Gen Banner 3" loading="lazy">
-              </div>
-
-              <!-- Hàng 3: 4, 5 -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/tuyen-gen/4.png" alt="Tuyển Gen Visual 4" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/tuyen-gen/5.png" alt="Tuyển Gen Visual 5" loading="lazy"></div>
-              </div>
-
-              <!-- Hàng 4: 6, 7 -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/tuyen-gen/6.png" alt="Tuyển Gen Visual 6" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/tuyen-gen/7.png" alt="Tuyển Gen Visual 7" loading="lazy"></div>
-              </div>
-
-              <!-- Hàng 5: 8, 9 -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/tuyen-gen/8.png" alt="Tuyển Gen Visual 8" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/tuyen-gen/9.png" alt="Tuyển Gen Visual 9" loading="lazy"></div>
-              </div>
-
-              <!-- Hàng 6: 10, 11, 12 -->
-              <div class="media-grid-3">
-                <div class="img-hover"><img src="assets/images/tuyen-gen/10.png" alt="Tuyển Gen Visual 10" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/tuyen-gen/11.png" alt="Tuyển Gen Visual 11" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/tuyen-gen/12.png" alt="Tuyển Gen Visual 12" loading="lazy"></div>
-              </div>
-
-              <!-- Hàng 7: 13, 14 -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/tuyen-gen/13.png" alt="Tuyển Gen Visual 13" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/tuyen-gen/14.png" alt="Tuyển Gen Visual 14" loading="lazy"></div>
-              </div>
-
-              <!-- Hàng 8: 15, 16 -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/tuyen-gen/15.png" alt="Tuyển Gen Visual 15" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/tuyen-gen/16.png" alt="Tuyển Gen Visual 16" loading="lazy"></div>
-              </div>
-
-              <!-- Hàng 9: 17, 18 -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/tuyen-gen/17.png" alt="Tuyển Gen Visual 17" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/tuyen-gen/18.png" alt="Tuyển Gen Visual 18" loading="lazy"></div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 7: Hola Radio (08.2025) -->
-        <article class="project reveal">
-          <div class="project-bar">
-            <span class="project-year">08/2025</span>
-            <div class="project-bar-right">
-              <span class="project-category" data-i18n="type_branding">Branding</span>
-              <span class="project-name-label" data-i18n="proj_hola_name">Hola Radio</span>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-info">
-              <h2 class="project-title" data-i18n="proj_hola_name">Hola Radio</h2>
-              <div class="project-description">
-                <p data-i18n="proj_hola_desc">Brand identity and visual system for a student radio initiative, establishing a cohesive voice across digital platforms.</p>
-              </div>
-              <dl class="project-meta">
-                <div class="meta-row">
-                  <dt>Role</dt>
-                  <dd data-i18n="proj_hola_role">Designer</dd>
-                </div>
-                <div class="meta-row">
-                  <dt>Deliverables</dt>
-                  <dd data-i18n="proj_hola_deliverables">Brand Identity, Social Media</dd>
-                </div>
-                <div class="meta-row">
-                  <dt>Format</dt>
-                  <dd>Digital & Audio Media</dd>
-                </div>
-              </dl>
-            </div>
-            <div class="project-media">
-              <!-- Hàng 1: 1 -->
-              <div class="media-grid-1 img-hover">
-                <img src="assets/images/hola-radio/01.jpg" alt="Hola Radio Visual 01" loading="lazy">
-              </div>
-
-              <!-- Hàng 2: 2, 3 -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/hola-radio/02.jpg" alt="Hola Radio Visual 02" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/hola-radio/03.jpg" alt="Hola Radio Visual 03" loading="lazy"></div>
-              </div>
-
-              <!-- Hàng 3: 4, 5 -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/hola-radio/04.jpg" alt="Hola Radio Visual 04" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/hola-radio/05.jpg" alt="Hola Radio Visual 05" loading="lazy"></div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 8: Green Dreams (HYYF - Những ước mơ xanh) (01.2024 – 04.2024) -->
-        <article class="project reveal">
-          <div class="project-bar">
-            <span class="project-year">01/2024 – 04/2024</span>
-            <div class="project-bar-right">
-              <span class="project-category" data-i18n="type_charity">Charity</span>
-              <span class="project-name-label" data-i18n="proj_hyyf_name">Green Dreams</span>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-info">
-              <h2 class="project-title" data-i18n="proj_hyyf_name">Green Dreams</h2>
-              <div class="project-description">
-                <p data-i18n="proj_hyyf_desc">Annual grassroots humanitarian initiative providing material donations and emotional support to orphaned children. Raised over 5,000,000 VND.</p>
-              </div>
-              <dl class="project-meta">
-                <div class="meta-row">
-                  <dt>Role</dt>
-                  <dd data-i18n="proj_hyyf_role">Head of Marketing</dd>
-                </div>
-                <div class="meta-row">
-                  <dt>Deliverables</dt>
-                  <dd data-i18n="proj_hyyf_deliverables">Campaign Design, Fundraising, Community Outreach</dd>
-                </div>
-                <div class="meta-row">
-                  <dt>Organization</dt>
-                  <dd>Hung Yen Youth Forum (HYYF)</dd>
-                </div>
-              </dl>
-            </div>
-            <div class="project-media">
-              <!-- Hàng 1: 1 -->
-              <div class="media-grid-1 img-hover">
-                <img src="assets/images/hyyf/1.jpg" alt="Green Dreams Activity 1" loading="lazy">
-              </div>
-
-              <!-- Hàng 2: 2 -->
-              <div class="media-grid-1 img-hover">
-                <img src="assets/images/hyyf/2.jpg" alt="Green Dreams Activity 2" loading="lazy">
-              </div>
-
-              <!-- Hàng 3: 3 -->
-              <div class="media-grid-1 img-hover">
-                <img src="assets/images/hyyf/3.jpg" alt="Green Dreams Activity 3" loading="lazy">
-              </div>
-
-              <!-- Hàng 4: 4 -->
-              <div class="media-grid-1 img-hover">
-                <img src="assets/images/hyyf/4.jpg" alt="Green Dreams Activity 4" loading="lazy">
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 9: Logo Collection (2022 – 2026) -->
-        <article class="project reveal">
-          <div class="project-bar">
-            <span class="project-year">2022 – 2026</span>
-            <div class="project-bar-right">
-              <span class="project-category" data-i18n="type_identity">Identity</span>
-              <span class="project-name-label" data-i18n="proj_logo_name">Logo Collection</span>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-info">
-              <h2 class="project-title" data-i18n="proj_logo_name">Logo Collection</h2>
-              <div class="project-description">
-                <p data-i18n="proj_logo_desc">A curated selection of logo and brand identity work across various student organizations and personal projects.</p>
-              </div>
-              <dl class="project-meta">
-                <div class="meta-row">
-                  <dt>Role</dt>
-                  <dd data-i18n="proj_logo_role">Designer</dd>
-                </div>
-                <div class="meta-row">
-                  <dt>Deliverables</dt>
-                  <dd data-i18n="proj_logo_deliverables">Logo Design, Brand Identity</dd>
-                </div>
-                <div class="meta-row">
-                  <dt>Scope</dt>
-                  <dd>Vector Marks, Typography, Systems</dd>
-                </div>
-              </dl>
-            </div>
-            <div class="project-media">
-              <!-- Hàng 1: 13 (Full width) -->
-              <div class="media-grid-1 img-hover">
-                <img src="assets/images/logos/13.jpg" alt="Logo Collection 13" loading="lazy">
-              </div>
-
-              <!-- Hàng 2: 13.1, 13.2 -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/logos/13.1.png" alt="Logo Collection 13.1" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/logos/13.2.png" alt="Logo Collection 13.2" loading="lazy"></div>
-              </div>
-
-              <!-- Hàng 3: 01, 02 -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/logos/01.jpg" alt="Logo Collection 01" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/logos/02.jpg" alt="Logo Collection 02" loading="lazy"></div>
-              </div>
-
-              <!-- Hàng 4: 03, 04 -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/logos/03.jpg" alt="Logo Collection 03" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/logos/04.jpg" alt="Logo Collection 04" loading="lazy"></div>
-              </div>
-
-              <!-- Hàng 5: 05, 06 -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/logos/05.jpg" alt="Logo Collection 05" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/logos/06.jpg" alt="Logo Collection 06" loading="lazy"></div>
-              </div>
-
-              <!-- Hàng 6: 07, 08 -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/logos/07.jpg" alt="Logo Collection 07" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/logos/08.jpg" alt="Logo Collection 08" loading="lazy"></div>
-              </div>
-
-              <!-- Hàng 7: 09, 10 -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/logos/09.jpg" alt="Logo Collection 09" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/logos/10.jpg" alt="Logo Collection 10" loading="lazy"></div>
-              </div>
-
-              <!-- Hàng 8: 11, 12 -->
-              <div class="media-grid-2">
-                <div class="img-hover"><img src="assets/images/logos/11.jpg" alt="Logo Collection 11" loading="lazy"></div>
-                <div class="img-hover"><img src="assets/images/logos/12.jpg" alt="Logo Collection 12" loading="lazy"></div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <div class="section-divider" aria-hidden="true"></div>
-
-    <!-- 3. OTHER PROJECTS SECTION (Ohwow, Chonvachot, Teto Cornellius, Teto Taskous) -->
-    <section id="other-works" class="section">
-      <div class="section__inner">
-        <h2 class="other-heading reveal" data-i18n="other_title">Other Projects</h2>
-
-        <div class="other-list reveal-stagger">
-          
-          <!-- Item 1: Ohwow.win -->
-          <a href="https://ohwow.win" target="_blank" rel="noopener noreferrer" class="other-item reveal">
-            <span class="other-item__name" data-i18n="other_ohwow_name">Ohwow.win</span>
-            <span class="other-item__type" data-i18n="type_website">Website</span>
-            <svg class="other-item__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M7 17L17 7M17 7H7M17 7V17"/>
-            </svg>
-            <p class="other-item__desc" data-i18n="other_ohwow_desc">Online Dots & Boxes multiplayer game — real-time strategy board game with ELO ranking.</p>
-          </a>
-
-          <!-- Item 2: Chọn & Chốt -->
-          <a href="https://chonvachot.com" target="_blank" rel="noopener noreferrer" class="other-item reveal">
-            <span class="other-item__name" data-i18n="other_cnc_name">Chọn & Chốt</span>
-            <span class="other-item__type" data-i18n="type_website">Website</span>
-            <svg class="other-item__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M7 17L17 7M17 7H7M17 7V17"/>
-            </svg>
-            <p class="other-item__desc" data-i18n="other_cnc_desc">Independent tech review & buying guide — "I choose, you decide."</p>
-          </a>
-
-          <!-- Item 3: Teto Cornellius -->
-          <a href="https://drive.google.com/file/d/1XR6wEN5kS0gl1ldO_vNd41ADMGD72Ao2/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="other-item other-item--has-preview reveal">
-            <span class="other-item__name" data-i18n="other_cornellius_name">Teto Cornellius</span>
-            <span class="other-item__type" data-i18n="type_software">Software</span>
-            <svg class="other-item__arrow other-item__arrow--download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-              <polyline points="7 10 12 15 17 10"/>
-              <line x1="12" y1="15" x2="12" y2="3"/>
-            </svg>
-            <p class="other-item__desc" data-i18n="other_cornellius_desc">Note-taking app using the Cornell method for structured and effective learning.</p>
-
-            <!-- Orderly Floating Preview Dock -->
-            <div class="other-preview-stack" aria-hidden="true">
-              <div class="other-preview-stack__head">
-                <span>UI Preview</span>
-                <span>Teto Cornellius</span>
-              </div>
-              <div class="other-preview-stack__tray other-preview-stack__tray--grid-2x2">
-                <div class="other-preview-card">
-                  <img src="assets/images/teto-cornellius/01.png" alt="Teto Cornellius Dark Dashboard" loading="lazy">
-                </div>
-                <div class="other-preview-card">
-                  <img src="assets/images/teto-cornellius/04.png" alt="Teto Cornellius Light Mode" loading="lazy">
-                </div>
-                <div class="other-preview-card">
-                  <img src="assets/images/teto-cornellius/02.png" alt="Teto Cornellius Note Editor" loading="lazy">
-                </div>
-                <div class="other-preview-card">
-                  <img src="assets/images/teto-cornellius/03.png" alt="Teto Cornellius Chapter Modal" loading="lazy">
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <!-- Item 4: Teto Taskous -->
-          <a href="https://drive.google.com/file/d/1R6yZJQVRM2su-FL1clBsPyA6n2VnTrqF/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="other-item other-item--has-preview reveal">
-            <span class="other-item__name" data-i18n="other_taskous_name">Teto Taskous</span>
-            <span class="other-item__type" data-i18n="type_software">Software</span>
-            <svg class="other-item__arrow other-item__arrow--download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-              <polyline points="7 10 12 15 17 10"/>
-              <line x1="12" y1="15" x2="12" y2="3"/>
-            </svg>
-            <p class="other-item__desc" data-i18n="other_taskous_desc">Sticky note-style task manager — lightweight reminders to never miss a deadline.</p>
-
-            <!-- Orderly Floating Preview Dock -->
-            <div class="other-preview-stack" aria-hidden="true">
-              <div class="other-preview-stack__head">
-                <span>UI Preview</span>
-                <span>Teto Taskous</span>
-              </div>
-              <div class="other-preview-stack__tray">
-                <div class="other-preview-card">
-                  <img src="assets/images/teto-taskous/01.png" alt="Teto Taskous Quick Task Note" loading="lazy">
-                </div>
-                <div class="other-preview-card">
-                  <img src="assets/images/teto-taskous/02.png" alt="Teto Taskous Note View" loading="lazy">
-                </div>
-              </div>
-            </div>
-          </a>
-
-        </div>
-      </div>
-    </section>
-
-    <div class="section-divider" aria-hidden="true"></div>
-
-    <!-- 4. ABOUT SECTION -->
-    <section id="about" class="section">
-      <div class="section__inner">
-        <div class="about-grid">
-          
-          <div class="about-main reveal">
-            <h2 class="about-title" data-i18n="about_title">About</h2>
-            <div class="about-text">
-              <p data-i18n="about_text_1">
+<div class="hero-stack reveal">
+<div>
+<span class="hero-work-label" data-i18n="hero_selected">Selected Work</span>
+<span class="hero-work-years" data-i18n="hero_years">2022 – 2026</span>
+</div>
+<div class="hero-scroll-hint">
+<span data-i18n="hero_scroll">Scroll</span>
+<span class="arrow">↓</span>
+</div>
+</div>
+</div>
+</section>
+<div aria-hidden="true" class="section-divider"></div>
+<!-- 2. SHOWCASE SECTION (9 Projects — der-lukas structure) -->
+<section class="section" id="showcase">
+<div class="section__inner">
+<!-- PROJECT 1: Tôi Bản Lĩnh 2026 (04.2026 – 09.2026) -->
+<article class="project reveal">
+<div class="project-bar">
+<span class="project-year">04/2026 – 09/2026</span>
+<div class="project-bar-right">
+<span class="project-category" data-i18n="type_event">Event</span>
+<span class="project-name-label" data-i18n="proj_tbl_name">Tôi Bản Lĩnh 2026</span>
+</div>
+</div>
+<div class="project-content">
+<div class="project-info">
+<h2 class="project-title" data-i18n="proj_tbl_name">Tôi Bản Lĩnh 2026</h2>
+<div class="project-description">
+<p data-i18n="proj_tbl_desc">Flagship university-wide public speaking and leadership competition. Architected the complete visual identity and centralized design system for cross-team collaboration.</p>
+</div>
+<dl class="project-meta">
+<div class="meta-row">
+<dt>Role</dt>
+<dd data-i18n="proj_tbl_role">Lead Visual Designer</dd>
+</div>
+<div class="meta-row">
+<dt>Deliverables</dt>
+<dd data-i18n="proj_tbl_deliverables">Design System, Key Visual, Social Media, Stage Design</dd>
+</div>
+<div class="meta-row">
+<dt>Organization</dt>
+<dd>Presentation Club of UET</dd>
+</div>
+</dl>
+</div>
+<div class="project-media">
+<!-- Row 1: 2-col -->
+<div class="media-grid-2">
+<div class="img-hover"><img alt="Tôi Bản Lĩnh 2026 01" loading="lazy" src="assets/images/toi-ban-linh/01.webp"/></div>
+<div class="img-hover"><img alt="Tôi Bản Lĩnh 2026 02" loading="lazy" src="assets/images/toi-ban-linh/02.webp"/></div>
+</div>
+<!-- Row 2: Full width banner -->
+<div class="media-grid-1 img-hover">
+<img alt="Tôi Bản Lĩnh 2026 Forest Cover" loading="lazy" src="assets/images/toi-ban-linh/03.webp"/>
+</div>
+<!-- Bố cục ghép: 04 ở trên (Banner lớn), 06, 07, 11 ở dưới (3 cột) -->
+
+
+<!-- Row: 05 + 12 (Countdown 12H + Khách mời Phạm Hoàng Anh Dũng) -->
+
+<!-- Row 5: 2-col -->
+
+<!-- Row 6: 2-col (LARVA + 4H) -->
+
+<!-- Row 7: 2-col -->
+
+<!-- Row 8: Full width banner (KÉN) -->
+
+<!-- Row 9: 1-col (17) -->
+
+<!-- Row 10: 2-col (18 cạnh 19) -->
+
+<!-- Row 11: 2-col (20 cạnh 21) -->
+
+<div class="project-media__more" hidden=""><div class="media-grid-1 img-hover">
+<img alt="Tôi Bản Lĩnh 2026 04" loading="lazy" src="assets/images/toi-ban-linh/04.webp"/>
+</div><div class="media-grid-3">
+<div class="img-hover"><img alt="Tôi Bản Lĩnh 2026 06" loading="lazy" src="assets/images/toi-ban-linh/06.webp"/></div>
+<div class="img-hover"><img alt="Tôi Bản Lĩnh 2026 07" loading="lazy" src="assets/images/toi-ban-linh/07.webp"/></div>
+<div class="img-hover"><img alt="Tôi Bản Lĩnh 2026 11" loading="lazy" src="assets/images/toi-ban-linh/11.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Tôi Bản Lĩnh 2026 05" loading="lazy" src="assets/images/toi-ban-linh/05.webp"/></div>
+<div class="img-hover"><img alt="Tôi Bản Lĩnh 2026 12" loading="lazy" src="assets/images/toi-ban-linh/12.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Tôi Bản Lĩnh 2026 08" loading="lazy" src="assets/images/toi-ban-linh/08.webp"/></div>
+<div class="img-hover"><img alt="Tôi Bản Lĩnh 2026 09" loading="lazy" src="assets/images/toi-ban-linh/09.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Tôi Bản Lĩnh 2026 10" loading="lazy" src="assets/images/toi-ban-linh/10.webp"/></div>
+<div class="img-hover"><img alt="Tôi Bản Lĩnh 2026 13" loading="lazy" src="assets/images/toi-ban-linh/13.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Tôi Bản Lĩnh 2026 14" loading="lazy" src="assets/images/toi-ban-linh/14.webp"/></div>
+<div class="img-hover"><img alt="Tôi Bản Lĩnh 2026 15" loading="lazy" src="assets/images/toi-ban-linh/15.webp"/></div>
+</div><div class="media-grid-1 img-hover">
+<img alt="Tôi Bản Lĩnh 2026 Chung Kết Banner 16" loading="lazy" src="assets/images/toi-ban-linh/16.webp"/>
+</div><div class="media-grid-1 img-hover">
+<img alt="Tôi Bản Lĩnh 2026 17" loading="lazy" src="assets/images/toi-ban-linh/17.webp"/>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Tôi Bản Lĩnh 2026 18" loading="lazy" src="assets/images/toi-ban-linh/18.webp"/></div>
+<div class="img-hover"><img alt="Tôi Bản Lĩnh 2026 19" loading="lazy" src="assets/images/toi-ban-linh/19.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Tôi Bản Lĩnh 2026 20" loading="lazy" src="assets/images/toi-ban-linh/20.webp"/></div>
+<div class="img-hover"><img alt="Tôi Bản Lĩnh 2026 21" loading="lazy" src="assets/images/toi-ban-linh/21.webp"/></div>
+</div></div><button aria-expanded="false" class="project-media-toggle" data-extra-count="18" type="button"><span class="toggle-text" data-i18n="btn_view_more">Xem thêm</span><span class="toggle-count"> (+18 ảnh)</span><svg class="toggle-icon" fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16"><path d="M6 9l6 6 6-6"></path></svg></button></div>
+</div>
+</article>
+<!-- PROJECT 2: iae Ambassador 2026 (02.2026 – 06.2026) -->
+<article class="project reveal">
+<div class="project-bar">
+<span class="project-year">02/2026 – 06/2026</span>
+<div class="project-bar-right">
+<span class="project-category" data-i18n="type_campaign">Campaign</span>
+<span class="project-name-label" data-i18n="proj_iae_name">iae Ambassador 2026</span>
+</div>
+</div>
+<div class="project-content">
+<div class="project-info">
+<h2 class="project-title" data-i18n="proj_iae_name">iae Ambassador 2026</h2>
+<div class="project-description">
+<p data-i18n="proj_iae_desc">Youth leadership and global education ambassadorship initiative. Owned nearly 100% of visual production; conceptualized 3 exclusive Key Visual suites for 3 flagship events.</p>
+</div>
+<dl class="project-meta">
+<div class="meta-row">
+<dt>Role</dt>
+<dd data-i18n="proj_iae_role">Lead Visual Designer / Creative Lead</dd>
+</div>
+<div class="meta-row">
+<dt>Deliverables</dt>
+<dd data-i18n="proj_iae_deliverables">Key Visual ×3, Digital Ads, Posters, Backdrops</dd>
+</div>
+<div class="meta-row">
+<dt>Client</dt>
+<dd>iae GLOBAL Vietnam</dd>
+</div>
+</dl>
+</div>
+<div class="project-media">
+<!-- PHẦN I: THIẾT KẾ CHUNG -->
+<section class="media-subgroup">
+<div aria-controls="iae-part-1-body" aria-expanded="false" class="media-subgroup__header" role="button" tabindex="0">
+<div class="subgroup-left">
+<span class="subgroup-num">I.</span>
+<h3 class="subgroup-title">Thiết kế chung</h3>
+</div>
+
+<div class="subgroup-right"><span class="subgroup-count">12 visual items</span><span class="subgroup-toggle-btn"><span class="subgroup-toggle-label" data-i18n="btn_open_part">Mở xem</span><svg class="subgroup-toggle-icon" fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="M6 9l6 6 6-6"></path></svg></span></div></div>
+<!-- Hàng 1: 12 (Banner) -->
+
+<!-- Hàng 2: 10 + 07 -->
+
+<!-- Hàng 3: 01 (Banner) -->
+
+<!-- Hàng 4: 02 + 03 -->
+
+<!-- Hàng 5: 04 + 05 -->
+
+<!-- Hàng 6: 06 + 08 -->
+
+<!-- Hàng 7: 09 + 11 -->
+
+<div class="media-subgroup__body" hidden="" id="iae-part-1-body"><div class="media-grid-1 img-hover">
+<img alt="Thiết kế chung 12" loading="lazy" src="assets/images/iae-ambassador/part-1/12.webp"/>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Thiết kế chung 10" loading="lazy" src="assets/images/iae-ambassador/part-1/10.webp"/></div>
+<div class="img-hover"><img alt="Thiết kế chung 07" loading="lazy" src="assets/images/iae-ambassador/part-1/07.webp"/></div>
+</div><div class="media-grid-1 img-hover">
+<img alt="Thiết kế chung 01" loading="lazy" src="assets/images/iae-ambassador/part-1/01.webp"/>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Thiết kế chung 02" loading="lazy" src="assets/images/iae-ambassador/part-1/02.webp"/></div>
+<div class="img-hover"><img alt="Thiết kế chung 03" loading="lazy" src="assets/images/iae-ambassador/part-1/03.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Thiết kế chung 04" loading="lazy" src="assets/images/iae-ambassador/part-1/04.webp"/></div>
+<div class="img-hover"><img alt="Thiết kế chung 05" loading="lazy" src="assets/images/iae-ambassador/part-1/05.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Thiết kế chung 06" loading="lazy" src="assets/images/iae-ambassador/part-1/06.webp"/></div>
+<div class="img-hover"><img alt="Thiết kế chung 08" loading="lazy" src="assets/images/iae-ambassador/part-1/08.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Thiết kế chung 09" loading="lazy" src="assets/images/iae-ambassador/part-1/09.webp"/></div>
+<div class="img-hover"><img alt="Thiết kế chung 11" loading="lazy" src="assets/images/iae-ambassador/part-1/11.webp"/></div>
+</div></div></section>
+<!-- PHẦN II: UK ADVANTAGE DAY -->
+<section class="media-subgroup">
+<div aria-controls="iae-part-2-body" aria-expanded="false" class="media-subgroup__header" role="button" tabindex="0">
+<div class="subgroup-left">
+<span class="subgroup-num">II.</span>
+<h3 class="subgroup-title">UK Advantage Day</h3>
+</div>
+
+<div class="subgroup-right"><span class="subgroup-count">13 visual items</span><span class="subgroup-toggle-btn"><span class="subgroup-toggle-label" data-i18n="btn_open_part">Mở xem</span><svg class="subgroup-toggle-icon" fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="M6 9l6 6 6-6"></path></svg></span></div></div>
+
+
+
+
+
+
+
+<div class="media-subgroup__body" hidden="" id="iae-part-2-body"><div class="media-grid-1 img-hover">
+<img alt="UK Advantage Day Cover" loading="lazy" src="assets/images/iae-ambassador/part-2/04.webp"/>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="UK Advantage Day 01" loading="lazy" src="assets/images/iae-ambassador/part-2/01.webp"/></div>
+<div class="img-hover"><img alt="UK Advantage Day 02" loading="lazy" src="assets/images/iae-ambassador/part-2/02.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="UK Advantage Day 03" loading="lazy" src="assets/images/iae-ambassador/part-2/03.webp"/></div>
+<div class="img-hover"><img alt="UK Advantage Day 05" loading="lazy" src="assets/images/iae-ambassador/part-2/05.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="UK Advantage Day 06" loading="lazy" src="assets/images/iae-ambassador/part-2/06.webp"/></div>
+<div class="img-hover"><img alt="UK Advantage Day 07" loading="lazy" src="assets/images/iae-ambassador/part-2/07.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="UK Advantage Day 08" loading="lazy" src="assets/images/iae-ambassador/part-2/08.webp"/></div>
+<div class="img-hover"><img alt="UK Advantage Day 09" loading="lazy" src="assets/images/iae-ambassador/part-2/09.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="UK Advantage Day 10" loading="lazy" src="assets/images/iae-ambassador/part-2/10.webp"/></div>
+<div class="img-hover"><img alt="UK Advantage Day 11" loading="lazy" src="assets/images/iae-ambassador/part-2/11.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="UK Advantage Day 12" loading="lazy" src="assets/images/iae-ambassador/part-2/12.webp"/></div>
+<div class="img-hover"><img alt="UK Advantage Day 13" loading="lazy" src="assets/images/iae-ambassador/part-2/13.webp"/></div>
+</div></div></section>
+<!-- PHẦN III: LOGIHUB - STUDY IN GERMANY -->
+<section class="media-subgroup">
+<div aria-controls="iae-part-3-body" aria-expanded="false" class="media-subgroup__header" role="button" tabindex="0">
+<div class="subgroup-left">
+<span class="subgroup-num">III.</span>
+<h3 class="subgroup-title">LOGIHUB – Study in Germany</h3>
+</div>
+
+<div class="subgroup-right"><span class="subgroup-count">13 visual items</span><span class="subgroup-toggle-btn"><span class="subgroup-toggle-label" data-i18n="btn_open_part">Mở xem</span><svg class="subgroup-toggle-icon" fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="M6 9l6 6 6-6"></path></svg></span></div></div>
+
+
+
+
+
+
+
+<div class="media-subgroup__body" hidden="" id="iae-part-3-body"><div class="media-grid-1 img-hover">
+<img alt="LOGIHUB Study in Germany Cover" loading="lazy" src="assets/images/iae-ambassador/part-3/02.webp"/>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="LOGIHUB 01" loading="lazy" src="assets/images/iae-ambassador/part-3/01.webp"/></div>
+<div class="img-hover"><img alt="LOGIHUB 03" loading="lazy" src="assets/images/iae-ambassador/part-3/03.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="LOGIHUB 04" loading="lazy" src="assets/images/iae-ambassador/part-3/04.webp"/></div>
+<div class="img-hover"><img alt="LOGIHUB 05" loading="lazy" src="assets/images/iae-ambassador/part-3/05.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="LOGIHUB 06" loading="lazy" src="assets/images/iae-ambassador/part-3/06.webp"/></div>
+<div class="img-hover"><img alt="LOGIHUB 07" loading="lazy" src="assets/images/iae-ambassador/part-3/07.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="LOGIHUB 08" loading="lazy" src="assets/images/iae-ambassador/part-3/08.webp"/></div>
+<div class="img-hover"><img alt="LOGIHUB 09" loading="lazy" src="assets/images/iae-ambassador/part-3/09.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="LOGIHUB 11" loading="lazy" src="assets/images/iae-ambassador/part-3/11.webp"/></div>
+<div class="img-hover"><img alt="LOGIHUB 12" loading="lazy" src="assets/images/iae-ambassador/part-3/12.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="LOGIHUB 13" loading="lazy" src="assets/images/iae-ambassador/part-3/13.webp"/></div>
+<div class="img-hover"><img alt="LOGIHUB 14" loading="lazy" src="assets/images/iae-ambassador/part-3/14.webp"/></div>
+</div></div></section>
+<!-- PHẦN IV: GERMANY GLOW DAY -->
+<section class="media-subgroup">
+<div aria-controls="iae-part-4-body" aria-expanded="false" class="media-subgroup__header" role="button" tabindex="0">
+<div class="subgroup-left">
+<span class="subgroup-num">IV.</span>
+<h3 class="subgroup-title">Germany Glow Day</h3>
+</div>
+
+<div class="subgroup-right"><span class="subgroup-count">9 visual items</span><span class="subgroup-toggle-btn"><span class="subgroup-toggle-label" data-i18n="btn_open_part">Mở xem</span><svg class="subgroup-toggle-icon" fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="M6 9l6 6 6-6"></path></svg></span></div></div>
+
+
+
+
+
+<div class="media-subgroup__body" hidden="" id="iae-part-4-body"><div class="media-grid-1 img-hover">
+<img alt="Germany Glow Day Cover" loading="lazy" src="assets/images/iae-ambassador/part-4/02.webp"/>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Germany Glow Day 01" loading="lazy" src="assets/images/iae-ambassador/part-4/01.webp"/></div>
+<div class="img-hover"><img alt="Germany Glow Day 03" loading="lazy" src="assets/images/iae-ambassador/part-4/03.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Germany Glow Day 04" loading="lazy" src="assets/images/iae-ambassador/part-4/04.webp"/></div>
+<div class="img-hover"><img alt="Germany Glow Day 05" loading="lazy" src="assets/images/iae-ambassador/part-4/05.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Germany Glow Day 06" loading="lazy" src="assets/images/iae-ambassador/part-4/06.webp"/></div>
+<div class="img-hover"><img alt="Germany Glow Day 07" loading="lazy" src="assets/images/iae-ambassador/part-4/07.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Germany Glow Day 08" loading="lazy" src="assets/images/iae-ambassador/part-4/08.webp"/></div>
+<div class="img-hover"><img alt="Germany Glow Day 09" loading="lazy" src="assets/images/iae-ambassador/part-4/09.webp"/></div>
+</div></div></section>
+</div>
+</div>
+</article>
+<!-- PROJECT 3: Workshop Gen Z làm nghiên cứu (03.2026 - 04.2026) -->
+<article class="project reveal">
+<div class="project-bar">
+<span class="project-year">03/2026 – 04/2026</span>
+<div class="project-bar-right">
+<span class="project-category" data-i18n="type_event">Event</span>
+<span class="project-name-label" data-i18n="proj_ws_name">Workshop "Gen Z Doing Research"</span>
+</div>
+</div>
+<div class="project-content">
+<div class="project-info">
+<h2 class="project-title" data-i18n="proj_ws_name">Workshop "Gen Z Doing Research"</h2>
+<div class="project-description">
+<p data-i18n="proj_ws_desc">Collaborative media and design workshop co-organized by two universities. Designed event Key Visuals and standardized joint branding.</p>
+</div>
+<dl class="project-meta">
+<div class="meta-row">
+<dt>Role</dt>
+<dd data-i18n="proj_ws_role">Head of Marketing</dd>
+</div>
+<div class="meta-row">
+<dt>Deliverables</dt>
+<dd data-i18n="proj_ws_deliverables">Key Visual, Content, Cross-club Coordination</dd>
+</div>
+<div class="meta-row">
+<dt>Collaboration</dt>
+<dd>UET IS × ULIS TV</dd>
+</div>
+</dl>
+</div>
+<div class="project-media">
+<!-- Hàng 1: 1, 2 -->
+<div class="media-grid-2">
+<div class="img-hover"><img alt="Workshop Gen Z Visual 01" loading="lazy" src="assets/images/workshop/01.webp"/></div>
+<div class="img-hover"><img alt="Workshop Gen Z Visual 02" loading="lazy" src="assets/images/workshop/02.webp"/></div>
+</div>
+<!-- Hàng 2: 3 (Full width) -->
+<div class="media-grid-1 img-hover">
+<img alt="Workshop Gen Z Banner 03" loading="lazy" src="assets/images/workshop/03.webp"/>
+</div>
+<!-- Hàng 3: 4, 5 -->
+
+<!-- Hàng 4: 6, 7 -->
+
+<div class="project-media__more" hidden=""><div class="media-grid-2">
+<div class="img-hover"><img alt="Workshop Gen Z Visual 04" loading="lazy" src="assets/images/workshop/04.webp"/></div>
+<div class="img-hover"><img alt="Workshop Gen Z Visual 05" loading="lazy" src="assets/images/workshop/05.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Workshop Gen Z Visual 06" loading="lazy" src="assets/images/workshop/06.webp"/></div>
+<div class="img-hover"><img alt="Workshop Gen Z Visual 07" loading="lazy" src="assets/images/workshop/07.webp"/></div>
+</div></div><button aria-expanded="false" class="project-media-toggle" data-extra-count="4" type="button"><span class="toggle-text" data-i18n="btn_view_more">Xem thêm</span><span class="toggle-count"> (+4 ảnh)</span><svg class="toggle-icon" fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16"><path d="M6 9l6 6 6-6"></path></svg></button></div>
+</div>
+</article>
+<!-- PROJECT 4: HRTech (11.2025 - 12.2025) -->
+<article class="project reveal">
+<div class="project-bar">
+<span class="project-year">11/2025 – 12/2025</span>
+<div class="project-bar-right">
+<span class="project-category" data-i18n="type_social">Social Media</span>
+<span class="project-name-label" data-i18n="proj_hr_name">HRTech</span>
+</div>
+</div>
+<div class="project-content">
+<div class="project-info">
+<h2 class="project-title" data-i18n="proj_hr_name">HRTech</h2>
+<div class="project-description">
+<p data-i18n="proj_hr_desc">Managed end-to-end Facebook media operations for a student HR-tech initiative, establishing visual benchmarks and authoring core graphic assets.</p>
+</div>
+<dl class="project-meta">
+<div class="meta-row">
+<dt>Role</dt>
+<dd data-i18n="proj_hr_role">Head of Marketing</dd>
+</div>
+<div class="meta-row">
+<dt>Deliverables</dt>
+<dd data-i18n="proj_hr_deliverables">Social Media, Visual Governance</dd>
+</div>
+<div class="meta-row">
+<dt>Platform</dt>
+<dd>VNU-UET</dd>
+</div>
+</dl>
+</div>
+<div class="project-media">
+<!-- Hàng 1: 1, 2 -->
+<div class="media-grid-2">
+<div class="img-hover"><img alt="HRTech Visual 1" loading="lazy" src="assets/images/hrtech/1.webp"/></div>
+<div class="img-hover"><img alt="HRTech Visual 2" loading="lazy" src="assets/images/hrtech/2.webp"/></div>
+</div>
+<!-- Hàng 2: 3 (Banner) -->
+<div class="media-grid-1 img-hover">
+<img alt="HRTech Banner 3" loading="lazy" src="assets/images/hrtech/3.webp"/>
+</div>
+<!-- Hàng 3: 4, 5 -->
+
+<!-- Hàng 4: 6, 7, 8 -->
+
+<!-- Hàng 5: 10, 11 -->
+
+<!-- Hàng 6: 12, 13 -->
+
+<!-- Hàng 7: 14, 15 -->
+
+<!-- Hàng 8: 16, 17 -->
+
+<div class="project-media__more" hidden=""><div class="media-grid-2">
+<div class="img-hover"><img alt="HRTech Visual 4" loading="lazy" src="assets/images/hrtech/4.webp"/></div>
+<div class="img-hover"><img alt="HRTech Visual 5" loading="lazy" src="assets/images/hrtech/5.webp"/></div>
+</div><div class="media-grid-3">
+<div class="img-hover"><img alt="HRTech Visual 6" loading="lazy" src="assets/images/hrtech/6.webp"/></div>
+<div class="img-hover"><img alt="HRTech Visual 7" loading="lazy" src="assets/images/hrtech/7.webp"/></div>
+<div class="img-hover"><img alt="HRTech Visual 8" loading="lazy" src="assets/images/hrtech/9.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="HRTech Visual 10" loading="lazy" src="assets/images/hrtech/10.webp"/></div>
+<div class="img-hover"><img alt="HRTech Visual 11" loading="lazy" src="assets/images/hrtech/11.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="HRTech Visual 12" loading="lazy" src="assets/images/hrtech/12.webp"/></div>
+<div class="img-hover"><img alt="HRTech Visual 13" loading="lazy" src="assets/images/hrtech/13.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="HRTech Visual 14" loading="lazy" src="assets/images/hrtech/14.webp"/></div>
+<div class="img-hover"><img alt="HRTech Visual 15" loading="lazy" src="assets/images/hrtech/15.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="HRTech Visual 16" loading="lazy" src="assets/images/hrtech/16.webp"/></div>
+<div class="img-hover"><img alt="HRTech Visual 17" loading="lazy" src="assets/images/hrtech/17.webp"/></div>
+</div></div><button aria-expanded="false" class="project-media-toggle" data-extra-count="13" type="button"><span class="toggle-text" data-i18n="btn_view_more">Xem thêm</span><span class="toggle-count"> (+13 ảnh)</span><svg class="toggle-icon" fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16"><path d="M6 9l6 6 6-6"></path></svg></button></div>
+</div>
+</article>
+<!-- PROJECT 5: The Xmas Knock (12.2025) -->
+<article class="project reveal">
+<div class="project-bar">
+<span class="project-year">12/2025</span>
+<div class="project-bar-right">
+<span class="project-category" data-i18n="type_event">Event</span>
+<span class="project-name-label" data-i18n="proj_xmas_name">The Xmas Knock</span>
+</div>
+</div>
+<div class="project-content">
+<div class="project-info">
+<h2 class="project-title" data-i18n="proj_xmas_name">The Xmas Knock</h2>
+<div class="project-description">
+<p data-i18n="proj_xmas_desc">Seasonal presentation event blending festive storytelling with student public speaking excellence.</p>
+</div>
+<dl class="project-meta">
+<div class="meta-row">
+<dt>Role</dt>
+<dd data-i18n="proj_xmas_role">Designer</dd>
+</div>
+<div class="meta-row">
+<dt>Deliverables</dt>
+<dd data-i18n="proj_xmas_deliverables">Key Visual, Social Media</dd>
+</div>
+<div class="meta-row">
+<dt>Event</dt>
+<dd>Annual Winter Showcase</dd>
+</div>
+</dl>
+</div>
+<div class="project-media">
+<!-- Row 1: Full width banner -->
+<div class="media-grid-1 img-hover">
+<img alt="The Xmas Knock Banner 1" loading="lazy" src="assets/images/xmas-knock/1.webp"/>
+</div>
+<!-- Row 2: 3-column square gallery -->
+<div class="media-grid-3">
+<div class="img-hover"><img alt="The Xmas Knock Visual 2" loading="lazy" src="assets/images/xmas-knock/2.webp"/></div>
+<div class="img-hover"><img alt="The Xmas Knock Visual 3" loading="lazy" src="assets/images/xmas-knock/3.webp"/></div>
+<div class="img-hover"><img alt="The Xmas Knock Visual 4" loading="lazy" src="assets/images/xmas-knock/4.webp"/></div>
+</div>
+</div>
+</div>
+</article>
+<!-- PROJECT 6: Gen 20 Member Recruitment (10.2025 - 12.2025) -->
+<article class="project reveal">
+<div class="project-bar">
+<span class="project-year">10/2025 – 12/2025</span>
+<div class="project-bar-right">
+<span class="project-category" data-i18n="type_campaign">Campaign</span>
+<span class="project-name-label" data-i18n="proj_gen_name">Gen 20 Member Recruitment</span>
+</div>
+</div>
+<div class="project-content">
+<div class="project-info">
+<h2 class="project-title" data-i18n="proj_gen_name">Gen 20 Member Recruitment</h2>
+<div class="project-description">
+<p data-i18n="proj_gen_desc">Full-cycle recruitment campaign for Presentation Club, featuring distinctive visual concept and multi-phase communication strategy.</p>
+</div>
+<dl class="project-meta">
+<div class="meta-row">
+<dt>Role</dt>
+<dd data-i18n="proj_gen_role">Head of Marketing</dd>
+</div>
+<div class="meta-row">
+<dt>Deliverables</dt>
+<dd data-i18n="proj_gen_deliverables">Campaign Concept, Key Visual, Social Media</dd>
+</div>
+<div class="meta-row">
+<dt>Impact</dt>
+<dd>100% Visual Consistency &amp; High Engagement</dd>
+</div>
+</dl>
+</div>
+<div class="project-media">
+<!-- Hàng 1: 1, 2 -->
+<div class="media-grid-2">
+<div class="img-hover"><img alt="Tuyển Gen Visual 1" loading="lazy" src="assets/images/tuyen-gen/1.webp"/></div>
+<div class="img-hover"><img alt="Tuyển Gen Visual 2" loading="lazy" src="assets/images/tuyen-gen/2.webp"/></div>
+</div>
+<!-- Hàng 2: 3 (Banner) -->
+<div class="media-grid-1 img-hover">
+<img alt="Tuyển Gen Banner 3" loading="lazy" src="assets/images/tuyen-gen/3.webp"/>
+</div>
+<!-- Hàng 3: 4, 5 -->
+
+<!-- Hàng 4: 6, 7 -->
+
+<!-- Hàng 5: 8, 9 -->
+
+<!-- Hàng 6: 10, 11, 12 -->
+
+<!-- Hàng 7: 13, 14 -->
+
+<!-- Hàng 8: 15, 16 -->
+
+<!-- Hàng 9: 17, 18 -->
+
+<div class="project-media__more" hidden=""><div class="media-grid-2">
+<div class="img-hover"><img alt="Tuyển Gen Visual 4" loading="lazy" src="assets/images/tuyen-gen/4.webp"/></div>
+<div class="img-hover"><img alt="Tuyển Gen Visual 5" loading="lazy" src="assets/images/tuyen-gen/5.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Tuyển Gen Visual 6" loading="lazy" src="assets/images/tuyen-gen/6.webp"/></div>
+<div class="img-hover"><img alt="Tuyển Gen Visual 7" loading="lazy" src="assets/images/tuyen-gen/7.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Tuyển Gen Visual 8" loading="lazy" src="assets/images/tuyen-gen/8.webp"/></div>
+<div class="img-hover"><img alt="Tuyển Gen Visual 9" loading="lazy" src="assets/images/tuyen-gen/9.webp"/></div>
+</div><div class="media-grid-3">
+<div class="img-hover"><img alt="Tuyển Gen Visual 10" loading="lazy" src="assets/images/tuyen-gen/10.webp"/></div>
+<div class="img-hover"><img alt="Tuyển Gen Visual 11" loading="lazy" src="assets/images/tuyen-gen/11.webp"/></div>
+<div class="img-hover"><img alt="Tuyển Gen Visual 12" loading="lazy" src="assets/images/tuyen-gen/12.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Tuyển Gen Visual 13" loading="lazy" src="assets/images/tuyen-gen/13.webp"/></div>
+<div class="img-hover"><img alt="Tuyển Gen Visual 14" loading="lazy" src="assets/images/tuyen-gen/14.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Tuyển Gen Visual 15" loading="lazy" src="assets/images/tuyen-gen/15.webp"/></div>
+<div class="img-hover"><img alt="Tuyển Gen Visual 16" loading="lazy" src="assets/images/tuyen-gen/16.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Tuyển Gen Visual 17" loading="lazy" src="assets/images/tuyen-gen/17.webp"/></div>
+<div class="img-hover"><img alt="Tuyển Gen Visual 18" loading="lazy" src="assets/images/tuyen-gen/18.webp"/></div>
+</div></div><button aria-expanded="false" class="project-media-toggle" data-extra-count="15" type="button"><span class="toggle-text" data-i18n="btn_view_more">Xem thêm</span><span class="toggle-count"> (+15 ảnh)</span><svg class="toggle-icon" fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16"><path d="M6 9l6 6 6-6"></path></svg></button></div>
+</div>
+</article>
+<!-- PROJECT 7: Hola Radio (08.2025) -->
+<article class="project reveal">
+<div class="project-bar">
+<span class="project-year">08/2025</span>
+<div class="project-bar-right">
+<span class="project-category" data-i18n="type_branding">Branding</span>
+<span class="project-name-label" data-i18n="proj_hola_name">Hola Radio</span>
+</div>
+</div>
+<div class="project-content">
+<div class="project-info">
+<h2 class="project-title" data-i18n="proj_hola_name">Hola Radio</h2>
+<div class="project-description">
+<p data-i18n="proj_hola_desc">Brand identity and visual system for a student radio initiative, establishing a cohesive voice across digital platforms.</p>
+</div>
+<dl class="project-meta">
+<div class="meta-row">
+<dt>Role</dt>
+<dd data-i18n="proj_hola_role">Designer</dd>
+</div>
+<div class="meta-row">
+<dt>Deliverables</dt>
+<dd data-i18n="proj_hola_deliverables">Brand Identity, Social Media</dd>
+</div>
+<div class="meta-row">
+<dt>Format</dt>
+<dd>Digital &amp; Audio Media</dd>
+</div>
+</dl>
+</div>
+<div class="project-media">
+<!-- Hàng 1: 1 -->
+<div class="media-grid-1 img-hover">
+<img alt="Hola Radio Visual 01" loading="lazy" src="assets/images/hola-radio/01.webp"/>
+</div>
+<!-- Hàng 2: 2, 3 -->
+<div class="media-grid-2">
+<div class="img-hover"><img alt="Hola Radio Visual 02" loading="lazy" src="assets/images/hola-radio/02.webp"/></div>
+<div class="img-hover"><img alt="Hola Radio Visual 03" loading="lazy" src="assets/images/hola-radio/03.webp"/></div>
+</div>
+<!-- Hàng 3: 4, 5 -->
+<div class="media-grid-2">
+<div class="img-hover"><img alt="Hola Radio Visual 04" loading="lazy" src="assets/images/hola-radio/04.webp"/></div>
+<div class="img-hover"><img alt="Hola Radio Visual 05" loading="lazy" src="assets/images/hola-radio/05.webp"/></div>
+</div>
+</div>
+</div>
+</article>
+<!-- PROJECT 8: Green Dreams (HYYF - Những ước mơ xanh) (01.2024 – 04.2024) -->
+<article class="project reveal">
+<div class="project-bar">
+<span class="project-year">01/2024 – 04/2024</span>
+<div class="project-bar-right">
+<span class="project-category" data-i18n="type_charity">Charity</span>
+<span class="project-name-label" data-i18n="proj_hyyf_name">Green Dreams</span>
+</div>
+</div>
+<div class="project-content">
+<div class="project-info">
+<h2 class="project-title" data-i18n="proj_hyyf_name">Green Dreams</h2>
+<div class="project-description">
+<p data-i18n="proj_hyyf_desc">Annual grassroots humanitarian initiative providing material donations and emotional support to orphaned children. Raised over 5,000,000 VND.</p>
+</div>
+<dl class="project-meta">
+<div class="meta-row">
+<dt>Role</dt>
+<dd data-i18n="proj_hyyf_role">Head of Marketing</dd>
+</div>
+<div class="meta-row">
+<dt>Deliverables</dt>
+<dd data-i18n="proj_hyyf_deliverables">Campaign Design, Fundraising, Community Outreach</dd>
+</div>
+<div class="meta-row">
+<dt>Organization</dt>
+<dd>Hung Yen Youth Forum (HYYF)</dd>
+</div>
+</dl>
+</div>
+<div class="project-media">
+<!-- Hàng 1: 1, 2 -->
+<div class="media-grid-2">
+<div class="img-hover"><img alt="Green Dreams Activity 1" loading="lazy" src="assets/images/hyyf/1.webp"/></div>
+<div class="img-hover"><img alt="Green Dreams Activity 2" loading="lazy" src="assets/images/hyyf/2.webp"/></div>
+</div>
+<!-- Hàng 2: 3, 4 -->
+<div class="media-grid-2">
+<div class="img-hover"><img alt="Green Dreams Activity 3" loading="lazy" src="assets/images/hyyf/3.webp"/></div>
+<div class="img-hover"><img alt="Green Dreams Activity 4" loading="lazy" src="assets/images/hyyf/4.webp"/></div>
+</div>
+</div>
+</div>
+</article>
+<!-- PROJECT 9: Logo Collection (2022 – 2026) -->
+<article class="project reveal">
+<div class="project-bar">
+<span class="project-year">2022 – 2026</span>
+<div class="project-bar-right">
+<span class="project-category" data-i18n="type_identity">Identity</span>
+<span class="project-name-label" data-i18n="proj_logo_name">Logo Collection</span>
+</div>
+</div>
+<div class="project-content">
+<div class="project-info">
+<h2 class="project-title" data-i18n="proj_logo_name">Logo Collection</h2>
+<div class="project-description">
+<p data-i18n="proj_logo_desc">A curated selection of logo and brand identity work across various student organizations and personal projects.</p>
+</div>
+<dl class="project-meta">
+<div class="meta-row">
+<dt>Role</dt>
+<dd data-i18n="proj_logo_role">Designer</dd>
+</div>
+<div class="meta-row">
+<dt>Deliverables</dt>
+<dd data-i18n="proj_logo_deliverables">Logo Design, Brand Identity</dd>
+</div>
+<div class="meta-row">
+<dt>Scope</dt>
+<dd>Vector Marks, Typography, Systems</dd>
+</div>
+</dl>
+</div>
+<div class="project-media">
+<!-- Hàng 1: 13 (Full width) -->
+<div class="media-grid-1 img-hover">
+<img alt="Logo Collection 13" loading="lazy" src="assets/images/logos/13.webp"/>
+</div>
+<!-- Hàng 2: 13.1, 13.2 -->
+<div class="media-grid-2">
+<div class="img-hover"><img alt="Logo Collection 13.1" loading="lazy" src="assets/images/logos/13.1.webp"/></div>
+<div class="img-hover"><img alt="Logo Collection 13.2" loading="lazy" src="assets/images/logos/13.2.webp"/></div>
+</div>
+<!-- Hàng 3: 01, 02 -->
+
+<!-- Hàng 4: 03, 04 -->
+
+<!-- Hàng 5: 05, 06 -->
+
+<!-- Hàng 6: 07, 08 -->
+
+<!-- Hàng 7: 09, 10 -->
+
+<!-- Hàng 8: 11, 12 -->
+
+<div class="project-media__more" hidden=""><div class="media-grid-2">
+<div class="img-hover"><img alt="Logo Collection 01" loading="lazy" src="assets/images/logos/01.webp"/></div>
+<div class="img-hover"><img alt="Logo Collection 02" loading="lazy" src="assets/images/logos/02.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Logo Collection 03" loading="lazy" src="assets/images/logos/03.webp"/></div>
+<div class="img-hover"><img alt="Logo Collection 04" loading="lazy" src="assets/images/logos/04.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Logo Collection 05" loading="lazy" src="assets/images/logos/05.webp"/></div>
+<div class="img-hover"><img alt="Logo Collection 06" loading="lazy" src="assets/images/logos/06.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Logo Collection 07" loading="lazy" src="assets/images/logos/07.webp"/></div>
+<div class="img-hover"><img alt="Logo Collection 08" loading="lazy" src="assets/images/logos/08.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Logo Collection 09" loading="lazy" src="assets/images/logos/09.webp"/></div>
+<div class="img-hover"><img alt="Logo Collection 10" loading="lazy" src="assets/images/logos/10.webp"/></div>
+</div><div class="media-grid-2">
+<div class="img-hover"><img alt="Logo Collection 11" loading="lazy" src="assets/images/logos/11.webp"/></div>
+<div class="img-hover"><img alt="Logo Collection 12" loading="lazy" src="assets/images/logos/12.webp"/></div>
+</div></div><button aria-expanded="false" class="project-media-toggle" data-extra-count="12" type="button"><span class="toggle-text" data-i18n="btn_view_more">Xem thêm</span><span class="toggle-count"> (+12 ảnh)</span><svg class="toggle-icon" fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16"><path d="M6 9l6 6 6-6"></path></svg></button></div>
+</div>
+</article>
+</div>
+</section>
+<div aria-hidden="true" class="section-divider"></div>
+<!-- 3. OTHER PROJECTS SECTION (Ohwow, Chonvachot, Teto Cornellius, Teto Taskous) -->
+<section class="section" id="other-works">
+<div class="section__inner">
+<h2 class="other-heading reveal" data-i18n="other_title">Other Projects</h2>
+<div class="other-list reveal-stagger">
+<!-- Item 1: Ohwow.win -->
+<a class="other-item reveal" href="https://ohwow.win" rel="noopener noreferrer" target="_blank">
+<span class="other-item__name" data-i18n="other_ohwow_name">Ohwow.win</span>
+<span class="other-item__type" data-i18n="type_website">Website</span>
+<svg class="other-item__arrow" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M7 17L17 7M17 7H7M17 7V17"></path>
+</svg>
+<p class="other-item__desc" data-i18n="other_ohwow_desc">Online Dots &amp; Boxes multiplayer game — real-time strategy board game with ELO ranking.</p>
+</a>
+<!-- Item 2: Chọn & Chốt -->
+<a class="other-item reveal" href="https://chonvachot.com" rel="noopener noreferrer" target="_blank">
+<span class="other-item__name" data-i18n="other_cnc_name">Chọn &amp; Chốt</span>
+<span class="other-item__type" data-i18n="type_website">Website</span>
+<svg class="other-item__arrow" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M7 17L17 7M17 7H7M17 7V17"></path>
+</svg>
+<p class="other-item__desc" data-i18n="other_cnc_desc">Independent tech review &amp; buying guide — "I choose, you decide."</p>
+</a>
+<!-- Item 3: Teto Cornellius -->
+<a class="other-item other-item--has-preview reveal" href="https://drive.google.com/file/d/1XR6wEN5kS0gl1ldO_vNd41ADMGD72Ao2/view?usp=sharing" rel="noopener noreferrer" target="_blank">
+<span class="other-item__name" data-i18n="other_cornellius_name">Teto Cornellius</span>
+<span class="other-item__type" data-i18n="type_software">Software</span>
+<svg class="other-item__arrow other-item__arrow--download" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+<polyline points="7 10 12 15 17 10"></polyline>
+<line x1="12" x2="12" y1="15" y2="3"></line>
+</svg>
+<p class="other-item__desc" data-i18n="other_cornellius_desc">Note-taking app using the Cornell method for structured and effective learning.</p>
+<!-- Orderly Floating Preview Dock -->
+<div aria-hidden="true" class="other-preview-stack">
+<div class="other-preview-stack__head">
+<span>UI Preview</span>
+<span>Teto Cornellius</span>
+</div>
+<div class="other-preview-stack__tray other-preview-stack__tray--grid-2x2">
+<div class="other-preview-card">
+<img alt="Teto Cornellius Dark Dashboard" loading="lazy" src="assets/images/teto-cornellius/01.webp"/>
+</div>
+<div class="other-preview-card">
+<img alt="Teto Cornellius Light Mode" loading="lazy" src="assets/images/teto-cornellius/04.webp"/>
+</div>
+<div class="other-preview-card">
+<img alt="Teto Cornellius Note Editor" loading="lazy" src="assets/images/teto-cornellius/02.webp"/>
+</div>
+<div class="other-preview-card">
+<img alt="Teto Cornellius Chapter Modal" loading="lazy" src="assets/images/teto-cornellius/03.webp"/>
+</div>
+</div>
+</div>
+</a>
+<!-- Item 4: Teto Taskous -->
+<a class="other-item other-item--has-preview reveal" href="https://drive.google.com/file/d/1R6yZJQVRM2su-FL1clBsPyA6n2VnTrqF/view?usp=sharing" rel="noopener noreferrer" target="_blank">
+<span class="other-item__name" data-i18n="other_taskous_name">Teto Taskous</span>
+<span class="other-item__type" data-i18n="type_software">Software</span>
+<svg class="other-item__arrow other-item__arrow--download" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+<polyline points="7 10 12 15 17 10"></polyline>
+<line x1="12" x2="12" y1="15" y2="3"></line>
+</svg>
+<p class="other-item__desc" data-i18n="other_taskous_desc">Sticky note-style task manager — lightweight reminders to never miss a deadline.</p>
+<!-- Orderly Floating Preview Dock -->
+<div aria-hidden="true" class="other-preview-stack">
+<div class="other-preview-stack__head">
+<span>UI Preview</span>
+<span>Teto Taskous</span>
+</div>
+<div class="other-preview-stack__tray">
+<div class="other-preview-card">
+<img alt="Teto Taskous Quick Task Note" loading="lazy" src="assets/images/teto-taskous/01.webp"/>
+</div>
+<div class="other-preview-card">
+<img alt="Teto Taskous Note View" loading="lazy" src="assets/images/teto-taskous/02.webp"/>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</section>
+<div aria-hidden="true" class="section-divider"></div>
+<!-- 4. ABOUT SECTION -->
+<section class="section" id="about">
+<div class="section__inner">
+<div class="about-grid">
+<div class="about-main reveal">
+<h2 class="about-title" data-i18n="about_title">About</h2>
+<div class="about-text">
+<p data-i18n="about_text_1">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </p>
-              <p data-i18n="about_text_2">
+<p data-i18n="about_text_2">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
-            </div>
-
-            <div class="about-skills">
-              <h3 class="about-skills__title" data-i18n="skills_label">Tools & Skills</h3>
-              <div class="about-skills__list">
-                <span class="skill-tag">Adobe Photoshop</span>
-                <span class="skill-tag">Adobe Illustrator</span>
-                <span class="skill-tag">Adobe InDesign</span>
-                <span class="skill-tag">Figma</span>
-                <span class="skill-tag">Premiere Pro</span>
-                <span class="skill-tag">After Effects</span>
-                <span class="skill-tag">Generative AI</span>
-                <span class="skill-tag">Design Systems</span>
-                <span class="skill-tag">Brand Direction</span>
-                <span class="skill-tag">Visual Identity</span>
-              </div>
-            </div>
-          </div>
-
-          <aside class="about-sidebar reveal">
-            <div class="about-detail">
-              <span class="about-detail__label">Name</span>
-              <span class="about-detail__value">Tran Gia Bao (Anomal)</span>
-            </div>
-            
-            <div class="about-detail">
-              <span class="about-detail__label" data-i18n="about_location_label">Location</span>
-              <span class="about-detail__value" data-i18n="about_location">Hanoi, Vietnam</span>
-            </div>
-
-            <div class="about-detail">
-              <span class="about-detail__label" data-i18n="about_education_label">Education</span>
-              <span class="about-detail__value" data-i18n="about_education">VNU University of Engineering & Technology</span>
-              <span style="font-size: var(--text-xs); color: var(--ink-soft);" data-i18n="about_degree">Bachelor of Industrial & Graphic Design</span>
-              <span style="font-size: var(--text-xs); color: var(--ink-faint);" data-i18n="about_gpa">GPA: 3.57 / 4.0</span>
-            </div>
-
-            <div class="about-detail">
-              <span class="about-detail__label" data-i18n="about_email_label">Email</span>
-              <span class="about-detail__value"><a href="mailto:bao.anomal@gmail.com">bao.anomal@gmail.com</a></span>
-            </div>
-
-            <div class="about-detail">
-              <span class="about-detail__label">Phone</span>
-              <span class="about-detail__value"><a href="tel:+84367190229">(+84) 367 190 229</a></span>
-            </div>
-          </aside>
-
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- 5. FOOTER -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-links">
-        <a href="https://www.facebook.com/anomalgreatad/" target="_blank" rel="noopener noreferrer" class="footer-link">
-          <span>Facebook</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/in/anomal/" target="_blank" rel="noopener noreferrer" class="footer-link">
-          <span>LinkedIn</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-        </a>
-        <a href="https://drive.google.com/drive/folders/1VGFzM5YZ_y-cfqixUHnG_vazjcJgUScA?usp=sharing" target="_blank" rel="noopener noreferrer" class="footer-link">
-          <span data-i18n="footer_portfolio">Portfolio</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-        </a>
-        <a href="#" class="footer-link" style="opacity: 0.5; pointer-events: none;">
-          <span data-i18n="footer_cv">CV (Coming soon)</span>
-        </a>
-      </div>
-
-      <div class="footer-copy">
-        <span data-i18n="footer_copy">© 2026 Tran Gia Bao</span>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="js/animated-favicon.js"></script>
-  <script src="js/animations.js"></script>
-  <script src="js/i18n.js"></script>
-  <script src="js/neko-landing.js"></script>
-  <script src="js/main.js"></script>
-</body>
+</div>
+<div class="about-skills">
+<h3 class="about-skills__title" data-i18n="skills_label">Tools &amp; Skills</h3>
+<div class="about-skills__list">
+<span class="skill-tag">Adobe Photoshop</span>
+<span class="skill-tag">Adobe Illustrator</span>
+<span class="skill-tag">Adobe InDesign</span>
+<span class="skill-tag">Figma</span>
+<span class="skill-tag">Premiere Pro</span>
+<span class="skill-tag">After Effects</span>
+<span class="skill-tag">Generative AI</span>
+<span class="skill-tag">Design Systems</span>
+<span class="skill-tag">Brand Direction</span>
+<span class="skill-tag">Visual Identity</span>
+</div>
+</div>
+</div>
+<aside class="about-sidebar reveal">
+<div class="about-detail">
+<span class="about-detail__label">Name</span>
+<span class="about-detail__value">Tran Gia Bao (Anomal)</span>
+</div>
+<div class="about-detail">
+<span class="about-detail__label" data-i18n="about_location_label">Location</span>
+<span class="about-detail__value" data-i18n="about_location">Hanoi, Vietnam</span>
+</div>
+<div class="about-detail">
+<span class="about-detail__label" data-i18n="about_education_label">Education</span>
+<span class="about-detail__value" data-i18n="about_education">VNU University of Engineering &amp; Technology</span>
+<span data-i18n="about_degree" style="font-size: var(--text-xs); color: var(--ink-soft);">Bachelor of Industrial &amp; Graphic Design</span>
+<span data-i18n="about_gpa" style="font-size: var(--text-xs); color: var(--ink-faint);">GPA: 3.57 / 4.0</span>
+</div>
+<div class="about-detail">
+<span class="about-detail__label" data-i18n="about_email_label">Email</span>
+<span class="about-detail__value"><a href="mailto:bao.anomal@gmail.com">bao.anomal@gmail.com</a></span>
+</div>
+<div class="about-detail">
+<span class="about-detail__label">Phone</span>
+<span class="about-detail__value"><a href="tel:+84367190229">(+84) 367 190 229</a></span>
+</div>
+</aside>
+</div>
+</div>
+</section>
+</main>
+<!-- 5. FOOTER -->
+<footer class="site-footer">
+<div class="footer-inner">
+<div class="footer-links">
+<a class="footer-link" href="https://www.facebook.com/anomalgreatad/" rel="noopener noreferrer" target="_blank">
+<span>Facebook</span>
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"></path></svg>
+</a>
+<a class="footer-link" href="https://www.linkedin.com/in/anomal/" rel="noopener noreferrer" target="_blank">
+<span>LinkedIn</span>
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"></path></svg>
+</a>
+<a class="footer-link" href="https://drive.google.com/drive/folders/1VGFzM5YZ_y-cfqixUHnG_vazjcJgUScA?usp=sharing" rel="noopener noreferrer" target="_blank">
+<span data-i18n="footer_portfolio">Portfolio</span>
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"></path></svg>
+</a>
+<a class="footer-link" href="#" style="opacity: 0.5; pointer-events: none;">
+<span data-i18n="footer_cv">CV (Coming soon)</span>
+</a>
+</div>
+<div class="footer-copy">
+<span data-i18n="footer_copy">© 2026 Tran Gia Bao</span>
+</div>
+</div>
+</footer>
+<!-- Scripts -->
+<script src="js/animated-favicon.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/neko-landing.js"></script>
+<script src="js/main.js"></script>
+<script src="js/project-accordion.js"></script></body>
 </html>
