@@ -69,12 +69,16 @@
       // Other projects
       other_title: 'Other Projects',
       other_ohwow_name: 'Ohwow.win',
+      other_ohwow_note: '(Product in experimental phase)',
       other_ohwow_desc: 'Online Dots & Boxes multiplayer game — real-time strategy board game with ELO ranking.',
       other_cnc_name: 'Chọn & Chốt',
+      other_cnc_note: '(Product in experimental phase)',
       other_cnc_desc: 'Independent tech review & buying guide — "I choose, you decide."',
       other_cornellius_name: 'Teto Cornellius',
+      other_cornellius_note: '(Personal build — not yet customizable)',
       other_cornellius_desc: 'Note-taking app using the Cornell method for structured and effective learning.',
       other_taskous_name: 'Teto Taskous',
+      other_taskous_note: '(Personal build — not yet customizable)',
       other_taskous_desc: 'Sticky note-style task manager — lightweight reminders to never miss a deadline.',
 
       // About
@@ -86,6 +90,8 @@
       about_degree: 'Bachelor of Industrial & Graphic Design',
       about_gpa: 'GPA: 3.57 / 4.0',
       about_email_label: 'Email',
+      about_email_business: '(For Business)',
+      about_email_activities: '(For Extra Curriculum Activities)',
       about_location_label: 'Location',
       about_education_label: 'Education',
       skills_label: 'Tools & Skills',
@@ -93,6 +99,8 @@
       // Footer
       footer_portfolio: 'Portfolio',
       footer_cv: 'CV',
+      footer_cv_work: 'Work / Business',
+      footer_cv_activities: 'Extra Curriculum Activities',
       footer_copy: '© 2026 Tran Gia Bao',
 
       // Types
@@ -173,12 +181,16 @@
       // Other projects
       other_title: 'Dự án khác',
       other_ohwow_name: 'Ohwow.win',
+      other_ohwow_note: '(Sản phẩm trong giai đoạn thử nghiệm)',
       other_ohwow_desc: 'Game chiến thuật Dots & Boxes online — chơi thời gian thực với hệ thống xếp hạng ELO.',
       other_cnc_name: 'Chọn & Chốt',
+      other_cnc_note: '(Sản phẩm trong giai đoạn thử nghiệm)',
       other_cnc_desc: 'Trang review & cẩm nang công nghệ độc lập — "Tôi Chọn Bạn Chốt."',
       other_cornellius_name: 'Teto Cornellius',
+      other_cornellius_note: '(Bản cá nhân hóa — chưa hỗ trợ tùy biến)',
       other_cornellius_desc: 'Ứng dụng ghi chú theo phương pháp Cornell, hỗ trợ học tập có hệ thống và hiệu quả.',
       other_taskous_name: 'Teto Taskous',
+      other_taskous_note: '(Bản cá nhân hóa — chưa hỗ trợ tùy biến)',
       other_taskous_desc: 'Phần mềm quản lý công việc dạng sticky note — nhắc nhở nhẹ nhàng để không bỏ lỡ deadline.',
 
       // About
@@ -190,6 +202,8 @@
       about_degree: 'Cử nhân Thiết kế Công nghiệp & Đồ họa',
       about_gpa: 'GPA: 3.57 / 4.0',
       about_email_label: 'Email',
+      about_email_business: '(Công việc)',
+      about_email_activities: '(Hoạt động ngoại khóa)',
       about_location_label: 'Địa điểm',
       about_education_label: 'Học vấn',
       skills_label: 'Công cụ & Kỹ năng',
@@ -197,6 +211,8 @@
       // Footer
       footer_portfolio: 'Portfolio',
       footer_cv: 'CV',
+      footer_cv_work: 'Công việc',
+      footer_cv_activities: 'Hoạt động ngoại khóa',
       footer_copy: '© 2026 Trần Gia Bảo',
 
       // Types

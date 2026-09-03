@@ -775,7 +775,10 @@
 <div class="other-list reveal-stagger">
 <!-- Item 1: Ohwow.win -->
 <a class="other-item reveal" href="https://ohwow.win" rel="noopener noreferrer" target="_blank">
+<div class="other-item__title-group">
 <span class="other-item__name" data-i18n="other_ohwow_name">Ohwow.win</span>
+<span class="other-item__note" data-i18n="other_ohwow_note">(Product in experimental phase)</span>
+</div>
 <span class="other-item__type" data-i18n="type_website">Website</span>
 <svg class="other-item__arrow" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
 <path d="M7 17L17 7M17 7H7M17 7V17"></path>
@@ -784,7 +787,10 @@
 </a>
 <!-- Item 2: Chọn & Chốt -->
 <a class="other-item reveal" href="https://chonvachot.com" rel="noopener noreferrer" target="_blank">
+<div class="other-item__title-group">
 <span class="other-item__name" data-i18n="other_cnc_name">Chọn &amp; Chốt</span>
+<span class="other-item__note" data-i18n="other_cnc_note">(Product in experimental phase)</span>
+</div>
 <span class="other-item__type" data-i18n="type_website">Website</span>
 <svg class="other-item__arrow" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
 <path d="M7 17L17 7M17 7H7M17 7V17"></path>
@@ -793,7 +799,10 @@
 </a>
 <!-- Item 3: Teto Cornellius -->
 <a class="other-item other-item--has-preview reveal" href="https://drive.google.com/file/d/1XR6wEN5kS0gl1ldO_vNd41ADMGD72Ao2/view?usp=sharing" rel="noopener noreferrer" target="_blank">
+<div class="other-item__title-group">
 <span class="other-item__name" data-i18n="other_cornellius_name">Teto Cornellius</span>
+<span class="other-item__note" data-i18n="other_cornellius_note">(Personal build — not yet customizable)</span>
+</div>
 <span class="other-item__type" data-i18n="type_software">Software</span>
 <svg class="other-item__arrow other-item__arrow--download" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -825,7 +834,10 @@
 </a>
 <!-- Item 4: Teto Taskous -->
 <a class="other-item other-item--has-preview reveal" href="https://drive.google.com/file/d/1R6yZJQVRM2su-FL1clBsPyA6n2VnTrqF/view?usp=sharing" rel="noopener noreferrer" target="_blank">
+<div class="other-item__title-group">
 <span class="other-item__name" data-i18n="other_taskous_name">Teto Taskous</span>
+<span class="other-item__note" data-i18n="other_taskous_note">(Personal build — not yet customizable)</span>
+</div>
 <span class="other-item__type" data-i18n="type_software">Software</span>
 <svg class="other-item__arrow other-item__arrow--download" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -900,7 +912,8 @@
 </div>
 <div class="about-detail">
 <span class="about-detail__label" data-i18n="about_email_label">Email</span>
-<span class="about-detail__value"><a href="mailto:bao.anomal@gmail.com">bao.anomal@gmail.com</a></span>
+<span class="about-detail__value"><a href="mailto:contact.anomal@gmail.com">contact.anomal@gmail.com</a> <span data-i18n="about_email_business" style="font-size: var(--text-xs); color: var(--ink-faint);">(For Business)</span></span>
+<span class="about-detail__value"><a href="mailto:bao.anomal@gmail.com">bao.anomal@gmail.com</a> <span data-i18n="about_email_activities" style="font-size: var(--text-xs); color: var(--ink-faint);">(For Extra Curriculum Activities)</span></span>
 </div>
 <div class="about-detail">
 <span class="about-detail__label">Phone</span>
@@ -927,9 +940,22 @@
 <span data-i18n="footer_portfolio">Portfolio</span>
 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"></path></svg>
 </a>
-<a class="footer-link" href="#" style="opacity: 0.5; pointer-events: none;">
-<span data-i18n="footer_cv">CV (Coming soon)</span>
+<div class="footer-dropdown-wrapper">
+<button class="footer-link footer-dropdown-trigger" type="button" aria-haspopup="true" aria-expanded="false">
+<span data-i18n="footer_cv">CV</span>
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg>
+</button>
+<div class="footer-dropdown-menu" role="menu">
+<a class="footer-dropdown-item" href="https://docs.google.com/document/d/1r1-SKbavH-Lbu9wqW586PKe28VFQyVO5dcXaNCvUZoY/edit?usp=sharing" rel="noopener noreferrer" target="_blank" role="menuitem">
+<span data-i18n="footer_cv_work">Work / Business</span>
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"></path></svg>
 </a>
+<a class="footer-dropdown-item" href="https://docs.google.com/document/d/1OFqf7uFjqDuahBa2HSa5Ry-hbzxxAPq2KrMS0LZ59BU/edit?usp=sharing" rel="noopener noreferrer" target="_blank" role="menuitem">
+<span data-i18n="footer_cv_activities">Extra Curriculum Activities</span>
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"></path></svg>
+</a>
+</div>
+</div>
 </div>
 <div class="footer-copy">
 <span data-i18n="footer_copy">© 2026 Tran Gia Bao</span>

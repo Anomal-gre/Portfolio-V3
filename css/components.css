@@ -772,6 +772,13 @@
   border-bottom: 1px dashed var(--border-solid);
 }
 
+.other-item__title-group {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem 0.75rem;
+  flex-wrap: wrap;
+}
+
 .other-item__name {
   font-family: var(--font-display);
   font-size: var(--text-lg);
@@ -779,6 +786,14 @@
   letter-spacing: -0.02em;
   color: var(--ink);
   transition: color 0.15s;
+}
+
+.other-item__note {
+  font-family: var(--font);
+  font-size: var(--text-xs);
+  color: var(--ink-faint);
+  font-weight: 400;
+  letter-spacing: 0;
 }
 
 .other-item:hover .other-item__name {
@@ -1103,4 +1118,96 @@
   font-size: var(--text-xs);
   color: var(--ink-faint);
   letter-spacing: 0.02em;
+}
+
+/* Footer Dropdown (CV Menu) */
+.footer-dropdown-wrapper {
+  position: relative;
+  display: inline-flex;
+}
+
+.footer-dropdown-trigger {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.footer-dropdown-trigger svg {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-dropdown-wrapper:hover .footer-dropdown-trigger svg,
+.footer-dropdown-wrapper:focus-within .footer-dropdown-trigger svg {
+  transform: rotate(180deg);
+}
+
+.footer-dropdown-menu {
+  position: absolute;
+  bottom: calc(100% + 0.5rem);
+  left: 50%;
+  transform: translateX(-50%) translateY(6px);
+  min-width: max-content;
+  background: var(--surface);
+  border: 1px solid var(--border-solid);
+  padding: 0.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  z-index: 100;
+}
+
+/* Invisible bridge so mouse doesn't drop off between button and popup */
+.footer-dropdown-menu::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 0.6rem;
+}
+
+.footer-dropdown-wrapper:hover .footer-dropdown-menu,
+.footer-dropdown-wrapper:focus-within .footer-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+.footer-dropdown-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.45rem 0.75rem;
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.footer-dropdown-item svg {
+  width: 11px;
+  height: 11px;
+  opacity: 0.5;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.footer-dropdown-item:hover {
+  background-color: var(--bg);
+  color: var(--ink);
+}
+
+.footer-dropdown-item:hover svg {
+  opacity: 1;
+  transform: translate(1px, -1px);
 }

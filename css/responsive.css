@@ -126,6 +126,16 @@
     gap: 1rem;
   }
 
+  .footer-dropdown-menu {
+    left: 0;
+    transform: translateY(6px);
+  }
+
+  .footer-dropdown-wrapper:hover .footer-dropdown-menu,
+  .footer-dropdown-wrapper:focus-within .footer-dropdown-menu {
+    transform: translateY(0);
+  }
+
   /* Section divider dots */
   .section-divider::before {
     left: 0.75rem;
